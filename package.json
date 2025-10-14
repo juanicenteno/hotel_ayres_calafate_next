@@ -9,13 +9,23 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@formatjs/intl-localematcher": "^0.6.2",
+    "embla-carousel-react": "^8.6.0",
+    "install": "^0.13.0",
+    "negotiator": "^1.0.0",
+    "next": "15.5.2",
+    "next-intl": "^4.3.12",
+    "npm": "^11.6.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.5.2"
+    "react-hot-toast": "^2.6.0",
+    "react-responsive": "^10.0.1",
+    "yet-another-react-lightbox": "^3.25.0"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
     "eslint": "^9",
-    "eslint-config-next": "15.5.2",
-    "@eslint/eslintrc": "^3"
+    "eslint-config-next": "15.5.2"
   }
 }

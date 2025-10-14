@@ -1,0 +1,191 @@
+.carrouselContainer {
+    width: 95%;
+    margin: 7rem auto;
+    background: var(--text-color-b);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textContainer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carrouselContainer h3 {
+    font-size: 16px;
+    color: var(--brown);
+    /* margin-top: 2rem; */
+    font-weight: normal;
+    text-align: center;
+}
+
+.carrouselContainer h4 {
+    font-size: 20px;
+    color: var(--background);
+    margin-top: 0.3rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.lineDivider {
+    width: 1px;
+    height: 3rem;
+    background: var(--background);
+    opacity: 1;
+    place-self: center;
+    display: none;
+    margin-bottom: 1rem;
+}
+
+.imgContainer {
+    margin-top: 1rem;
+    position: relative;
+}
+
+.imgRoom {
+    width: 100%;
+    height: 8rem !important;
+    object-fit: cover;
+    position: relative !important;
+}
+
+.imgText {
+    background: var(--white);
+    color: var(--text-color-b);
+    width: 90%;
+    margin: -3rem auto 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    z-index: 59;
+    position: relative;
+}
+
+.TitlePrice {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #31313142;
+    display: flex;
+    flex-direction: column;
+}
+
+.TitlePrice h3 {
+    font-size: 18px;
+    margin-bottom: .5rem;
+    font-weight: normal;
+    color: var(--text-color-b);
+    text-align: start;
+    margin-top: 0;
+}
+
+.TitlePrice span {
+    color: var(--brown);
+    font-size: 14px;
+}
+
+.amenitiesList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.amenitiesList li {
+    display: flex;
+    flex: 0 0 40%;
+    font-size: 14px;
+    font-weight: normal;
+    align-items: center;
+    gap: .2rem;
+}
+
+.amenitiesList li svg {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 3px;
+}
+
+.buttonsList {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.DetailsButton {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #31313199;
+    font-size: 12px;
+}
+
+.DetailsButton svg {
+    width: 1rem;
+}
+
+.BookNow {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    color: var(--brown);
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: .5rem;
+    font-size: 14px;
+}
+
+.amenitiesList p {
+    font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    .imgRoom {
+        height: 13rem !important;
+    }
+
+    .imgText {
+        margin-top: -5rem;
+    }
+
+    
+}
+
+@media (min-width: 1024px) {
+    .carrouselContainer {
+        position: relative;
+    }
+
+    .carrouselContainer h3{
+        font-size: 20px;
+    }
+    .carrouselContainer h4{
+        font-size: 30px;
+    }
+
+    .TitlePrice span{
+        font-size: 16px;
+    }
+
+    .amenitiesList li{
+        font-size: 16px;
+    }
+
+    .DetailsButton{
+        font-size: 16px;
+    }
+    .BookNow {
+        font-size: 16px;
+    }
+}

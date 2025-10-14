@@ -1,0 +1,179 @@
+#embla_home_rooms {
+  /* margin: auto; */
+  --slide-height: 19rem;
+  --slide-spacing: 1rem;
+  --slide-size: 100%;
+  width: 19rem;
+  height: 100%;
+}
+
+#embla_home_viewport {
+  overflow: hidden;
+}
+
+#embla__container_home {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+
+#embla__slide_home {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+}
+
+#embla__slide__number_home {
+  /* box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast); */
+  border-radius: 1.8rem;
+  font-size: 4rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--slide-height);
+  user-select: none;
+  height: 100%;
+}
+
+#embla__controls_home {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: space-between;
+  gap: 1.2rem;
+  margin: 0 auto 0;
+  width: 80%;
+}
+
+#embla__buttons_home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+  align-items: center;
+}
+
+#embla__buttons_home button{
+  -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  /* box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast); */
+  width: 2rem;
+  height: 2rem;
+  z-index: 1;
+  border-radius: 50%;
+  color: var(--text-body);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#embla__buttons_home button:disabled {
+  color: var(--detail-high-contrast);
+}
+
+#embla__buttons_home button svg {
+  width: 35%;
+  height: 35%;
+  cursor: pointer;
+}
+
+#embla__dots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: .5rem;
+}
+
+.embla__dot {
+  -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.embla__dot:after {
+  box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  content: '';
+}
+
+.embla__dot--selected:after {
+  box-shadow: inset 0 0 0 0.2rem var(--text-body);
+}
+
+@media (min-width: 768px) {
+  #embla_home_rooms{
+    width: 25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #embla_home_rooms{
+    width: 100%;
+  }
+
+  #embla__slide_home{
+    flex: 0 0 50%;
+    padding-left: 0;
+  }
+
+  #embla__container_home{
+    margin-left: 0;
+  }
+
+  #embla_home_viewport{
+    width: 50rem;
+    margin: auto;
+  }
+  
+  #embla__controls_home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+  }
+
+  #embla__buttons_home{
+    display: flex;
+    justify-content: space-between;
+    width: 57rem;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #embla__buttons_home button svg{
+    width: 100%;
+    height: 100%;
+  }
+}

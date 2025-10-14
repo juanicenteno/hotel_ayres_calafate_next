@@ -1,0 +1,293 @@
+#embla_room_carousel {
+  max-width: 48rem;
+  margin: auto;
+  --slide-height: 19rem;
+  --slide-spacing: 1rem;
+  --slide-size: 100%;
+  position: relative;
+  width: 100%;
+}
+
+#embla_viewport_room {
+  overflow: hidden;
+}
+
+#embla__container_room_detail {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+
+#embla__slide_room_detail {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+}
+
+#embla__slide__number_room_detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--slide-height);
+  user-select: none;
+  position: relative;
+  background: #dedede;
+  background: -webkit-linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
+  background: -moz-linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
+  background: linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#DEDEDE", endColorstr="#A3A3A3", GradientType=0);
+}
+
+.embla-thumbs {
+  margin-top: .5rem;
+}
+
+.embla-thumbs__viewport {
+  overflow: hidden;
+}
+
+.embla-thumbs__container {
+  display: flex;
+  gap: .3rem;
+}
+
+
+.embla-thumbs__slide__number {
+  cursor: pointer;
+  position: relative;
+  width: 9rem;
+  height: 6rem;
+}
+
+.embla-thumbs__slide__number img {
+  transition: all .3s;
+  background: #dedede;
+  background: -webkit-linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
+  background: -moz-linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
+  background: linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#DEDEDE", endColorstr="#A3A3A3", GradientType=0);
+  filter: brightness(.5);
+
+}
+
+.embla-thumbs__slide--selected .embla-thumbs__slide__number img {
+  filter: none;
+}
+
+
+
+#embla__buttons_room_detail {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-140%);
+  z-index: 1;
+}
+
+#embla__buttons_room_detail button {
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  color: #fff;
+}
+
+#embla__buttons_room_detail button svg{
+  cursor: pointer;
+}
+
+#embla__buttons_room_detail button:disabled {
+  background-color: transparent;
+  color: #323232;
+}
+
+.price_customers {
+  position: absolute;
+  top: 0;
+  background-color: var(--background-green);
+  color: var(--text-color-w);
+  width: 50%;
+  height: 2rem;
+  border-radius: 0 0 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  right: 0;
+  z-index: 1;
+}
+
+.price_customers span {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: .3rem;
+}
+
+.quantity_customers svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.quantity_customers {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  background-color: var(--background-green);
+  color: var(--text-color-w);
+  width: 3rem;
+  height: 2rem;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 0 10px 0;
+  z-index: 1;
+}
+
+.main_room_detail {
+  margin: 7rem .5rem 0;
+}
+
+.main_room_detail h1 {
+  margin-bottom: 1rem;
+  font-size: 22px;
+}
+
+.container_room_detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description_room {
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgb(0 0 0 / 20%);
+}
+
+.description_room p {
+  font-size: 14px;
+  font-family: var(--font-eb-garamond);
+  width: 90%;
+  font-style: italic;
+  margin: auto;
+}
+
+.description_room ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: 2rem;
+}
+
+.description_room ul li {
+  background-color: rgb(255 255 255 / 60%);
+  padding: .3rem .5rem;
+  border-radius: 50rem;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: .2rem;
+}
+
+.description_room svg {
+  fill: #323232;
+  width: 1rem;
+  height: 1rem;
+}
+
+.reserve_btn {
+  align-self: center;
+  background-color: var(--background-green);
+  padding: 1rem 2rem;
+  color: var(--text-color-w);
+  font-size: 18px;
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .main_room_detail {
+    width: 90%;
+    margin: 7rem auto 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main_room_detail {
+    border-bottom: 1px solid #c1c1c1;
+    margin-top: 11rem;
+    width: 80%;
+  }
+
+  .main_room_detail h1 {
+    font-size: 32px;
+  }
+
+  .price_customers {
+    font-size: 14px;
+  }
+
+  .quantity_customers {
+    font-size: 16px;
+    height: auto;
+    width: auto;
+    padding: .3rem 1rem;
+  }
+
+  .quantity_customers svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .container_room_detail {
+    flex-direction: row;
+    gap: 2rem;
+    height: auto;
+    padding-bottom: 5rem;
+    align-items: flex-start;
+  }
+
+  #embla_room_carousel {
+    width: 50%;
+    margin: 0;
+  }
+
+  .description_room {
+    width: 50%;
+    height: 100%;
+    margin-top: 0;
+    justify-content: space-between;
+    align-self: flex-start;
+    align-items: flex-start;
+    border: none;
+    padding: 0;
+  }
+
+  .description_room p {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  #embla_viewport_room {
+    height: 23rem;
+  }
+
+  .description_room ul li {
+    font-size: 16px;
+  }
+
+  #embla__container_room_detail{
+    height: 100%;
+  }
+
+  #embla__slide__number_room_detail{
+    height: 100%;
+  }
+}

@@ -1,0 +1,137 @@
+.rooms_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 11rem;
+}
+
+.image_container_rooms {
+    position: relative;
+    width: 100%;
+    height: 14rem;
+    border-radius: 15px 7px 0 0;
+    overflow: hidden;
+    background: #dedede;
+    background: -webkit-linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
+    background: -moz-linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
+    background: linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#DEDEDE", endColorstr="#A3A3A3", GradientType=0);
+}
+
+.image_container_rooms:hover{
+    opacity: .7;
+    transition: all .3s ease-in-out;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 19rem;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 15px 7px 0 0;
+    box-shadow: 4px 4px 8px -2px rgba(0, 0, 0, 0.31);
+    -webkit-box-shadow: 4px 4px 8px -2px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 4px 4px 8px -2px rgba(0, 0, 0, 0.31);
+}
+
+#rooms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.room_image {
+    object-fit: cover;
+}
+
+.description_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* gap: 1rem; */
+    width: 90%;
+    height: 100%;
+    padding: 1rem 0;
+}
+
+.description_container h1 {
+    font-size: 24px;
+}
+
+.description_container p {
+    font-size: 14px;
+}
+
+.ventajas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 12px;
+}
+
+.ventajas li {
+    background-color: rgb(231 231 231 / 60%);
+    padding: 7px 8px;
+    border-radius: 50rem;
+}
+
+.room_price {
+    margin-top: 1rem;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.reserve_button {
+    align-self: center;
+    background-color: var(--red);
+    font-size: 16px;
+    color: var(--background);
+    font-weight: 600;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reserve_button:hover{
+    background-color: #63271cd9;
+    transition: all .3s ease-in-out;
+}
+
+@media (min-width: 1024px) {
+    .rooms_container {
+        width: 90%;
+        margin: 11rem auto 0;
+    }
+    .image_container_rooms{
+        height: 20rem;
+    }
+    .card{
+        width: 25rem;
+    }
+    .description_container p {
+        font-size: 16px;
+    }
+    .ventajas{
+        font-size: 14px;
+    }
+    .room_price{
+        font-size: 20px
+    }
+
+    .reserve_button{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1440px) {
+  .rooms_container{
+    width: 80%;
+  }
+}

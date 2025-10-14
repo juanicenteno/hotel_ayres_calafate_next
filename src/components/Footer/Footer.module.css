@@ -1,0 +1,143 @@
+.footer {
+    background-color: var(--text-color-b);
+    padding-bottom: 4rem;
+}
+
+.footerContainer {
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.footerImg img {
+    width: 8rem;
+}
+
+.footerImg {
+    color: #ffffff75;
+    font-size: 14px;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footerContact {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.footerContact li {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    color: #ffffff75;
+}
+
+.footerContact svg {
+    fill: var(--gold);
+}
+
+.footerNavegation {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.footerNavegation h3 {
+    color: var(--gold);
+    font-size: 18px;
+    font-family: var(--font-eb-garamond), serif;
+}
+
+.footerNavegation ul {
+    font-size: 14px;
+    color: #ffffff75;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.socialMedia h3 {
+    color: var(--gold);
+    font-size: 18px;
+    font-family: var(--font-eb-garamond), serif;
+}
+
+.socialMedia ul {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: #ffffff75;
+}
+
+.copyRight {
+    color: #ffffff75;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: .3rem;
+    font-size: 12px;
+    border-top: 1px solid #ffffff75;
+    padding-top: 1rem;
+}
+
+.footerExtras {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .footerExtras {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footerContainer{
+        width: 80%;
+    }
+    .footerImg img{
+        width: 13rem;
+    }
+    .footerImg p{
+        font-size: 16px;
+    }
+    .footerNavegation h3{
+        font-size: 20px;
+    }
+    .footerNavegation ul{
+        font-size: 16px;
+    }
+    .footerContact{
+        font-size: 16px;
+    }
+    .socialMedia h3 {
+        font-size: 20px;
+    }
+    .socialMedia svg{
+        width: 2rem;
+        height: 2rem;
+    }
+    .copyRight{
+        font-size: 16px;
+    }
+}

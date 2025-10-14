@@ -1,0 +1,423 @@
+.container {
+    margin-top: 6rem;
+    background: var(--background-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0 0;
+}
+
+.container h3 {
+    font-size: 24px;
+    color: var(--white);
+    font-family: var(--font-bodar), serif;
+}
+
+.DayPicker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.DayPicker span {
+    background-color: var(--text-color-w);
+    padding: .3rem 2rem;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    gap: .2rem;
+    cursor: pointer;
+}
+
+.DayPicker svg {
+    width: 17px !important;
+}
+
+.buttonReserve {
+    background: var(--brown);
+    padding: 1rem;
+    width: 100%;
+    font-family: var(--font-bodar), serif;
+    text-align: center;
+    color: var(--text-color-w);
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.customersMenu {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: var(--background);
+    z-index: 10002;
+}
+
+.CloseCustomers {
+    width: 38px !important;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    cursor: pointer;
+}
+
+.AdultsMenu {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    background-color: #323232;
+    color: var(--text-color-w);
+    padding: 0 .5rem;
+    height: 3rem;
+    border-radius: 5px;
+}
+
+.ChildrenMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.AddDelete {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.AdultsMenu span,
+.ChildrenMenu span {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.AddDelete svg {
+    width: 24px;
+    border-radius: 5px;
+    background-color: #4d4d4d;
+    cursor: pointer;
+}
+
+.AddDelete svg path{
+    stroke: var(--gold2);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.buttons button {
+    cursor: pointer;
+}
+
+.cancelButton {
+    background: transparent;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: .7rem 2rem;
+}
+
+.saveButton {
+    background-color: var(--background-green);
+    border: none;
+    border-radius: 5px;
+    padding: .7rem 2rem;
+    color: var(--text-color-w);
+}
+
+.calendarMenu {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: var(--background);
+    z-index: 10002;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 1rem;
+}
+
+.calendarMenu svg {
+    align-self: flex-end;
+    width: 38px;
+    margin: 2rem 2rem 0;
+    cursor: pointer;
+}
+
+.calendars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 1rem;
+    /* background-color: #323232; */
+    padding: 1rem;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.datePicker {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    position: relative;
+}
+
+.datePicker span{
+    color: var(--text-color-w);
+}
+
+.datePicker input {
+    cursor: pointer;
+    height: 2rem;
+}
+
+.dateSaveButton {
+    background-color: var(--gold2);
+    border: none;
+    border-radius: 5px;
+    padding: .7rem 0;
+    color: var(--text-color-b);
+    width: 70%;
+    align-self: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    /* font-family: var(--font-bodar), serif; */
+    /* font-style: italic; */
+}
+
+.disponibilidad {
+    background-color: #1c1c1c;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    z-index: 100;
+    gap: 3rem;
+}
+
+.disponibilidad:global(.active) {
+    height: 35rem;
+    transition: all .5s ease-in-out;
+    justify-content: flex-start;
+}
+
+.span {
+    color: var(--gold2);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.disponibilidad:global(.active) .span {
+    margin-top: 1rem !important;
+}
+
+.openBox {
+    width: 24px;
+    margin-left: 0.2rem;
+}
+
+.openBox:global(.active) {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.guests {
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 2rem;
+    margin: 0 1rem;
+    padding: 1rem;
+    width: 90%;
+}
+
+.AdultsMenu small {
+    width: 2rem;
+    height: 2rem;
+    color: var(--gold2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.bookingDesktop{
+    display: none;
+}
+
+.datePicker input[type="date"] {
+  appearance: none;
+  background-color: #323232;
+  border-radius: 5px;
+  padding: 1rem;
+  font-family: inherit;
+  color: var(--text-color-w);
+  cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.5); /* cambia el color del icono */
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .datePicker input{
+        padding: 0 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .disponibilidad,
+    .disponibilidad span {
+        display: none !important;
+    }
+
+    .calendars {
+        width: 40%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .guestsDesktop {
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+        position: relative;
+        width: 40%;
+    }
+
+    .bookingDesktop {
+        bottom: 2rem;
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #1c1c1c;
+        height: 5rem;
+        z-index: 2;
+        gap: 1rem;
+    }
+
+    .AdultsMenu{
+        border-radius: 0;
+    }
+
+    .bookingDesktop a {
+        width: 15%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color: #323232;
+        font-weight: 600;
+        background-color: var(--gold2);
+        cursor: pointer;
+    }
+
+    .bookingDesktop a:hover{
+        background-color: #d7b488;
+        transition: all .3s;
+    }
+
+    .guestsMenu {
+        position: absolute;
+        top: -8rem;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .datePicker span {
+        color: #fff;
+    }
+
+    .guestsDesktopSpan {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        height: 4rem;
+        background-color: #323232;
+    }
+
+    .guestsDesktopSpan::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+    }
+
+    .guestsDesktopSpan:hover::after {
+        transform: scaleX(1);
+    }
+
+    .datePicker input::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+    }
+
+    .datePicker input:hover::after {
+        transform: scaleX(1);
+    }
+
+    .openBox {
+        transform: rotate(90deg);
+    }
+
+    .AdultsMenu small {
+        width: 2rem;
+        background-color: var(--brown);
+        border-radius: 3px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1440px){
+    .bookingDesktop{
+        width: 80%;
+    }
+}
+
