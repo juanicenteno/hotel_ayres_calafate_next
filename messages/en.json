@@ -67,5 +67,14 @@
     "message": "Message",
     "date_in": "Check-in Date",
     "date_out": "Check-out Date",
-    "send": "Send"
+    "send": "Send",
+    "question1": "Minors and Pets",
+    "question2": "Check-in and Check-out Times",
+    "question3": "Cleaning Policy",
+    "question4": "Points of Interest",
+    "answ1": "Guests under 18 years old cannot make reservations without the intervention of an adult. Children up to 3 years old can share a room with their parents, with a maximum of two children per room. Regarding pets, at the moment our property is not adapted to accommodate them, so we do not offer a Pet Friendly option.",
+    "answ2": "Check-in starts at 2:00 PM, while check-out must be completed before 10:00 AM. Breakfast is included in the rate and is served from 7:00 AM to 10:00 AM. Our pool is available for guests to enjoy from 10:00 AM until midnight. In addition, we have a Pool Bar where you can enjoy drinks, beverages, empanadas, and toasted sandwiches in a relaxed atmosphere. The bar is open daily from 6:00 PM to 11:00 PM.",
+    "answ3": "All our rooms include amenities such as shampoo, conditioner, and soap. Cleaning service is included in your stay, ensuring a fresh and comfortable environment during your visit. If you wish to enjoy the pool, you can request exclusive towels for this area at the reception.",
+    "answ4": "If you want to explore the surroundings, El Calafate offers numerous options within a short distance from the hotel. Just a few minutes on foot, you can walk along Paseo del Bosque, a trail surrounded by lenga and ñire trees that connects you with Patagonian nature. You can also visit the Glaciarium, a top-level glaciological interpretation center where you will learn everything about the region's glaciers. For shopping and souvenir lovers, the shopping area on Avenida del Libertador is just a few steps away and stays open late with artisanal shops and chocolatiers. If you're looking for a different experience, you can cruise on Lake Argentino or take a trip to the Perito Moreno Glacier, located only 80 kilometers from downtown. And when you return, relax in our pool open until midnight or enjoy a selection of cocktails, empanadas, and smoothies at our Pool Bar, open from 6:00 PM to 11:00 PM.",
+    "footer_desc": "Ayres de Calafate is a boutique hotel in the heart of El Calafate, offering comfortable rooms, personalized service, and a unique Patagonian experience."
 }

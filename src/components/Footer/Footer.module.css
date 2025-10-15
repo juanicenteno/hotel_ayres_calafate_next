@@ -105,6 +105,15 @@
     flex-direction: column;
 }
 
+.socialMedia svg {
+    cursor: pointer;
+}
+
+.socialMedia svg:hover {
+    color: var(--gold2);
+    transition: all .3s;
+}
+
 @media (min-width: 768px) {
     .footerExtras {
         flex-direction: row;
@@ -112,32 +121,40 @@
 }
 
 @media (min-width: 1024px) {
-    .footerContainer{
+    .footerContainer {
         width: 80%;
     }
-    .footerImg img{
+
+    .footerImg img {
         width: 13rem;
     }
-    .footerImg p{
+
+    .footerImg p {
         font-size: 16px;
     }
-    .footerNavegation h3{
+
+    .footerNavegation h3 {
         font-size: 20px;
     }
-    .footerNavegation ul{
+
+    .footerNavegation ul {
         font-size: 16px;
     }
-    .footerContact{
+
+    .footerContact {
         font-size: 16px;
     }
+
     .socialMedia h3 {
         font-size: 20px;
     }
-    .socialMedia svg{
+
+    .socialMedia svg {
         width: 2rem;
         height: 2rem;
     }
-    .copyRight{
+
+    .copyRight {
         font-size: 16px;
     }
 }

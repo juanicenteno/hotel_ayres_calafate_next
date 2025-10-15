@@ -70,5 +70,14 @@
     "date_out": "Fecha de Salida",
     "send": "Enviar",
     "alert_error_dates": "Debes completar fecha de entrada y salida.",
-    "alert_error_guests": "Debes completar la cantidad de huéspedes."
+    "alert_error_guests": "Debes completar la cantidad de huéspedes.",
+    "question1": "Menores y Mascotas",
+    "question2": "Horarios de entrada y salida",
+    "question3": "Política de limpieza",
+    "question4": "Lugares de interés",
+    "answ1": "Los menores de 18 años no pueden realizar reservas sin la intervención de un adulto. Los niños de hasta 3 años pueden compartir habitación con sus padres, con un máximo de dos menores por habitación. En cuanto a las mascotas, por el momento nuestro complejo no está adaptado para recibirlas, por lo que no contamos con la opción Pet Friendly.",
+    "answ2": "El horario de check-in es a partir de las 14:00, mientras que el check-out debe realizarse antes de las 10:00. El desayuno está incluido en la tarifa y se sirve de 7:00 a 10:00. Nuestra piscina está disponible para el disfrute de nuestros huéspedes desde las 10:00 hasta la medianoche. Además, contamos con un Bar de Piscina, donde podrás disfrutar de tragos, bebidas, empanadas y tostados en un ambiente relajado. El bar abre todos los días de 18:00 a 23:00.",
+    "answ3": "Todas nuestras habitaciones incluyen amenities como shampoo, crema de enjuague y jabón. El servicio de limpieza está incluido en la estadía, garantizando un ambiente fresco y confortable durante tu visita. Si deseas disfrutar de la piscina, en recepción puedes solicitar toallas exclusivas para ese sector.",
+    "answ4": "Si deseas explorar los alrededores, El Calafate te ofrece numerosas opciones a muy poca distancia del hotel. A tan solo unos minutos caminando, podés recorrer el Paseo del Bosque, un sendero rodeado de lengas y ñires que te conecta con la naturaleza patagónica. También podés visitar el Glaciarium, un centro de interpretación glaciológico de primer nivel donde aprenderás todo sobre los glaciares de la región. Para los amantes de las compras y los souvenirs, el centro comercial de la Avenida del Libertador está a pocos pasos y permanece abierto hasta altas horas con tiendas artesanales y chocolaterías. Si buscás una experiencia distinta, navegá por el Lago Argentino o animate a una excursión al glaciar Perito Moreno, que se encuentra a solo 80 kilómetros del centro. Y al volver, relajate en nuestra piscina abierta hasta la medianoche, o disfrutá de una selección de cócteles, empanadas y licuados en nuestro Bar de Piscina, abierto de 18:00 a 23:00.",
+    "footer_desc": "Ayres de Calafate es un hotel boutique en el corazón de El Calafate, ofreciendo habitaciones confortables, atención personalizada y una experiencia única en la Patagonia."
 }

@@ -9,20 +9,20 @@ export default function FAQ() {
 
     const faqs = [
         {
-            question: "¿What is the check-in and check-out time?",
-            answer: "Check-in is from 3:00 PM to 11:00 PM, and check-out is until 12:00 PM.",
+            question: t('question1'),
+            answer: t('answ1'),
         },
         {
-            question: "¿Is breakfast included in the room rate?",
-            answer: "Yes, breakfast is included in the price of the room.",
+            question: t('question2'),
+            answer: t('answ2'),
         },
         {
-            question: "¿Is breakfast included in the room rate?",
-            answer: "Yes, breakfast is included in the price of the room.",
+            question: t('question3'),
+            answer: t('answ3'),
         },
         {
-            question: "¿Is breakfast included in the room rate?",
-            answer: "Yes, breakfast is included in the price of the room.",
+            question: t('question4'),
+            answer: t('answ4'),
         },
     ];
 

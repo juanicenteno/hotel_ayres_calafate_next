@@ -68,5 +68,14 @@
     "message": "Mensagem",
     "date_in": "Data de entrada",
     "date_out": "Data de saída",
-    "send": "Enviar"
+    "send": "Enviar",
+    "question1": "Menores e Animais de Estimação",
+    "question2": "Horários de entrada e saída",
+    "question3": "Política de limpeza",
+    "question4": "Lugares de interesse",
+    "answ1": "Menores de 18 anos não podem fazer reservas sem a intervenção de um adulto. Crianças de até 3 anos podem compartilhar o quarto com os pais, com um máximo de dois menores por quarto. Quanto aos animais de estimação, no momento nosso complexo não está adaptado para recebê-los, portanto não oferecemos a opção Pet Friendly.",
+    "answ2": "O horário de check-in é a partir das 14:00, enquanto o check-out deve ser feito antes das 10:00. O café da manhã está incluído na tarifa e é servido das 7:00 às 10:00. Nossa piscina está disponível para os hóspedes das 10:00 até a meia-noite. Além disso, contamos com um Bar da Piscina, onde você pode desfrutar de drinks, bebidas, empanadas e sanduíches em um ambiente descontraído. O bar funciona todos os dias das 18:00 às 23:00.",
+    "answ3": "Todos os nossos quartos incluem amenities como shampoo, condicionador e sabonete. O serviço de limpeza está incluído na estadia, garantindo um ambiente fresco e confortável durante sua visita. Se desejar aproveitar a piscina, na recepção você pode solicitar toalhas exclusivas para essa área.",
+    "answ4": "Se quiser explorar os arredores, El Calafate oferece inúmeras opções a curta distância do hotel. A poucos minutos a pé, você pode percorrer o Passeio do Bosque, uma trilha cercada por lengas e ñires que conecta você à natureza patagônica. Também pode visitar o Glaciarium, um centro de interpretação glaciológica de alto nível onde você aprenderá tudo sobre os glaciares da região. Para os amantes de compras e souvenirs, o centro comercial da Avenida del Libertador está a poucos passos e permanece aberto até tarde com lojas artesanais e chocolaterias. Se busca uma experiência diferente, navegue pelo Lago Argentino ou se aventure em uma excursão ao glaciar Perito Moreno, que fica a apenas 80 quilômetros do centro. E ao voltar, relaxe em nossa piscina aberta até a meia-noite ou aproveite uma seleção de coquetéis, empanadas e smoothies em nosso Bar da Piscina, aberto das 18:00 às 23:00.",
+    "footer_desc": "O Ayres de Calafate é um hotel boutique no coração de El Calafate, oferecendo quartos confortáveis, atendimento personalizado e uma experiência única na Patagônia."
 }
