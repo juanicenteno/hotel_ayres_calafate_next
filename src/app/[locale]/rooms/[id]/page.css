@@ -210,6 +210,11 @@
   margin-top: 2rem;
   width: 100%;
   text-align: center;
+  transition: all .3s;
+}
+
+.reserve_btn:hover{
+  background-color: #305243cc;
 }
 
 @media (min-width: 768px) {

@@ -17,11 +17,11 @@
     background: -moz-linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
     background: linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#DEDEDE", endColorstr="#A3A3A3", GradientType=0);
+    transition: all .3s ease-in-out;
 }
 
 .image_container_rooms:hover{
     opacity: .7;
-    transition: all .3s ease-in-out;
 }
 
 .card {
@@ -97,11 +97,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .3s ease-in-out;
 }
 
 .reserve_button:hover{
     background-color: #63271cd9;
-    transition: all .3s ease-in-out;
 }
 
 @media (min-width: 1024px) {

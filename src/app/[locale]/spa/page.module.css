@@ -188,10 +188,10 @@ html {
     text-align: center;
     background: #a58765;
     color: #f4ede0;
+    transition: all .3s;
 }
 
 .offers_items a:hover {
-    transition: all .3s;
     background-color: #cdab84;
 }
 

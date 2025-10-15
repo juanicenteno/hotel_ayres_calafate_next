@@ -338,11 +338,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         font-weight: 600;
         background-color: var(--gold2);
         cursor: pointer;
+        transition: all .3s;
     }
 
     .bookingDesktop a:hover{
         background-color: #d7b488;
-        transition: all .3s;
     }
 
     .guestsMenu {

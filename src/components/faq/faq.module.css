@@ -13,8 +13,6 @@
 .faq li {
     font-size: 16px;
     border-bottom: 2px solid rgb(213, 216, 220);
-    padding: 1.3rem 0;
-
 }
 
 
@@ -23,6 +21,7 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    padding: 1.3rem 0;
 }
 
 .question:target{

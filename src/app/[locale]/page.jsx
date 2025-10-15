@@ -2,10 +2,13 @@ import Booking from "@/components/Booking/Booking";
 import styles from "./page.module.css";
 import Carrousel from "@/components/Carrousel_Rooms/Carrousel";
 import Image from "next/image";
+import { useLocale } from 'next-intl';
 import { useTranslations } from 'next-intl';
 
 export default function Home() {
-const t = useTranslations();
+  const t = useTranslations();
+  const locale = useLocale();
+
   return (
     <>
       <section className={styles.header_image}>
@@ -20,7 +23,7 @@ const t = useTranslations();
           <div className={styles.lineDivider}></div>
           <small>best place to relax & enjoy</small>
           <h1>Perfect Place to Enjoy Your Life</h1>
-          <a href="">{t('reserve')} {t('now')}</a>
+          <a href={`https://www.todoalojamiento.com/portal/${locale}?idHotel=3032&forzarLimpiar=true`} target="_blank">{t('reserve')} {t('now')}</a>
         </div>
         <Booking />
         <div className={styles.gradient}></div>
@@ -58,7 +61,7 @@ const t = useTranslations();
           <article>
             <h3>{t('discover_ayres')}</h3>
             <p>{t('home_discover_text')}</p>
-            <a href="">{t('reserve')} {t('now')}</a>
+            <a href={`https://www.todoalojamiento.com/portal/${locale}?idHotel=3032&forzarLimpiar=true`} target="_blank">{t('reserve')} {t('now')}</a>
           </article>
         </section>
       </main>

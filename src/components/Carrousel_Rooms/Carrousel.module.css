@@ -129,6 +129,11 @@
     gap: 0.3rem;
     color: #31313199;
     font-size: 12px;
+    transition: all .3s;
+}
+
+.DetailsButton:hover {
+    color: #313131;
 }
 
 .DetailsButton svg {
@@ -144,6 +149,12 @@
     border-bottom: 1px solid;
     padding: .5rem;
     font-size: 14px;
+    transition: all .3s;
+}
+
+.BookNow:hover {
+    border: 1px solid;
+    font-weight: 600;
 }
 
 .amenitiesList p {
@@ -159,7 +170,7 @@
         margin-top: -5rem;
     }
 
-    
+
 }
 
 @media (min-width: 1024px) {
@@ -167,24 +178,26 @@
         position: relative;
     }
 
-    .carrouselContainer h3{
+    .carrouselContainer h3 {
         font-size: 20px;
     }
-    .carrouselContainer h4{
+
+    .carrouselContainer h4 {
         font-size: 30px;
     }
 
-    .TitlePrice span{
+    .TitlePrice span {
         font-size: 16px;
     }
 
-    .amenitiesList li{
+    .amenitiesList li {
         font-size: 16px;
     }
 
-    .DetailsButton{
+    .DetailsButton {
         font-size: 16px;
     }
+
     .BookNow {
         font-size: 16px;
     }

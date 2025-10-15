@@ -158,9 +158,10 @@
 
 
 @media (min-width: 1024px) {
-    .switcher_mobile{
+    .switcher_mobile {
         display: none;
     }
+
     .nav {
         display: none;
     }
@@ -219,17 +220,20 @@
         display: none;
     }
 
+    .list_item {
+        transition: opacity .3s ease-in-out;
+    }
+
     .list_item:hover {
         opacity: .7;
-        transition: opacity .3s ease-in-out;
     }
 
     .container_booking {
         display: none;
-    }   
+    }
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1440px) {
     .header {
         padding: 2rem 7rem 1rem;
     }
