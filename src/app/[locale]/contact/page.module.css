@@ -38,6 +38,17 @@
     align-self: flex-start;
 }
 
+.gradient {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* background: #000000; */
+  /* background: linear-gradient(180deg, #000000 0%, #ffffff 80%); */
+  background: -webkit-linear-gradient(268deg, #000000 0%, #323232 80%);
+  background: -moz-linear-gradient(180deg, #000000 0%, #323232 80%);
+  opacity: .7;
+}
+
 .imageText_container small {
     font-size: 16px;
     color: #BF9766;

@@ -12,7 +12,7 @@ function Contacto() {
         <>
             <section className={styles.header_image_contact}>
                 <Image
-                    src="https://ayresdecalafate.com/images/ayres_webp/slider_home5.webp"
+                    src="https://ayresdecalafate.com/images/webp_new/78.webp"
                     alt=""
                     fill
                     style={{ objectFit: "cover" }}
@@ -24,6 +24,7 @@ function Contacto() {
                         <small>{t('contact_text')}</small>
                     </article>
                 </div>
+                <div className={styles.gradient}></div>
             </section>
             <main className={styles.main}>
                 <h1>{t('have_questions')}</h1>

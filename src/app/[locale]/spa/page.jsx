@@ -9,7 +9,7 @@ function Spa() {
     <>
       <section className={styles.header_image_spa}>
         <Image
-          src="https://ayresdecalafate.com/images/ayres_webp/slider_home5.webp"
+          src="https://ayresdecalafate.com/images/webp_new/59.webp"
           alt=""
           fill
           style={{ objectFit: "cover" }}
@@ -19,6 +19,7 @@ function Spa() {
           <small>{t('spa_imagetext')}</small>
           <h1>{t('spa_imagetext2')}</h1>
         </div>
+        <div className={styles.gradient}></div>
       </section>
       <main className={styles.spa_section}>
         <section className={styles.spa_presentation}>

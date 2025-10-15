@@ -36,7 +36,7 @@ const t = useTranslations();
           </article>
           <div className={styles.image_desktop_container} style={{ position: "relative", width: "40%", height: "100%" }}>
             <Image
-              src="https://ayresdecalafate.com/images/ayres_gallery/9.webp"
+              src="https://ayresdecalafate.com/images/webp_new/9.webp"
               alt=""
               fill
               style={{ objectFit: "cover" }}
@@ -48,7 +48,7 @@ const t = useTranslations();
         <section className={styles.ayresPresentation}>
           <div className={styles.image_desktop_container} style={{ position: "relative", width: "40%", height: "100%", alignSelf: "flex-start" }}>
             <Image
-              src="https://ayresdecalafate.com/images/ayres_gallery/40.webp"
+              src="https://ayresdecalafate.com/images/webp_new/44.webp"
               alt=""
               fill
               style={{ objectFit: "cover" }}

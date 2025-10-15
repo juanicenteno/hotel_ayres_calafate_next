@@ -75,15 +75,15 @@
   position: absolute;
 }
 
-.gradient{
-      position: absolute;
-    height: 100%;
-    width: 100%;
-    /* background: #000000; */
-    /* background: linear-gradient(180deg, #000000 0%, #ffffff 80%); */
-    background: -webkit-linear-gradient(268deg, #000000 0%, #7f7f7f 80%);
-    background: -moz-linear-gradient(180deg,#000000 0%, #ffffff 80%);
-    opacity: .7;
+.gradient {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* background: #000000; */
+  /* background: linear-gradient(180deg, #000000 0%, #ffffff 80%); */
+  background: -webkit-linear-gradient(268deg, #000000 0%, #7f7f7f 80%);
+  background: -moz-linear-gradient(180deg, #000000 0%, #ffffff 80%);
+  opacity: .7;
 }
 
 .imageText_container {
