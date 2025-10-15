@@ -1,13 +1,13 @@
 import styles from "./page.module.css"
 import RoomsData from "../../../data/Rooms.json"
 import Image from "next/image";
-import { useTranslations } from 'next-intl';
+import { useTranslations,useLocale } from 'next-intl';
 
 import { Link } from '@/i18n/routing';
 
-function Rooms({ params }) {
+function Rooms() {
     const t = useTranslations();
-    const { locale } = params;
+    const locale = useLocale();
     return (
         <>
             <main className={styles.rooms_container}>
@@ -29,7 +29,7 @@ function Rooms({ params }) {
                                 <h1>{item.nombre[locale]}</h1>
                                 <p>{item.descripcion[locale]}</p>
                                 <ul className={styles.ventajas}>
-                                    {Object.entries(item.ventajas[locale]).map(([key, text]) => (
+                                    {Object.entries(item.ventajas[locale]).slice(0,6).map(([key, text]) => (
                                         <li key={key}>{text}</li>
                                     ))}
                                 </ul>

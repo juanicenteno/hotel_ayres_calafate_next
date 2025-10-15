@@ -106,7 +106,7 @@
 .price_customers {
   position: absolute;
   top: 0;
-  background-color: var(--background-green);
+  background-color: var(--red);
   color: var(--text-color-w);
   width: 50%;
   height: 2rem;
@@ -134,7 +134,7 @@
   display: flex;
   align-items: center;
   gap: .5rem;
-  background-color: var(--background-green);
+  background-color: var(--red);
   color: var(--text-color-w);
   width: 3rem;
   height: 2rem;
@@ -203,7 +203,7 @@
 
 .reserve_btn {
   align-self: center;
-  background-color: var(--background-green);
+  background-color: var(--red);
   padding: 1rem 2rem;
   color: var(--text-color-w);
   font-size: 18px;
@@ -214,7 +214,7 @@
 }
 
 .reserve_btn:hover{
-  background-color: #305243cc;
+  background-color: #63271cdc;
 }
 
 @media (min-width: 768px) {

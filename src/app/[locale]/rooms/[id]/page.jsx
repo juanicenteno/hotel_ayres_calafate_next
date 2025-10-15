@@ -12,7 +12,6 @@ import { useTranslations } from 'next-intl';
 
 export default function RoomDetail({ params }) {
     const t = useTranslations();
-    // const { locale } = params;
 
     // Buscar la habitación por id
     const paramsData = React.use(params); // <-- esto "desempaqueta" el promise

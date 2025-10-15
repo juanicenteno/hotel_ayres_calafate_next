@@ -56,7 +56,7 @@
   transition: all .3s;
 }
 
-.ayresPresentation a:hover{
+.ayresPresentation a:hover {
   background-color: #63271cdc;
 }
 
@@ -139,6 +139,31 @@
   display: none;
 }
 
+.wpp_btn {
+  position: fixed;
+  background: #12C60F;
+  right: 1rem;
+  bottom: 6rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  /* padding: 1rem; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s;
+}
+
+.wpp_btn:hover {
+  background: #0fa10c;
+}
+
+.wpp_btn svg {
+  fill: #fff !important;
+  height: 70%;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .imageText_container a {
     width: 100%;
@@ -146,6 +171,11 @@
 
   .imageText_container h1 {
     align-self: flex-start;
+  }
+
+  .wpp_btn{
+    right: 3rem;
+    bottom: 8rem;
   }
 }
 

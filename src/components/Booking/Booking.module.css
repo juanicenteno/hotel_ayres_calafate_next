@@ -278,6 +278,10 @@
   cursor: pointer;
 }
 
+.datePicker input[type="date"]:focus{
+    outline: 2px solid var(--gold2);
+}
+
 input[type="date"]::-webkit-calendar-picker-indicator {
   filter: invert(0.5); /* cambia el color del icono */
   cursor: pointer;
@@ -312,14 +316,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 
     .bookingDesktop {
+        position: fixed;
         bottom: 2rem;
-        width: 95%;
+        width: 90%;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #1c1c1c;
         height: 5rem;
-        z-index: 2;
+        z-index: 100;
         gap: 1rem;
     }
 
@@ -373,7 +378,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         bottom: 0;
         height: 2px;
         width: 100%;
-        background-color: #fff;
+        background-color: var(--gold2);
         transform: scaleX(0);
         transform-origin: left;
         transition: transform 0.3s ease;
@@ -390,7 +395,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         bottom: 0;
         height: 2px;
         width: 100%;
-        background-color: #fff;
+        background-color: var(--gold2);
         transform: scaleX(0);
         transform-origin: left;
         transition: transform 0.3s ease;

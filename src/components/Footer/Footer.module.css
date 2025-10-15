@@ -121,6 +121,10 @@
 }
 
 @media (min-width: 1024px) {
+    .footer{
+        padding-bottom: 10rem;
+    }
+
     .footerContainer {
         width: 80%;
     }
