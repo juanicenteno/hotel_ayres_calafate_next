@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Ayres de Calafate — Web Upgrade (En Desarrollo)
 
-## Getting Started
+Esta versión representa una actualización completa de la web de Ayres de Calafate.
+El proyecto original fue desarrollado con React + Vite, pero se tomó la decisión de migrarlo a Next.js para aprovechar sus ventajas en rendimiento, SEO y arquitectura.
 
-First, run the development server:
+Gracias a la migración, la performance mejoró de 40 a 100 puntos (según Lighthouse).
+También se realizaron mejoras en el UI, adoptando un diseño más moderno, limpio y consistente con la identidad visual del hotel.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🔧 Tecnologías principales
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Next.js 15
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+React 19
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+CSS Modules / CSS
 
-## Learn More
+i18n (next-intl)
 
-To learn more about Next.js, take a look at the following resources:
+Embla Carousel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🚀 Mejoras clave
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Migración completa a Next.js con optimización SSR/SSG
 
-## Deploy on Vercel
+Refactorización de componentes para mayor mantenibilidad
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Mejoras de performance y accesibilidad
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Interfaz de usuario rediseñada y más moderna
+
+Web actual: https://ayresdecalafate.com
+
+<img width="1879" height="832" alt="image" src="https://github.com/user-attachments/assets/2d4b4100-3169-4858-b21d-f721c1bcc07b" />
