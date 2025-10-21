@@ -1,6 +1,7 @@
 .footer {
     background-color: var(--text-color-b);
     padding-bottom: 4rem;
+    margin-top: 5rem;
 }
 
 .footerContainer {
@@ -121,7 +122,7 @@
 }
 
 @media (min-width: 1024px) {
-    .footer{
+    .footer {
         padding-bottom: 10rem;
     }
 

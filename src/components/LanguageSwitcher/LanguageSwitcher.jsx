@@ -33,10 +33,10 @@ export default function LocaleSwitcher() {
       >
         <div className="image_container_currentFlag">
         <Image
-          src={flags[locale] || '/flags/en.svg'}
+          src={flags[locale] || 'https://flagcdn.com/ar.svg'}
           alt={locale}
           fill
-          className=""
+          className="holasoyeste"
           style={{objectFit: "cover"}}
           loading="eager"
           />
@@ -55,7 +55,7 @@ export default function LocaleSwitcher() {
               className="image_container_flags"
             >
               <Image
-                src={flags[cur] || '/flags/en.svg'}
+                src={flags[cur] || 'https://flagcdn.com/ar.svg'}
                 alt={cur}
                 fill
                 className=""

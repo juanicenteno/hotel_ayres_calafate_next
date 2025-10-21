@@ -39,6 +39,11 @@
 @media (min-width: 1024px) {
     .question{
         font-size: 20px;
+        transition: all .3s ;
+    }
+    .question:hover{
+        /* background-color: #e5dfd5; */
+        background-color: #bf97661a;
     }
     .answer{
         font-size: 16px;

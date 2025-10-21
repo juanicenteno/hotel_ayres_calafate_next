@@ -107,6 +107,7 @@ function Header() {
                         </ul>
                     </div>
                     <Link className={styles.list_item} prefetch={true} href="/gallery">{t('gallery')}</Link>
+                    <Link className={styles.list_item} prefetch={true} href="/restaurant">{t('dining')}</Link>
                     <Link className={styles.list_item} prefetch={true} href="/spa">{t('our_spa')}</Link>
                     <a className={styles.list_item} href="#faq2">{t('faq')}</a>
                     <Link prefetch={true} className={styles.list_item} href="/contact">{t('contact')}</Link>
@@ -130,6 +131,7 @@ function Header() {
                         <ul className={styles.nav_list}>
                             <Link className={styles.list_item} onClick={handleMobileNavClick} href="/">{t('home')}</Link>
                             <Link className={styles.list_item} prefetch={true} href="/gallery" onClick={handleMobileNavClick}>{t('gallery')}</Link>
+                            <Link className={styles.list_item} prefetch={true} href="/restaurant" onClick={handleMobileNavClick}>{t('dining')}</Link>
                             <Link className={styles.list_item} prefetch={true} href="/spa" onClick={handleMobileNavClick}>{t('our_spa')}</Link>
                             <div className={styles.divider}>
                                 <div className={styles.opensubmenu}>
