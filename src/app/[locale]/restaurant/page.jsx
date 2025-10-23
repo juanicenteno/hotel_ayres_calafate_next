@@ -1,38 +1,31 @@
-'use client'
-import { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import styles from './page.module.css'
 import "./embla_restaurant.css"
 import { useTranslations } from 'next-intl';
-import useEmblaCarousel from 'embla-carousel-react'
-import Autoplay from 'embla-carousel-autoplay'
+import Restaurant_carrousel from './Restaurant_carrousel';
 
-const imgCarrusel = [
-  "https://ayresdecalafate.com/images/webp_new/44.webp",
-  "https://ayresdecalafate.com/images/webp_new/56.webp",
-  "https://ayresdecalafate.com/images/webp_new/63.webp",
-  "https://ayresdecalafate.com/images/webp_new/58.webp",
-  "https://ayresdecalafate.com/images/webp_new/82.webp"
-]
+export async function generateMetadata({ params }) {
+  const { locale } = await params; 
+
+  const lang = locale || 'es';
+
+  const titles = {
+    es: 'Restaurante | Ayres de Calafate',
+    en: 'Restaurant | Ayres de Calafate',
+    pt: 'Restaurante | Ayres de Calafate',
+  }
+
+  return {
+    title: titles[lang] || titles.es,
+    alternates: {
+      canonical: `https://ayresdecalafate.com/${lang}/restaurant`,
+    },
+  }
+}
 
 function page() {
   const t = useTranslations();
-  const OPTIONS = {
-    loop: "true",
-    containScroll: "trimSnaps"
-  }
-
-  const autoplay = useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: false }) // 3 segundos por slide
-  )
-  const [emblaRef, emblaApi] = useEmblaCarousel( OPTIONS , [autoplay.current])
-
-  // Iniciar autoplay automáticamente
-  useEffect(() => {
-    if (!emblaApi) return
-    const autoplayPlugin = emblaApi.plugins().autoplay
-    if (autoplayPlugin) autoplayPlugin.play()
-  }, [emblaApi])
+  
 
   return (
     <>
@@ -66,33 +59,11 @@ function page() {
               {t('dining_text3')}
             </p>
             <ul className={styles.list_btns}>
-              <li><a aria-label='reservar una mesa en el restaurante del hotel ayres de calafate' href="https://wa.me/5492966568253">{t('book_table')}</a></li>
+              <li><a aria-label='reservar una mesa en el restaurante del hotel ayres de calafate' href="https://wa.me/5492966568253?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20mesa%20en%20Ayres%20Restaurante.%20%C2%BFTienen%20disponibilidad%3F">{t('book_table')}</a></li>
             </ul>
           </article>
         </section>
-        <section className="carruselContainer">
-          <div className="embla" id='embla_dining_carousel'>
-            {/* Slider principal */}
-            <div className="embla__viewport" id='embla_viewport_dining' ref={emblaRef}>
-              <div className="embla__container" id='embla__container_dining_detail'>
-                {imgCarrusel.map((i, index) => (
-                  <div key={index} id='embla__slide_dining_detail' className="embla__slide">
-                    <div className="embla__slide__number" id='embla__slide__number_dining_detail'>
-                      <Image
-                        fill
-                        alt="slide"
-                        src={i}
-                        loading="lazy"
-                        className="embla__slide__img"
-                        style={{ objectFit: "cover" }}
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
+        <Restaurant_carrousel /> 
         <section className={styles.Img_hours}>
           <div className={styles.ImageContainer}>
             <Image
@@ -122,8 +93,8 @@ function page() {
               </li>
             </ul>
             <ul className={styles.btns_reserve}>
-              <li><a aria-label='ver ofertas en el restaurante del hotel ayres de calafate' href="https://wa.me/5492966568253">{t('view_offers')}</a></li>
-              <li><a aria-label='reservar una mesa en el restaurante del hotel ayres de calafate' href="https://wa.me/5492966568253">{t('book_table')}</a></li>
+              <li><a aria-label='ver ofertas en el restaurante del hotel ayres de calafate' href="https://www.instagram.com/ayres_restaurante/">{t('view_offers')}</a></li>
+              <li><a aria-label='reservar una mesa en el restaurante del hotel ayres de calafate' href="https://wa.me/5492966568253?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20mesa%20en%20Ayres%20Restaurante.%20%C2%BFTienen%20disponibilidad%3F">{t('book_table')}</a></li>
             </ul>
           </article>
         </section>

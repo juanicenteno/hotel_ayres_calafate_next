@@ -3,6 +3,25 @@ import styles from './page.module.css'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl';
 
+export async function generateMetadata({ params }) {
+  const { locale } = await params; 
+
+  const lang = locale || 'es';
+
+  const titles = {
+    es: 'Spa | Ayres de Calafate',
+    en: 'Spa | Ayres de Calafate',
+    pt: 'Spa | Ayres de Calafate',
+  }
+
+  return {
+    title: titles[lang] || titles.es,
+    alternates: {
+      canonical: `https://ayresdecalafate.com/${lang}/spa`,
+    },
+  }
+}
+
 function Spa() {
   const t = useTranslations();
   return (
@@ -46,14 +65,14 @@ function Spa() {
               <div className={styles.description_masage}>
                 <h3>{t('treatment_1')}</h3>
                 <p>{t('treatment_1_text')}</p>
-                <a aria-label='reservar una sesión de spa' href="https://wa.me/5492966568253" target='_blank'>{t('reserve')} {t('your')} {t('session')}</a>
+                <a aria-label='reservar una sesión de spa' href="https://wa.me/5492966568253?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20en%20el%20spa%20de%20Ayres.%20%C2%BFTienen%20disponibilidad%3F" target='_blank'>{t('reserve')} {t('your')} {t('session')}</a>
               </div>
             </li>
             <li id={styles.spa_card2_desktop}>
               <div className={styles.description_masage}>
                 <h3>{t('treatment_2')}</h3>
                 <p>{t('treatment_2_text')}</p>
-                <a aria-label='reservar una sesión de spa' href="https://wa.me/5492966568253" target='_blank'>{t('reserve')} {t('your')} {t('session')}</a>
+                <a aria-label='reservar una sesión de spa' href="https://wa.me/5492966568253?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20en%20el%20spa%20de%20Ayres.%20%C2%BFTienen%20disponibilidad%3F" target='_blank'>{t('reserve')} {t('your')} {t('session')}</a>
               </div>
               <img loading="lazy" src="https://ayresdecalafate.com/images/ayres_webp/spa4.webp" alt="masajes ayres de calafate" />
             </li>
@@ -62,7 +81,7 @@ function Spa() {
               <div className={styles.description_masage}>
                 <h3>{t('treatment_2')}</h3>
                 <p>{t('treatment_2_text')}</p>
-                <a aria-label='reservar una sesión de spa' href="https://wa.me/5492966568253" target='_blank'>{t('reserve')} {t('your')} {t('session')}</a>
+                <a aria-label='reservar una sesión de spa' href="https://wa.me/5492966568253?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20en%20el%20spa%20de%20Ayres.%20%C2%BFTienen%20disponibilidad%3F" target='_blank'>{t('reserve')} {t('your')} {t('session')}</a>
               </div>
             </li>
             <li>
@@ -70,7 +89,7 @@ function Spa() {
               <div className={styles.description_masage}>
                 <h3>{t('treatment_3')}</h3>
                 <p>{t('treatment_3_text')}</p>
-                <a aria-label='reservar una sesión de spa' href="https://wa.me/5492966568253" target='_blank'>{t('reserve')} {t('your')} {t('session')}</a>
+                <a aria-label='reservar una sesión de spa' href="https://wa.me/5492966568253?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20en%20el%20spa%20de%20Ayres.%20%C2%BFTienen%20disponibilidad%3F" target='_blank'>{t('reserve')} {t('your')} {t('session')}</a>
               </div>
             </li>
           </ul>

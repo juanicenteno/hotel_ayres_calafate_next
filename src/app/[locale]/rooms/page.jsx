@@ -5,6 +5,25 @@ import { useTranslations,useLocale } from 'next-intl';
 
 import { Link } from '@/i18n/routing';
 
+export async function generateMetadata({ params }) {
+  const { locale } = await params; 
+
+  const lang = locale || 'es';
+
+  const titles = {
+    es: 'Habitaciones | Ayres de Calafate',
+    en: 'Rooms | Ayres de Calafate',
+    pt: 'Quartos | Ayres de Calafate',
+  }
+
+  return {
+    title: titles[lang] || titles.es,
+    alternates: {
+      canonical: `https://ayresdecalafate.com/${lang}/rooms`,
+    },
+  }
+}
+
 function Rooms() {
     const t = useTranslations();
     const locale = useLocale();

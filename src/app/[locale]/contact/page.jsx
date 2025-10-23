@@ -4,7 +4,24 @@ import styles from './page.module.css'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl';
 
+export async function generateMetadata({ params }) {
+  const { locale } = await params; 
 
+  const lang = locale || 'es';
+
+  const titles = {
+    es: 'Contacto | Ayres de Calafate',
+    en: 'Contact | Ayres de Calafate',
+    pt: 'Contato | Ayres de Calafate',
+  }
+
+  return {
+    title: titles[lang] || titles.es,
+    alternates: {
+      canonical: `https://ayresdecalafate.com/${lang}/contact`,
+    },
+  }
+}
 
 function Contacto() {
     const t = useTranslations();
