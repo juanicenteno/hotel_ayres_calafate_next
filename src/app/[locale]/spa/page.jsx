@@ -46,14 +46,14 @@ function Spa() {
               <div className={styles.description_masage}>
                 <h3>{t('treatment_1')}</h3>
                 <p>{t('treatment_1_text')}</p>
-                <a href="https://wa.me/5492966568253" target='_blank'>{t('reserve')} {t('your')} {t('session')}</a>
+                <a aria-label='reservar una sesión de spa' href="https://wa.me/5492966568253" target='_blank'>{t('reserve')} {t('your')} {t('session')}</a>
               </div>
             </li>
             <li id={styles.spa_card2_desktop}>
               <div className={styles.description_masage}>
                 <h3>{t('treatment_2')}</h3>
                 <p>{t('treatment_2_text')}</p>
-                <a href="https://wa.me/5492966568253" target='_blank'>{t('reserve')} {t('your')} {t('session')}</a>
+                <a aria-label='reservar una sesión de spa' href="https://wa.me/5492966568253" target='_blank'>{t('reserve')} {t('your')} {t('session')}</a>
               </div>
               <img loading="lazy" src="https://ayresdecalafate.com/images/ayres_webp/spa4.webp" alt="masajes ayres de calafate" />
             </li>
@@ -62,7 +62,7 @@ function Spa() {
               <div className={styles.description_masage}>
                 <h3>{t('treatment_2')}</h3>
                 <p>{t('treatment_2_text')}</p>
-                <a href="https://wa.me/5492966568253" target='_blank'>{t('reserve')} {t('your')} {t('session')}</a>
+                <a aria-label='reservar una sesión de spa' href="https://wa.me/5492966568253" target='_blank'>{t('reserve')} {t('your')} {t('session')}</a>
               </div>
             </li>
             <li>
@@ -70,7 +70,7 @@ function Spa() {
               <div className={styles.description_masage}>
                 <h3>{t('treatment_3')}</h3>
                 <p>{t('treatment_3_text')}</p>
-                <a href="https://wa.me/5492966568253" target='_blank'>{t('reserve')} {t('your')} {t('session')}</a>
+                <a aria-label='reservar una sesión de spa' href="https://wa.me/5492966568253" target='_blank'>{t('reserve')} {t('your')} {t('session')}</a>
               </div>
             </li>
           </ul>

@@ -93,6 +93,7 @@
   justify-content: flex-end;
   align-items: center;
   margin-right: .5rem;
+  gap: .3rem;
 }
 
 .embla__dot {
@@ -117,8 +118,8 @@
 
 .embla__dot:after {
   box-shadow: inset 0 0 0 0.2rem var(--text-color-w);
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   display: flex;
   align-items: center;

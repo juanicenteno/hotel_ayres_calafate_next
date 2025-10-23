@@ -2,9 +2,7 @@
     display: none;
 }
 
-.desktop_nav2 {
-    display: none;
-}
+
 
 .burger_container {
     display: flex;
@@ -153,9 +151,38 @@
     margin-top: 0.5rem;
 }
 
+.content_header {
+    height: 100%;
+}
 
+@media (min-width: 768px) {
+    .container {
+        margin: 9rem 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .nav_title{
+        font-size: 36px;
+    }
 
+    .nav_list{
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .submenu:global(.active){
+        margin: 1rem 0 0;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .opensubmenu{
+        justify-content: center;
+    }
+}
 
 @media (min-width: 1024px) {
     .switcher_mobile {
@@ -196,25 +223,21 @@
         color: var(--text-color-b);
     }
 
-    .desktop_nav2 {
+    .content_header {
+        width: 97%;
+        height: 100%;
+        margin: auto;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        font-size: 16px;
-        gap: 2rem;
-        justify-content: flex-end;
-        color: var(--text-color-b);
     }
 
     .header {
-        padding: 2rem 5rem 1rem;
+        padding: 2rem 0 1rem;
         /* background: transparent; */
         /* position: absolute; */
         height: auto;
     }
-
-    /* .header.visible {
-        
-    } */
 
     .openBox {
         display: none;
@@ -227,14 +250,14 @@
     .list_item:hover {
         opacity: .7;
     }
-
-    .container_booking {
-        display: none;
-    }
 }
 
 @media (min-width: 1440px) {
     .header {
-        padding: 2rem 7rem 1rem;
+        padding: 2rem 0 1rem;
+    }
+
+    .content_header {
+        width: 80%;
     }
 }

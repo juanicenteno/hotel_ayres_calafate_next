@@ -34,7 +34,7 @@ function Rooms() {
                                     ))}
                                 </ul>
                                 <small className={styles.room_price}>{item.precio}/Night</small>
-                                <Link key={item.id} href={`/rooms/${item.id}`} className={styles.reserve_button}>{t('see_more')}</Link>
+                                <Link aria-label="ver detalles de habitacion" key={item.id} href={`/rooms/${item.id}`} className={styles.reserve_button}>{t('see_more')}</Link>
                             </section>
                         </article>
                         {/* <li key={item.id}>{item.nombre.es}</li> */}

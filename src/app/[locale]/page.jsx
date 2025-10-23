@@ -1,4 +1,3 @@
-import Booking from "@/components/Booking/Booking";
 import styles from "./page.module.css";
 import Carrousel from "@/components/Carrousel_Rooms/Carrousel";
 import Image from "next/image";
@@ -21,11 +20,11 @@ export default function Home() {
         />
         <div className={styles.imageText_container}>
           <div className={styles.lineDivider}></div>
-          <small>best place to relax & enjoy</small>
-          <h1>Perfect Place to Enjoy Your Life</h1>
-          <a href={`https://www.todoalojamiento.com/portal/${locale}?idHotel=3032&forzarLimpiar=true`} target="_blank">{t('reserve')} {t('now')}</a>
+          <small>{t('spa_imagetext')}</small>
+          <h1>{t('home_imgText')}</h1>
+          <a aria-label="Reservar habitación" href={`https://www.todoalojamiento.com/portal/${locale}?idHotel=3032&forzarLimpiar=true`} target="_blank">{t('reserve')} {t('now')}</a>
         </div>
-        <Booking />
+
         <div className={styles.gradient}></div>
       </section>
       <main className={styles.main}>
@@ -61,7 +60,7 @@ export default function Home() {
           <article>
             <h3>{t('discover_ayres')}</h3>
             <p>{t('home_discover_text')}</p>
-            <a href={`https://www.todoalojamiento.com/portal/${locale}?idHotel=3032&forzarLimpiar=true`} target="_blank">{t('reserve')} {t('now')}</a>
+            <a aria-label="reservar ahora" href={`https://www.todoalojamiento.com/portal/${locale}?idHotel=3032&forzarLimpiar=true`} target="_blank">{t('reserve')} {t('now')}</a>
           </article>
         </section>
       </main>

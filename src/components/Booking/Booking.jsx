@@ -68,6 +68,7 @@ function Booking() {
     <article className={styles.datePicker}>
       <span>{label}</span>
       <input
+        label="check-in & check-out"
         type="date"
         min={min}
         max={max}
@@ -202,7 +203,7 @@ function Booking() {
 
         <section className={styles.guestsDesktop}>
           <span className={styles.guestsDesktopSpan} onClick={() => setShowGuestsMenu(!showGuestsMenu)}>
-            {adultsCount} Adultos, {childrenCount} Niños
+            {adultsCount} {t('adults')}, {childrenCount} {t('children')}
             <svg
               className={`${styles.openBox} ${showGuestsMenu ? "active" : ""}`}
               viewBox="0 0 24 24"
@@ -220,13 +221,13 @@ function Booking() {
 
           {showGuestsMenu && (
             <div ref={guestsMenuRef} className={styles.guestsMenu}>
-              <GuestsSelector label="Adultos" count={adultsCount} setCount={setAdultsCount} />
-              <GuestsSelector label="Niños" count={childrenCount} setCount={setChildrenCount} />
+              <GuestsSelector label={t('adults')} count={adultsCount} setCount={setAdultsCount} />
+              <GuestsSelector label={t('children')} count={childrenCount} setCount={setChildrenCount} />
             </div>
           )}
         </section>
 
-        <a onClick={generarEnlaceReserva}>{t('search')}</a>
+        <button onClick={generarEnlaceReserva}>{t('search')}</button>
       </section>
     </>
   );

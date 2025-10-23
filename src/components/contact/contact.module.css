@@ -117,7 +117,7 @@
     transition: all .3s;
 }
 
-.contactForm_input_container_submit input:hover{
+.contactForm_input_container_submit input:hover {
     background-color: rgba(99, 39, 28, .863);
 }
 
@@ -136,23 +136,39 @@ textarea:focus {
     outline: none;
 }
 
+.contactForm_inputs {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
 @media (min-width: 1024px) {
     .contactForm_inputs {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
     }
 
     .contactForm_input_container {
         width: 40%;
     }
-    .contactForm_input_container span{
+
+    .contactForm_input_container span {
         font-size: 16px;
     }
-    .contactForm_input_container input, .contactForm_input_container textarea{
+
+    .contactForm_input_container input,
+    .contactForm_input_container textarea {
         height: 4rem;
         font-size: 16px;
     }
-    .contactForm_input_container_submit input{
+
+    .contactForm_input_container_submit input {
         font-size: 20px;
+    }
+
+    .form {
+        justify-content: space-between;
+        width: 60%;
     }
 }

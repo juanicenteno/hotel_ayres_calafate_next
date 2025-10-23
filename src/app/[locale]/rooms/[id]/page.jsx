@@ -171,7 +171,7 @@ export default function RoomDetail({ params }) {
                                 </li>
                             ))}
                         </ul>
-                        <a href={`https://www.todoalojamiento.com/portal/${locale}?idHotel=3032&forzarLimpiar=true&idHabitacion=${room.id_ta}`} target='_blank' className='reserve_btn'>{t('reserve')} {t('now')}</a>
+                        <a aria-label='reservar habitación' href={`https://www.todoalojamiento.com/portal/${locale}?idHotel=3032&forzarLimpiar=true&idHabitacion=${room.id_ta}`} target='_blank' className='reserve_btn'>{t('reserve')} {t('now')}</a>
                     </section>
                 </div>
             </main>

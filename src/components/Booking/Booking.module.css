@@ -326,13 +326,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         height: 5rem;
         z-index: 100;
         gap: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .AdultsMenu{
         border-radius: 0;
     }
 
-    .bookingDesktop a {
+    .bookingDesktop button {
         width: 15%;
         height: 80%;
         display: flex;
@@ -346,7 +348,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         transition: all .3s;
     }
 
-    .bookingDesktop a:hover{
+    .bookingDesktop button:hover{
         background-color: #d7b488;
     }
 

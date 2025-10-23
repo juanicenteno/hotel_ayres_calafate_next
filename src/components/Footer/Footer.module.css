@@ -1,6 +1,6 @@
 .footer {
     background-color: var(--text-color-b);
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
     margin-top: 5rem;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .footerImg {
-    color: #ffffff75;
+    color: #b5b5b5;
     font-size: 14px;
     margin-top: 1rem;
     display: flex;
@@ -36,11 +36,11 @@
     gap: .5rem;
 }
 
-.footerContact li {
+.footerContact div {
     display: flex;
     align-items: center;
     gap: .3rem;
-    color: #ffffff75;
+    color: #b5b5b5;
 }
 
 .footerContact svg {
@@ -61,7 +61,7 @@
 
 .footerNavegation ul {
     font-size: 14px;
-    color: #ffffff75;
+    color: #b5b5b5;
     display: flex;
     flex-direction: column;
     gap: .3rem;
@@ -83,11 +83,11 @@
     display: flex;
     align-items: center;
     gap: .5rem;
-    color: #ffffff75;
+    color: #b5b5b5;
 }
 
 .copyRight {
-    color: #ffffff75;
+    color: #b5b5b5;
     display: flex;
     justify-content: center;
     flex-direction: column;

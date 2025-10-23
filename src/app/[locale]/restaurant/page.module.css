@@ -1,0 +1,326 @@
+.header_image_restaurant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #dedede;
+    background: -webkit-linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
+    background: -moz-linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
+    background: linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#DEDEDE", endColorstr="#A3A3A3", GradientType=0);
+    width: 100%;
+    height: 20rem;
+    margin-top: 6rem;
+}
+
+.header_image_restaurant img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.imageText_container {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 1;
+    width: 90%;
+}
+
+.lineDivider {
+    width: 2px;
+    background: #fff;
+    height: 7rem;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+
+.gradient {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background: #000000; */
+    /* background: linear-gradient(180deg, #000000 0%, #ffffff 80%); */
+    background: -webkit-linear-gradient(268deg, #000000 0%, #323232 80%);
+    background: -moz-linear-gradient(180deg, #000000 0%, #323232 80%);
+    opacity: .7;
+}
+
+.imageText_container small {
+    font-size: 16px;
+    color: #BF9766;
+    font-family: var(--font-bodar), serif;
+    font-style: italic;
+    align-self: flex-start;
+    font-weight: 600;
+}
+
+.imageText_container h1 {
+    font-size: 38px;
+    font-family: var(--font-eb-garamond), serif;
+}
+
+.imageText_container a {
+    margin-top: 5rem;
+    width: 100%;
+    background: var(--brown);
+    height: 4rem;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+
+
+.restaurant_text {
+    padding: 2rem 0 4rem;
+    background-color: #f2f2f2;
+}
+
+.restaurant_art {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.restaurant_text h1 {
+    font-size: 18px;
+    font-family: var(--font-eb-garamond);
+    font-style: italic;
+    color: var(--red);
+}
+
+.restaurant_text h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--font-bodar);
+    color: var(--text-color-b);
+}
+
+.restaurant_text p {
+    margin: 2rem 0;
+    color: var(--text-color-b);
+    font-size: 14px;
+}
+
+.list_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.list_btns li {
+    width: 100%;
+}
+
+.list_btns a {
+    background-color: var(--text-color-b);
+    color: var(--text-color-w);
+    width: 100%;
+    height: 3rem;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Img_hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+
+.ImageContainer {
+    position: relative;
+    width: 90%;
+    height: 14rem;
+}
+
+.ImageContainer img {
+    border-radius: 1rem;
+    box-shadow: -1px 0px 13px 1px rgba(0, 0, 0, 0.51);
+    -webkit-box-shadow: -1px 0px 13px 1px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: -1px 0px 13px 1px rgba(0, 0, 0, 0.51);
+}
+
+.hours_description {
+    width: 90%;
+    margin: 1rem auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.hours_description h3 {
+    font-size: 24px;
+    color: var(--text-color-b);
+}
+
+.hours_description p {
+    font-size: 14px;
+}
+
+.list_hours {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.list_hours li {
+    display: flex;
+    font-size: 14px;
+    gap: .5rem;
+}
+
+.list_hours li svg {
+    fill: var(--gold2);
+    width: 2rem;
+    height: 2rem;
+}
+
+.hours_restaurant {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.hours_restaurant span {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.btns_reserve {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.btns_reserve li a {
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+.btns_reserve li {
+    background-color: #BF9766;
+    color: #fff;
+    width: 50%;
+    height: 3rem;
+    display: flex;
+}
+
+.btns_reserve li:nth-child(2) {
+    background-color: #323232;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .imageText_container h1 {
+        align-self: flex-start;
+        font-size: 70px;
+    }
+
+    .Img_hours {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        align-items: flex-start;
+        width: 90%;
+        margin: auto;
+    }
+
+    .hours_description {
+        margin-top: 0;
+        width: 50%;
+    }
+
+    .ImageContainer {
+        height: 21rem;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .Img_hours {
+        width: 80%;
+    }
+
+    .imageText_container a {
+        display: none;
+    }
+
+    .header_image_restaurant {
+        margin-top: 8rem;
+        height: 25rem;
+    }
+
+    .imageText_container small {
+        font-size: 20px;
+    }
+
+    .restaurant_text {
+        padding: 8rem 0;
+    }
+
+    .restaurant_text h1 {
+        font-size: 22px;
+    }
+
+    .restaurant_text h2 {
+        font-size: 38px;
+    }
+
+    .restaurant_text p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .restaurant_art {
+        width: 70%;
+    }
+
+    .list_btns li {
+        width: 70%;
+    }
+
+    .list_btns a {
+        margin-top: 4rem;
+    }
+
+    .hours_description p{
+        font-size: 16px;
+    }
+
+    .hours_description h3 {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 1440px) {
+    /* .main {
+        width: 80%;
+    } */
+
+    .header_image_restaurant {
+        height: 30rem;
+    }
+}

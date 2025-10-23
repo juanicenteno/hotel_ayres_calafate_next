@@ -101,7 +101,7 @@ function Contact() {
                 </article>
                 {!isLoading ? (
                     <div className={styles.contactForm_input_container_submit}>
-                        <input type="submit" value={t('send')} style={{ cursor: "pointer" }} />
+                        <input aria-label='enviar una consulta' type="submit" value={t('send')} style={{ cursor: "pointer" }} />
                     </div>
                 ) : (
                     <div className={styles.spinner}>

@@ -30,6 +30,7 @@ export default function LocaleSwitcher() {
       <button
         onClick={() => setOpen(!open)}
         className="current_container"
+        aria-label="cambiar idioma"
       >
         <div className="image_container_currentFlag">
         <Image
