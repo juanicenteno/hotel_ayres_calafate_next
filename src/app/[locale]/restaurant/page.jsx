@@ -3,9 +3,10 @@ import styles from './page.module.css'
 import "./embla_restaurant.css"
 import { useTranslations } from 'next-intl';
 import Restaurant_carrousel from './Restaurant_carrousel';
+import { metadata as defaultMetadata } from '../layout';
 
 export async function generateMetadata({ params }) {
-  const { locale } = await params; 
+  const { locale } = await params;
 
   const lang = locale || 'es';
 
@@ -15,8 +16,17 @@ export async function generateMetadata({ params }) {
     pt: 'Restaurante | Ayres de Calafate',
   }
 
+  const descriptions = {
+    es: 'Descubrí el restaurante de Ayres de Calafate, con gastronomía patagónica, vistas al Lago Argentino y un ambiente cálido y acogedor.',
+    en: 'Discover the restaurant at Ayres de Calafate, featuring Patagonian cuisine, views of Lake Argentino, and a warm, welcoming atmosphere.',
+    pt: 'Descubra o restaurante do Ayres de Calafate, com culinária patagônica, vista para o Lago Argentino e um ambiente acolhedor.',
+  }
+
+
   return {
+    ...defaultMetadata, 
     title: titles[lang] || titles.es,
+    description: descriptions[lang] || descriptions.es,
     alternates: {
       canonical: `https://ayresdecalafate.com/${lang}/restaurant`,
     },
@@ -25,7 +35,7 @@ export async function generateMetadata({ params }) {
 
 function page() {
   const t = useTranslations();
-  
+
 
   return (
     <>
@@ -63,7 +73,7 @@ function page() {
             </ul>
           </article>
         </section>
-        <Restaurant_carrousel /> 
+        <Restaurant_carrousel />
         <section className={styles.Img_hours}>
           <div className={styles.ImageContainer}>
             <Image

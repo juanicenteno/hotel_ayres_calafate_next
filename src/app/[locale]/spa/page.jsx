@@ -2,9 +2,10 @@ import React from 'react'
 import styles from './page.module.css'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl';
+import { metadata as defaultMetadata } from '../layout';
 
 export async function generateMetadata({ params }) {
-  const { locale } = await params; 
+  const { locale } = await params;
 
   const lang = locale || 'es';
 
@@ -14,8 +15,17 @@ export async function generateMetadata({ params }) {
     pt: 'Spa | Ayres de Calafate',
   }
 
+  const descriptions = {
+    es: 'Relajate en el spa de Ayres de Calafate, con tratamientos exclusivos y un ambiente tranquilo con vistas al Lago Argentino.',
+    en: 'Relax at the Ayres de Calafate spa, offering exclusive treatments in a peaceful setting with views of Lake Argentino.',
+    pt: 'Relaxe no spa do Ayres de Calafate, com tratamentos exclusivos e um ambiente tranquilo com vista para o Lago Argentino.',
+  }
+
+
   return {
+    ...defaultMetadata,
     title: titles[lang] || titles.es,
+    description: descriptions[lang] || descriptions.es,
     alternates: {
       canonical: `https://ayresdecalafate.com/${lang}/spa`,
     },
