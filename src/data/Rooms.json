@@ -2,7 +2,7 @@
     {
         "id": "doble-estandar",
         "id_ta": "12122",
-        "precio": "$75.990",
+        "precio": "$125",
         "cantidadPersonas": "2",
         "nombre": {
             "es": "Doble Estándar",
@@ -10,9 +10,9 @@
             "pt": "Duplo Standard"
         },
         "descripcion": {
-            "es": "Espaciosa y confortable, perfecta para 4 personas. Equipada con aire acondicionado, TV y Wi-Fi.",
-            "en": "Spacious and comfortable, perfect for 4 guests. Equipped with air conditioning, TV, and Wi-Fi.",
-            "pt": "Espaçosa e confortável, perfeita para 4 pessoas. Equipada com ar-condicionado, TV e Wi-Fi."
+            "es": "Espaciosa y confortable, perfecta para 2 personas. Equipada con aire acondicionado, TV y Wi-Fi.",
+            "en": "Spacious and comfortable, perfect for 2 guests. Equipped with air conditioning, TV, and Wi-Fi.",
+            "pt": "Espaçosa e confortável, perfeita para 2 pessoas. Equipada com ar-condicionado, TV e Wi-Fi."
         },
         "detail": {
             "es": "La Habitación Doble Estándar, ubicada en la casa original del hotel, conserva un estilo clásico y acogedor. Con cama matrimonial o dos individuales, baño privado, aire acondicionado, Wi-Fi y TV LCD, es ideal para quienes valoran la simplicidad sin resignar confort. Incluye desayuno, servicio de mucama, estacionamiento y acceso a las instalaciones comunes del hotel.",
@@ -80,7 +80,7 @@
     {
         "id": "triple-estandar",
         "id_ta": "12123",
-        "precio": "$75.990",
+        "precio": "$130",
         "cantidadPersonas": "3",
         "nombre": {
             "es": "Triple Estándar",
@@ -88,9 +88,9 @@
             "pt": "Triplo Standard"
         },
         "descripcion": {
-            "es": "Espaciosa y confortable, perfecta para 4 personas. Equipada con aire acondicionado, TV y Wi-Fi.",
-            "en": "Spacious and comfortable, perfect for 4 guests. Equipped with air conditioning, TV, and Wi-Fi.",
-            "pt": "Espaçosa e confortável, perfeita para 4 pessoas. Equipada com ar-condicionado, TV e Wi-Fi."
+            "es": "Espaciosa y confortable, perfecta para 3 personas. Equipada con aire acondicionado, TV y Wi-Fi.",
+            "en": "Spacious and comfortable, perfect for 3 guests. Equipped with air conditioning, TV, and Wi-Fi.",
+            "pt": "Espaçosa e confortável, perfeita para 3 pessoas. Equipada com ar-condicionado, TV e Wi-Fi."
         },
         "detail": {
             "es": "Perfecta para familias o grupos de hasta tres personas, la Habitación Triple Estándar combina funcionalidad y calidez. Cuenta con una cama doble y una individual o tres camas individuales, además de baño privado, aire acondicionado, TV LCD y Wi-Fi gratuito. Se ubica en la casa origen y brinda acceso completo a los servicios del hotel: desayuno buffet, piscina, estacionamiento y más.",
@@ -104,7 +104,7 @@
                 "safe": "Caja de seguridad",
                 "bathroom": "Baño privado",
                 "tv": "Televisión LCD",
-                "capacity": "Capacidad para 2 personas",
+                "capacity": "Capacidad para 3 personas",
                 "minibar": "Frigobar",
                 "housekeeping": "Servicio de Mucama",
                 "wifi": "Wifi Gratuito",
@@ -119,7 +119,7 @@
                 "safe": "Safe box",
                 "bathroom": "Private bathroom",
                 "tv": "LCD TV",
-                "capacity": "Capacity for 2 people",
+                "capacity": "Capacity for 3 people",
                 "minibar": "Minibar",
                 "housekeeping": "Housekeeping service",
                 "wifi": "Free Wi-Fi",
@@ -134,7 +134,7 @@
                 "safe": "Cofre de segurança",
                 "bathroom": "Banheiro privativo",
                 "tv": "TV LCD",
-                "capacity": "Capacidade para 2 pessoas",
+                "capacity": "Capacidade para 3 pessoas",
                 "minibar": "Frigobar",
                 "housekeeping": "Serviço de limpeza",
                 "wifi": "Wi-Fi gratuito",
@@ -153,7 +153,7 @@
     {
         "id": "doble-superior",
         "id_ta": "12119",
-        "precio": "$75.990",
+        "precio": "$131",
         "cantidadPersonas": "2",
         "ubicacion": "Casa Nueva",
         "nombre": {
@@ -230,17 +230,17 @@
     {
         "id": "triple-superior",
         "id_ta": "12120",
-        "precio": "$75.990",
-        "cantidadPersonas": "4",
+        "precio": "$153",
+        "cantidadPersonas": "3",
         "nombre": {
             "es": "Triple Superior",
             "en": "Superior Triple",
             "pt": "Triplo Superior"
         },
         "descripcion": {
-            "es": "Espaciosa habitación para 4 personas con aire acondicionado, TV y baño privado.",
-            "en": "Spacious room for 4 guests with air conditioning, TV, and private bathroom.",
-            "pt": "Quarto espaçoso para 4 pessoas com ar-condicionado, TV e banheiro privativo."
+            "es": "Espaciosa habitación para 3 personas con aire acondicionado, TV y baño privado.",
+            "en": "Spacious room for 3 guests with air conditioning, TV, and private bathroom.",
+            "pt": "Quarto espaçoso para 3 pessoas com ar-condicionado, TV e banheiro privativo."
         },
         "detail": {
             "es": "Ideal para grupos o familias pequeñas, la Habitación Triple Superior ofrece espacio y funcionalidad en un entorno acogedor. Equipada con tres camas twin o una cama doble más una individual, cuenta con baño privado, aire acondicionado, Wi-Fi, TV LCD y cerradura electrónica. Su ubicación en la casa nueva brinda tranquilidad y acceso a servicios como desayuno buffet, piscina, estacionamiento y servicio de mucama incluidos.",
@@ -254,7 +254,7 @@
                 "safe": "Caja de seguridad",
                 "bathroom": "Baño privado",
                 "tv": "Televisión LCD",
-                "capacity": "Capacidad para 2 personas",
+                "capacity": "Capacidad para 3 personas",
                 "minibar": "Frigobar",
                 "housekeeping": "Servicio de Mucama",
                 "wifi": "Wifi Gratuito",
@@ -269,7 +269,7 @@
                 "safe": "Safe box",
                 "bathroom": "Private bathroom",
                 "tv": "LCD TV",
-                "capacity": "Capacity for 2 people",
+                "capacity": "Capacity for 3 people",
                 "minibar": "Minibar",
                 "housekeeping": "Housekeeping service",
                 "wifi": "Free Wi-Fi",
@@ -284,7 +284,7 @@
                 "safe": "Cofre de segurança",
                 "bathroom": "Banheiro privativo",
                 "tv": "TV LCD",
-                "capacity": "Capacidade para 2 pessoas",
+                "capacity": "Capacidade para 3 pessoas",
                 "minibar": "Frigobar",
                 "housekeeping": "Serviço de limpeza",
                 "wifi": "Wi-Fi gratuito",
@@ -303,7 +303,7 @@
     {
         "id": "suite",
         "id_ta": "12121",
-        "precio": "$75.990",
+        "precio": "$200",
         "cantidadPersonas": "2",
         "nombre": {
             "es": "Suite",
@@ -311,9 +311,9 @@
             "pt": "Suite"
         },
         "descripcion": {
-            "es": "Espaciosa y confortable, perfecta para 4 personas. Equipada con aire acondicionado, TV y Wi-Fi.",
-            "en": "Spacious and comfortable, perfect for 4 guests. Equipped with air conditioning, TV, and Wi-Fi.",
-            "pt": "Espaçosa e confortável, perfeita para 4 pessoas. Equipada com ar-condicionado, TV e Wi-Fi."
+            "es": "Espaciosa y confortable, perfecta para 2 personas. Equipada con aire acondicionado, TV y Wi-Fi.",
+            "en": "Spacious and comfortable, perfect for 2 guests. Equipped with air conditioning, TV, and Wi-Fi.",
+            "pt": "Espaçosa e confortável, perfeita para 2 pessoas. Equipada com ar-condicionado, TV e Wi-Fi."
         },
         "detail": {
             "es": "Perfecta para familias o grupos de hasta tres personas, la Habitación Triple Estándar combina funcionalidad y calidez. Cuenta con una cama doble y una individual o tres camas individuales, además de baño privado, aire acondicionado, TV LCD y Wi-Fi gratuito. Se ubica en la casa origen y brinda acceso completo a los servicios del hotel: desayuno buffet, piscina, estacionamiento y más.",

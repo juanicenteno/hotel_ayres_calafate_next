@@ -106,9 +106,9 @@ export default function RoomDetail({ params }) {
                 <div className="container_room_detail">
                     <div className="embla" id='embla_room_carousel'>
                         <p className='price_customers'>
-                            Desde
+                            {t('from')}
                             <span> {room.precio}</span>
-                            /noche
+                            /{t('night')}
                         </p>
                         <p className='quantity_customers'>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
