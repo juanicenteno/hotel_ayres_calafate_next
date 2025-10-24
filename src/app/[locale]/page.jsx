@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <section className={styles.header_image}>
         <Image
-          src="https://ayresdecalafate.com/img_prueba.jpg"
+          src="https://simplicitysoftware.site/img_prueba.jpg"
           alt=""
           fill
           style={{ objectFit: "cover" }}
