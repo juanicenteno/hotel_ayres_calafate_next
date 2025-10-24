@@ -41,7 +41,7 @@ function page() {
     <>
       <section className={styles.header_image_restaurant}>
         <Image
-          src="https://ayresdecalafate.com/images/webp_new/43.webp"
+          src="https://simplicitysoftware.site/images/webp_new/43.webp"
           alt=""
           fill
           style={{ objectFit: "cover" }}
@@ -78,7 +78,7 @@ function page() {
           <div className={styles.ImageContainer}>
             <Image
               className={styles.img}
-              src="https://ayresdecalafate.com/images/webp_new/42.webp"
+              src="https://simplicitysoftware.site/images/webp_new/42.webp"
               fill
               style={{ objectFit: "cover" }}
               alt='Restaurante Ayres de Calafate'

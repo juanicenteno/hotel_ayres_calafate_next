@@ -38,7 +38,7 @@ export default function Home() {
           </article>
           <div className={styles.image_desktop_container} style={{ position: "relative", width: "40%", height: "100%" }}>
             <Image
-              src="https://ayresdecalafate.com/images/webp_new/9.webp"
+              src="https://simplicitysoftware.site/images/webp_new/9.webp"
               alt=""
               fill
               style={{ objectFit: "cover" }}
@@ -50,7 +50,7 @@ export default function Home() {
         <section className={styles.ayresPresentation}>
           <div className={styles.image_desktop_container} style={{ position: "relative", width: "40%", height: "100%", alignSelf: "flex-start" }}>
             <Image
-              src="https://ayresdecalafate.com/images/webp_new/44.webp"
+              src="https://simplicitysoftware.site/images/webp_new/44.webp"
               alt=""
               fill
               style={{ objectFit: "cover" }}

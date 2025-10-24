@@ -38,7 +38,7 @@ function Spa() {
     <>
       <section className={styles.header_image_spa}>
         <Image
-          src="https://ayresdecalafate.com/images/webp_new/59.webp"
+          src="https://simplicitysoftware.site/images/webp_new/59.webp"
           alt=""
           fill
           style={{ objectFit: "cover" }}
@@ -71,7 +71,7 @@ function Spa() {
           <h2>{t('more_solicitated')}</h2>
           <ul className={styles.offers_items}>
             <li>
-              <img loading="lazy" src="https://ayresdecalafate.com/images/ayres_webp/spa1.webp" alt="masajes ayres de calafate" />
+              <img loading="lazy" src="https://simplicitysoftware.site/images/ayres_webp/spa1.webp" alt="masajes ayres de calafate" />
               <div className={styles.description_masage}>
                 <h3>{t('treatment_1')}</h3>
                 <p>{t('treatment_1_text')}</p>
@@ -84,10 +84,10 @@ function Spa() {
                 <p>{t('treatment_2_text')}</p>
                 <a aria-label='reservar una sesión de spa' href="https://wa.me/5492966568253?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20en%20el%20spa%20de%20Ayres.%20%C2%BFTienen%20disponibilidad%3F" target='_blank'>{t('reserve')} {t('your')} {t('session')}</a>
               </div>
-              <img loading="lazy" src="https://ayresdecalafate.com/images/ayres_webp/spa4.webp" alt="masajes ayres de calafate" />
+              <img loading="lazy" src="https://simplicitysoftware.site/images/ayres_webp/spa4.webp" alt="masajes ayres de calafate" />
             </li>
             <li id={styles.spa_card2_mobile}>
-              <img loading="lazy" src="https://ayresdecalafate.com/images/ayres_webp/spa4.webp" alt="masajes ayres de calafate" />
+              <img loading="lazy" src="https://simplicitysoftware.site/images/ayres_webp/spa4.webp" alt="masajes ayres de calafate" />
               <div className={styles.description_masage}>
                 <h3>{t('treatment_2')}</h3>
                 <p>{t('treatment_2_text')}</p>
@@ -95,7 +95,7 @@ function Spa() {
               </div>
             </li>
             <li>
-              <img loading="lazy" src="https://ayresdecalafate.com/images/ayres_webp/spa3.webp" alt="masajes ayres de calafate" />
+              <img loading="lazy" src="https://simplicitysoftware.site/images/ayres_webp/spa3.webp" alt="masajes ayres de calafate" />
               <div className={styles.description_masage}>
                 <h3>{t('treatment_3')}</h3>
                 <p>{t('treatment_3_text')}</p>

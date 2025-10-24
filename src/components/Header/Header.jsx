@@ -69,7 +69,7 @@ function Header() {
                     <Link className={styles.containerLogo} href="/">
                         <img
                             className={styles.logo}
-                            src="https://ayresdecalafate.com/images/ayresnegro2.webp"
+                            src="https://simplicitysoftware.site/images/ayresnegro2.webp"
                             alt="logo del hotel ayres de calafate"
                             loading="eager"
                         />
@@ -108,7 +108,7 @@ function Header() {
                     >
                         <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                     </svg>
-                    <img className={styles.logo} src="https://ayresdecalafate.com/images/ayresnegro2.webp" alt="logo del hotel ayres de calafate" loading="lazy" />
+                    <img className={styles.logo} src="https://simplicitysoftware.site/images/ayresnegro2.webp" alt="logo del hotel ayres de calafate" loading="lazy" />
                     <section className={styles.container}>
                         <h3 className={styles.nav_title}>{t('menu')}</h3>
                         <ul className={styles.nav_list}>
