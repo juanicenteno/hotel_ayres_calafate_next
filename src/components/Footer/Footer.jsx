@@ -1,13 +1,45 @@
-import React from 'react'
+"use client"
+
+import { useEffect } from 'react';
 import Faq from '../faq/Faq'
 import styles from "./Footer.module.css"
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 
 function Footer() {
+
+  useEffect(() => {
+    let attempts = 0;
+
+    const interval = setInterval(() => {
+      attempts++;
+
+      // Buscamos todos los elementos de la página
+      const all = document.querySelectorAll("*");
+
+      all.forEach(el => {
+        if (el.shadowRoot) {
+          const ribbon = el.shadowRoot.querySelector(".commonninja-ribbon");
+          if (ribbon) {
+            ribbon.style.display = "none"; // o ribbon.remove();
+            clearInterval(interval);
+          }
+        }
+      });
+
+      // Por si nunca aparece
+      if (attempts > 20) clearInterval(interval);
+    }, 300);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const t = useTranslations();
   return (
     <>
+    {/* <div className={styles.reviews_container}>
+      <div className="commonninja_component pid-fadb9f5c-2cdf-491c-8fdc-b8e6b062c179"></div> 
+    </div> */}
       <Faq />
       <footer className={styles.footer}>
         <section className={styles.footerContainer}>

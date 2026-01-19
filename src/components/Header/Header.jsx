@@ -69,7 +69,7 @@ function Header() {
                     <Link className={styles.containerLogo} href="/">
                         <img
                             className={styles.logo}
-                            src="https://simplicitysoftware.site/images/ayresnegro2.webp"
+                            src="https://ayresdecalafate.com/images/ayresnegro2.webp"
                             alt="logo del hotel ayres de calafate"
                             loading="eager"
                         />
@@ -83,7 +83,7 @@ function Header() {
                             <ul className={`${styles.submenu} ${isSubmenuOpen ? 'active' : ''}`}>
                                 <li><Link prefetch={true} href="/rooms/doble-estandar">{t('room_doble_standard')}</Link></li>
                                 <li><Link prefetch={true} href="/rooms/triple-estandar">{t('room_triple_standard')}</Link></li>
-                                <li><Link prefetch={true} href="/rooms/suite">{t('suite')}</Link></li>
+                                {/* <li><Link prefetch={true} href="/rooms/suite">{t('suite')}</Link></li> */}
                                 <li><Link prefetch={true} href="/rooms/doble-superior">{t('room_doble_superior')}</Link></li>
                                 <li><Link prefetch={true} href="/rooms/triple-superior">{t('room_triple_superior')}</Link></li>
                             </ul>
@@ -108,7 +108,7 @@ function Header() {
                     >
                         <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                     </svg>
-                    <img className={styles.logo} src="https://simplicitysoftware.site/images/ayresnegro2.webp" alt="logo del hotel ayres de calafate" loading="lazy" />
+                    <img className={styles.logo} src="https://ayresdecalafate.com/images/ayresnegro2.webp" alt="logo del hotel ayres de calafate" loading="lazy" />
                     <section className={styles.container}>
                         <h3 className={styles.nav_title}>{t('menu')}</h3>
                         <ul className={styles.nav_list}>
@@ -125,7 +125,7 @@ function Header() {
                                     <ul className={`${styles.submenu} ${isSubmenuOpen ? 'active' : ''}`}>
                                         <li><Link prefetch={true} onClick={handleMobileNavClick} href="/rooms/doble-estandar">{t('room_doble_standard')}</Link></li>
                                         <li><Link prefetch={true} onClick={handleMobileNavClick} href="/rooms/triple-estandar">{t('room_triple_standard')}</Link></li>
-                                        <li><Link prefetch={true} onClick={handleMobileNavClick} href="/rooms/suite">{t('suite')}</Link></li>
+                                        {/* <li><Link prefetch={true} onClick={handleMobileNavClick} href="/rooms/suite">{t('suite')}</Link></li> */}
                                         <li><Link prefetch={true} onClick={handleMobileNavClick} href="/rooms/doble-superior">{t('room_doble_superior')}</Link></li>
                                         <li><Link prefetch={true} onClick={handleMobileNavClick} href="/rooms/triple-superior">{t('room_triple_superior')}</Link></li>
                                     </ul>

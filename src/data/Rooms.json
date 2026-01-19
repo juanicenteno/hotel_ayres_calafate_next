@@ -10,19 +10,18 @@
             "pt": "Duplo Standard"
         },
         "descripcion": {
-            "es": "Espaciosa y confortable, perfecta para 2 personas. Equipada con aire acondicionado, TV y Wi-Fi.",
-            "en": "Spacious and comfortable, perfect for 2 guests. Equipped with air conditioning, TV, and Wi-Fi.",
-            "pt": "Espaçosa e confortável, perfeita para 2 pessoas. Equipada com ar-condicionado, TV e Wi-Fi."
+            "es": "Espaciosa y confortable, perfecta para 2 personas. Equipada con TV y Wi-Fi.",
+            "en": "Spacious and comfortable, perfect for 2 guests. Equipped with TV, and Wi-Fi.",
+            "pt": "Espaçosa e confortável, perfeita para 2 pessoas. Equipada com TV e Wi-Fi."
         },
         "detail": {
-            "es": "La Habitación Doble Estándar, ubicada en la casa original del hotel, conserva un estilo clásico y acogedor. Con cama matrimonial o dos individuales, baño privado, aire acondicionado, Wi-Fi y TV LCD, es ideal para quienes valoran la simplicidad sin resignar confort. Incluye desayuno, servicio de mucama, estacionamiento y acceso a las instalaciones comunes del hotel.",
-            "en": "The Standard Double Room, located in the original part of the hotel, maintains a classic and cozy style. With either a double bed or two single beds, private bathroom, air conditioning, Wi-Fi, and LCD TV, it is ideal for those who appreciate simplicity without sacrificing comfort. Includes breakfast, housekeeping service, parking, and access to the hotel's shared facilities.",
-            "pt": "O Quarto Duplo Standard, localizado na casa original do hotel, mantém um estilo clássico e acolhedor. Com cama de casal ou duas de solteiro, banheiro privativo, ar-condicionado, Wi-Fi e TV LCD, é ideal para quem valoriza a simplicidade sem abrir mão do conforto. Inclui café da manhã, serviço de limpeza, estacionamento e acesso às áreas comuns do hotel."
+            "es": "La Habitación Doble Estándar, ubicada en la casa original del hotel, conserva un estilo clásico y acogedor. Con cama matrimonial o dos individuales, baño privado, Wi-Fi y TV LCD, es ideal para quienes valoran la simplicidad sin resignar confort. Incluye desayuno, servicio de mucama, estacionamiento y acceso a las instalaciones comunes del hotel.",
+            "en": "The Standard Double Room, located in the original part of the hotel, maintains a classic and cozy style. With either a double bed or two single beds, private bathroom, Wi-Fi, and LCD TV, it is ideal for those who appreciate simplicity without sacrificing comfort. Includes breakfast, housekeeping service, parking, and access to the hotel's shared facilities.",
+            "pt": "O Quarto Duplo Standard, localizado na casa original do hotel, mantém um estilo clássico e acolhedor. Com cama de casal ou duas de solteiro, banheiro privativo, Wi-Fi e TV LCD, é ideal para quem valoriza a simplicidade sem abrir mão do conforto. Inclui café da manhã, serviço de limpeza, estacionamento e acesso às áreas comuns do hotel."
         },
-        "thumbnailImage": "https://simplicitysoftware.site/images/webp_new/habitaciones/doble_estandar/doble_estandar5.webp",
+        "thumbnailImage": "https://ayresdecalafate.com/images/webp_new/habitaciones/doble_estandar/doble_estandar5.webp",
         "ventajas": {
             "es": {
-                "ac": "Aire acondicionado",
                 "safe": "Caja de seguridad",
                 "bathroom": "Baño privado",
                 "tv": "Televisión LCD",
@@ -37,7 +36,6 @@
                 "parking": "Estacionamiento"
             },
             "en": {
-                "ac": "Air conditioning",
                 "safe": "Safe box",
                 "bathroom": "Private bathroom",
                 "tv": "LCD TV",
@@ -52,7 +50,6 @@
                 "parking": "Parking"
             },
             "pt": {
-                "ac": "Ar-condicionado",
                 "safe": "Cofre de segurança",
                 "bathroom": "Banheiro privativo",
                 "tv": "TV LCD",
@@ -68,13 +65,13 @@
             }
         },
         "images": [
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/doble_estandar/doble_estandar1.webp",
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/doble_estandar/doble_estandar2.webp",
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/doble_estandar/doble_estandar3.webp",
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/doble_estandar/doble_estandar4.webp",
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/doble_estandar/doble_estandar5.webp",
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/doble_estandar/doble_estandar6.webp",
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/doble_estandar/doble_estandar7.webp"
+            "https://ayresdecalafate.com/images/webp_new/habitaciones/doble_estandar/doble_estandar1.webp",
+            "https://ayresdecalafate.com/images/webp_new/habitaciones/doble_estandar/doble_estandar2.webp",
+            "https://ayresdecalafate.com/images/webp_new/habitaciones/doble_estandar/doble_estandar3.webp",
+            "https://ayresdecalafate.com/images/webp_new/habitaciones/doble_estandar/doble_estandar4.webp",
+            "https://ayresdecalafate.com/images/webp_new/habitaciones/doble_estandar/doble_estandar5.webp",
+            "https://ayresdecalafate.com/images/webp_new/habitaciones/doble_estandar/doble_estandar6.webp",
+            "https://ayresdecalafate.com/images/webp_new/habitaciones/doble_estandar/doble_estandar7.webp"
         ]
     },
     {
@@ -88,19 +85,18 @@
             "pt": "Triplo Standard"
         },
         "descripcion": {
-            "es": "Espaciosa y confortable, perfecta para 3 personas. Equipada con aire acondicionado, TV y Wi-Fi.",
-            "en": "Spacious and comfortable, perfect for 3 guests. Equipped with air conditioning, TV, and Wi-Fi.",
-            "pt": "Espaçosa e confortável, perfeita para 3 pessoas. Equipada com ar-condicionado, TV e Wi-Fi."
+            "es": "Espaciosa y confortable, perfecta para 3 personas. Equipada con TV y Wi-Fi.",
+            "en": "Spacious and comfortable, perfect for 3 guests. Equipped with TV, and Wi-Fi.",
+            "pt": "Espaçosa e confortável, perfeita para 3 pessoas. Equipada com TV e Wi-Fi."
         },
         "detail": {
-            "es": "Perfecta para familias o grupos de hasta tres personas, la Habitación Triple Estándar combina funcionalidad y calidez. Cuenta con una cama doble y una individual o tres camas individuales, además de baño privado, aire acondicionado, TV LCD y Wi-Fi gratuito. Se ubica en la casa origen y brinda acceso completo a los servicios del hotel: desayuno buffet, piscina, estacionamiento y más.",
-            "en": "Perfect for families or groups of up to three people, the Standard Triple Room combines functionality and warmth. It includes a double bed and a single bed or three single beds, as well as a private bathroom, air conditioning, LCD TV, and free Wi-Fi. Located in the original house, it provides full access to hotel services: buffet breakfast, pool, parking, and more.",
-            "pt": "Perfeito para famílias ou grupos de até três pessoas, o Quarto Triplo Standard combina funcionalidade e aconchego. Possui uma cama de casal e uma de solteiro ou três camas de solteiro, além de banheiro privativo, ar-condicionado, TV LCD e Wi-Fi gratuito. Localizado na casa original, oferece acesso completo aos serviços do hotel: café da manhã buffet, piscina, estacionamento e muito mais."
+            "es": "Perfecta para familias o grupos de hasta tres personas, la Habitación Triple Estándar combina funcionalidad y calidez. Cuenta con una cama doble y una individual o tres camas individuales, además de baño privado, TV LCD y Wi-Fi gratuito. Se ubica en la casa origen y brinda acceso completo a los servicios del hotel: desayuno buffet, piscina, estacionamiento y más.",
+            "en": "Perfect for families or groups of up to three people, the Standard Triple Room combines functionality and warmth. It includes a double bed and a single bed or three single beds, as well as a private bathroom, LCD TV, and free Wi-Fi. Located in the original house, it provides full access to hotel services: buffet breakfast, pool, parking, and more.",
+            "pt": "Perfeito para famílias ou grupos de até três pessoas, o Quarto Triplo Standard combina funcionalidade e aconchego. Possui uma cama de casal e uma de solteiro ou três camas de solteiro, além de banheiro privativo, TV LCD e Wi-Fi gratuito. Localizado na casa original, oferece acesso completo aos serviços do hotel: café da manhã buffet, piscina, estacionamento e muito mais."
         },
-        "thumbnailImage": "https://simplicitysoftware.site/images/webp_new/habitaciones/triple_estandar/triple_estandar1.webp",
+        "thumbnailImage": "https://ayresdecalafate.com/images/webp_new/habitaciones/triple_estandar/triple_estandar1.webp",
         "ventajas": {
             "es": {
-                "ac": "Aire acondicionado",
                 "safe": "Caja de seguridad",
                 "bathroom": "Baño privado",
                 "tv": "Televisión LCD",
@@ -115,7 +111,6 @@
                 "parking": "Estacionamiento"
             },
             "en": {
-                "ac": "Air conditioning",
                 "safe": "Safe box",
                 "bathroom": "Private bathroom",
                 "tv": "LCD TV",
@@ -130,7 +125,6 @@
                 "parking": "Parking"
             },
             "pt": {
-                "ac": "Ar-condicionado",
                 "safe": "Cofre de segurança",
                 "bathroom": "Banheiro privativo",
                 "tv": "TV LCD",
@@ -146,8 +140,8 @@
             }
         },
         "images": [
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/triple_estandar/triple_estandar1.webp",
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/triple_estandar/triple_estandar2.webp"
+            "https://ayresdecalafate.com/images/webp_new/habitaciones/triple_estandar/triple_estandar1.webp",
+            "https://ayresdecalafate.com/images/webp_new/habitaciones/triple_estandar/triple_estandar2.webp"
         ]
     },
     {
@@ -162,19 +156,18 @@
             "pt": "Duplo Superior"
         },
         "descripcion": {
-            "es": "Cómoda habitación doble con aire acondicionado, TV y baño privado. Ideal para 2 personas.",
-            "en": "Comfortable double room with air conditioning, TV, and private bathroom. Ideal for 2 guests.",
-            "pt": "Confortável quarto duplo com ar-condicionado, TV e banheiro privativo. Ideal para 2 pessoas."
+            "es": "Cómoda habitación doble con TV y baño privado. Ideal para 2 personas.",
+            "en": "Comfortable double room with TV, and private bathroom. Ideal for 2 guests.",
+            "pt": "Confortável quarto duplo com TV e banheiro privativo. Ideal para 2 pessoas."
         },
         "detail": {
-            "es": "Nuestra Habitación Doble Superior combina calidez patagónica con un diseño moderno. Ubicada en el sector de casa nueva, ofrece una cama sommier matrimonial o dos camas twin, baño privado con bañera, aire acondicionado, TV LCD y conexión Wi-Fi gratuita. Es perfecta para parejas o amigos que buscan relajarse con confort. Además, disfrutarás de desayuno incluido, vista panorámica, caja de seguridad, acceso a piscina y estacionamiento sin cargo.",
-            "en": "Our Superior Double Room blends Patagonian warmth with modern design. Located in the new house sector, it offers a queen-size bed or two twin beds, private bathroom with bathtub, air conditioning, LCD TV, and free Wi-Fi. Perfect for couples or friends seeking comfort and relaxation. Enjoy complimentary breakfast, panoramic views, safe box, access to the pool, and free parking.",
-            "pt": "Nosso Quarto Duplo Superior combina o calor da Patagônia com um design moderno. Localizado no setor da casa nova, oferece uma cama de casal ou duas camas de solteiro, banheiro privativo com banheira, ar-condicionado, TV LCD e Wi-Fi gratuito. Perfeito para casais ou amigos que procuram conforto e relaxamento. Aproveite café da manhã incluso, vista panorâmica, cofre, acesso à piscina e estacionamento gratuito."
+            "es": "Nuestra Habitación Doble Superior combina calidez patagónica con un diseño moderno. Ubicada en el sector de casa nueva, ofrece una cama sommier matrimonial o dos camas twin, baño privado con bañera, TV LCD y conexión Wi-Fi gratuita. Es perfecta para parejas o amigos que buscan relajarse con confort. Además, disfrutarás de desayuno incluido, vista panorámica, caja de seguridad, acceso a piscina y estacionamiento sin cargo.",
+            "en": "Our Superior Double Room blends Patagonian warmth with modern design. Located in the new house sector, it offers a queen-size bed or two twin beds, private bathroom with bathtub, LCD TV, and free Wi-Fi. Perfect for couples or friends seeking comfort and relaxation. Enjoy complimentary breakfast, panoramic views, safe box, access to the pool, and free parking.",
+            "pt": "Nosso Quarto Duplo Superior combina o calor da Patagônia com um design moderno. Localizado no setor da casa nova, oferece uma cama de casal ou duas camas de solteiro, banheiro privativo com banheira, TV LCD e Wi-Fi gratuito. Perfeito para casais ou amigos que procuram conforto e relaxamento. Aproveite café da manhã incluso, vista panorâmica, cofre, acesso à piscina e estacionamento gratuito."
         },
-        "thumbnailImage": "https://simplicitysoftware.site/images/webp_new/habitaciones/doble_superior/doble_superior4.webp",
+        "thumbnailImage": "https://ayresdecalafate.com/images/webp_new/habitaciones/doble_superior/doble_superior4.webp",
         "ventajas": {
             "es": {
-                "ac": "Aire acondicionado",
                 "safe": "Caja de seguridad",
                 "bathroom": "Baño privado",
                 "tv": "Televisión LCD",
@@ -189,7 +182,6 @@
                 "parking": "Estacionamiento"
             },
             "en": {
-                "ac": "Air conditioning",
                 "safe": "Safe box",
                 "bathroom": "Private bathroom",
                 "tv": "LCD TV",
@@ -204,7 +196,6 @@
                 "parking": "Parking"
             },
             "pt": {
-                "ac": "Ar-condicionado",
                 "safe": "Cofre de segurança",
                 "bathroom": "Banheiro privativo",
                 "tv": "TV LCD",
@@ -220,11 +211,11 @@
             }
         },
         "images": [
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/doble_superior/doble_superior1.webp",
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/doble_superior/doble_superior2.webp",
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/doble_superior/doble_superior3.webp",
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/doble_superior/doble_superior4.webp",
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/doble_superior/doble_superior5.webp"
+            "https://ayresdecalafate.com/images/webp_new/habitaciones/doble_superior/doble_superior1.webp",
+            "https://ayresdecalafate.com/images/webp_new/habitaciones/doble_superior/doble_superior2.webp",
+            "https://ayresdecalafate.com/images/webp_new/habitaciones/doble_superior/doble_superior3.webp",
+            "https://ayresdecalafate.com/images/webp_new/habitaciones/doble_superior/doble_superior4.webp",
+            "https://ayresdecalafate.com/images/webp_new/habitaciones/doble_superior/doble_superior5.webp"
         ]
     },
     {
@@ -238,19 +229,18 @@
             "pt": "Triplo Superior"
         },
         "descripcion": {
-            "es": "Espaciosa habitación para 3 personas con aire acondicionado, TV y baño privado.",
-            "en": "Spacious room for 3 guests with air conditioning, TV, and private bathroom.",
-            "pt": "Quarto espaçoso para 3 pessoas com ar-condicionado, TV e banheiro privativo."
+            "es": "Espaciosa habitación para 3 personas con TV y baño privado.",
+            "en": "Spacious room for 3 guests with TV, and private bathroom.",
+            "pt": "Quarto espaçoso para 3 pessoas com TV e banheiro privativo."
         },
         "detail": {
-            "es": "Ideal para grupos o familias pequeñas, la Habitación Triple Superior ofrece espacio y funcionalidad en un entorno acogedor. Equipada con tres camas twin o una cama doble más una individual, cuenta con baño privado, aire acondicionado, Wi-Fi, TV LCD y cerradura electrónica. Su ubicación en la casa nueva brinda tranquilidad y acceso a servicios como desayuno buffet, piscina, estacionamiento y servicio de mucama incluidos.",
-            "en": "Ideal for small families or groups, the Superior Triple Room offers space and functionality in a cozy environment. Equipped with three twin beds or one double bed plus a single bed, it includes a private bathroom, air conditioning, Wi-Fi, LCD TV, and electronic lock. Located in the new house section, it offers tranquility and access to services such as buffet breakfast, pool, parking, and housekeeping — all included.",
-            "pt": "Ideal para pequenas famílias ou grupos, o Quarto Triplo Superior oferece espaço e funcionalidade em um ambiente acolhedor. Equipado com três camas de solteiro ou uma cama de casal mais uma de solteiro, conta com banheiro privativo, ar-condicionado, Wi-Fi, TV LCD e fechadura eletrônica. Localizado na nova ala da casa, oferece tranquilidade e acesso a serviços como café da manhã buffet, piscina, estacionamento e serviço de limpeza — tudo incluso."
+            "es": "Ideal para grupos o familias pequeñas, la Habitación Triple Superior ofrece espacio y funcionalidad en un entorno acogedor. Equipada con tres camas twin o una cama doble más una individual, cuenta con baño privado, Wi-Fi, TV LCD y cerradura electrónica. Su ubicación en la casa nueva brinda tranquilidad y acceso a servicios como desayuno buffet, piscina, estacionamiento y servicio de mucama incluidos.",
+            "en": "Ideal for small families or groups, the Superior Triple Room offers space and functionality in a cozy environment. Equipped with three twin beds or one double bed plus a single bed, it includes a private bathroom, Wi-Fi, LCD TV, and electronic lock. Located in the new house section, it offers tranquility and access to services such as buffet breakfast, pool, parking, and housekeeping — all included.",
+            "pt": "Ideal para pequenas famílias ou grupos, o Quarto Triplo Superior oferece espaço e funcionalidade em um ambiente acolhedor. Equipado com três camas de solteiro ou uma cama de casal mais uma de solteiro, conta com banheiro privativo, Wi-Fi, TV LCD e fechadura eletrônica. Localizado na nova ala da casa, oferece tranquilidade e acesso a serviços como café da manhã buffet, piscina, estacionamento e serviço de limpeza — tudo incluso."
         },
-        "thumbnailImage": "https://simplicitysoftware.site/images/webp_new/habitaciones/triple_superior/triple_superior2.webp",
+        "thumbnailImage": "https://ayresdecalafate.com/images/webp_new/habitaciones/triple_superior/triple_superior2.webp",
         "ventajas": {
             "es": {
-                "ac": "Aire acondicionado",
                 "safe": "Caja de seguridad",
                 "bathroom": "Baño privado",
                 "tv": "Televisión LCD",
@@ -265,7 +255,6 @@
                 "parking": "Estacionamiento"
             },
             "en": {
-                "ac": "Air conditioning",
                 "safe": "Safe box",
                 "bathroom": "Private bathroom",
                 "tv": "LCD TV",
@@ -280,7 +269,6 @@
                 "parking": "Parking"
             },
             "pt": {
-                "ac": "Ar-condicionado",
                 "safe": "Cofre de segurança",
                 "bathroom": "Banheiro privativo",
                 "tv": "TV LCD",
@@ -296,85 +284,8 @@
             }
         },
         "images": [
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/triple_superior/triple_superior1.webp",
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/triple_superior/triple_superior2.webp"
-        ]
-    },
-    {
-        "id": "suite",
-        "id_ta": "12121",
-        "precio": "$200",
-        "cantidadPersonas": "2",
-        "nombre": {
-            "es": "Suite",
-            "en": "Suite",
-            "pt": "Suite"
-        },
-        "descripcion": {
-            "es": "Espaciosa y confortable, perfecta para 2 personas. Equipada con aire acondicionado, TV y Wi-Fi.",
-            "en": "Spacious and comfortable, perfect for 2 guests. Equipped with air conditioning, TV, and Wi-Fi.",
-            "pt": "Espaçosa e confortável, perfeita para 2 pessoas. Equipada com ar-condicionado, TV e Wi-Fi."
-        },
-        "detail": {
-            "es": "Perfecta para familias o grupos de hasta tres personas, la Habitación Triple Estándar combina funcionalidad y calidez. Cuenta con una cama doble y una individual o tres camas individuales, además de baño privado, aire acondicionado, TV LCD y Wi-Fi gratuito. Se ubica en la casa origen y brinda acceso completo a los servicios del hotel: desayuno buffet, piscina, estacionamiento y más.",
-            "en": "Perfect for families or groups of up to three people, the Standard Triple Room combines functionality and warmth. It includes a double bed and a single bed or three single beds, as well as a private bathroom, air conditioning, LCD TV, and free Wi-Fi. Located in the original house, it provides full access to hotel services: buffet breakfast, pool, parking, and more.",
-            "pt": "Perfeito para famílias ou grupos de até três pessoas, o Quarto Triplo Standard combina funcionalidade e aconchego. Possui uma cama de casal e uma de solteiro ou três camas de solteiro, além de banheiro privativo, ar-condicionado, TV LCD e Wi-Fi gratuito. Localizado na casa original, oferece acesso completo aos serviços do hotel: café da manhã buffet, piscina, estacionamento e muito mais."
-        },
-        "thumbnailImage": "https://simplicitysoftware.site/images/webp_new/habitaciones/suite/suite4.webp",
-        "ventajas": {
-            "es": {
-                "ac": "Aire acondicionado",
-                "safe": "Caja de seguridad",
-                "bathroom": "Baño privado",
-                "tv": "Televisión LCD",
-                "capacity": "Capacidad para 2 personas",
-                "minibar": "Frigobar",
-                "housekeeping": "Servicio de Mucama",
-                "wifi": "Wifi Gratuito",
-                "lock": "Cerradura Electrónica",
-                "dryer": "Secador de pelo",
-                "breakfast": "Desayuno buffet",
-                "pool": "Piscina al aire libre",
-                "parking": "Estacionamiento"
-            },
-            "en": {
-                "ac": "Air conditioning",
-                "safe": "Safe box",
-                "bathroom": "Private bathroom",
-                "tv": "LCD TV",
-                "capacity": "Capacity for 2 people",
-                "minibar": "Minibar",
-                "housekeeping": "Housekeeping service",
-                "wifi": "Free Wi-Fi",
-                "lock": "Electronic lock",
-                "dryer": "Hairdryer",
-                "breakfast": "Buffet breakfast",
-                "pool": "Outdoor pool",
-                "parking": "Parking"
-            },
-            "pt": {
-                "ac": "Ar-condicionado",
-                "safe": "Cofre de segurança",
-                "bathroom": "Banheiro privativo",
-                "tv": "TV LCD",
-                "capacity": "Capacidade para 2 pessoas",
-                "minibar": "Frigobar",
-                "housekeeping": "Serviço de limpeza",
-                "wifi": "Wi-Fi gratuito",
-                "lock": "Fechadura eletrônica",
-                "dryer": "Secador de cabelo",
-                "breakfast": "Café da manhã buffet",
-                "pool": "Piscina ao ar livre",
-                "parking": "Estacionamento"
-            }
-        },
-        "images": [
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/suite/suite1.webp",
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/suite/suite2.webp",
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/suite/suite3.webp",
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/suite/suite4.webp",
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/suite/suite5.webp",
-            "https://simplicitysoftware.site/images/webp_new/habitaciones/suite/suite6.webp"
+            "https://ayresdecalafate.com/images/webp_new/habitaciones/triple_superior/triple_superior1.webp",
+            "https://ayresdecalafate.com/images/webp_new/habitaciones/triple_superior/triple_superior2.webp"
         ]
     }
 ]

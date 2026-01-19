@@ -15,8 +15,8 @@ export default function Gallery() {
 
   // Generamos miniaturas + full
   const images = Array.from({ length: totalImages }, (_, i) => ({
-    src: `https://simplicitysoftware.site/images/webp_new/${i + 1}.webp`, // imagen full
-    thumbnail: `https://simplicitysoftware.site/images/thumbnails_new/${i + 1}.png`, // miniatura
+    src: `https://ayresdecalafate.com/images/webp_new/${i + 1}.webp`, // imagen full
+    thumbnail: `https://ayresdecalafate.com/images/thumbnails_new/${i + 1}.png`, // miniatura
     width: 1920,
     height: 1080,
   }));

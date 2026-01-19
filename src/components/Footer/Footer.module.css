@@ -115,6 +115,12 @@
     transition: all .3s;
 }
 
+.reviews_container{
+    display: block !important;
+    width: 90% !important;
+    margin: 6rem auto 0 !important;
+} 
+
 @media (min-width: 768px) {
     .footerExtras {
         flex-direction: row;

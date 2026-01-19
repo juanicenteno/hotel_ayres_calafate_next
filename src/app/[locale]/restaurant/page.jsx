@@ -41,7 +41,7 @@ function page() {
     <>
       <section className={styles.header_image_restaurant}>
         <Image
-          src="https://simplicitysoftware.site/images/webp_new/43.webp"
+          src="https://ayresdecalafate.com/images/webp_new/43.webp"
           alt=""
           fill
           style={{ objectFit: "cover" }}
@@ -78,7 +78,7 @@ function page() {
           <div className={styles.ImageContainer}>
             <Image
               className={styles.img}
-              src="https://simplicitysoftware.site/images/webp_new/42.webp"
+              src="https://ayresdecalafate.com/images/webp_new/42.webp"
               fill
               style={{ objectFit: "cover" }}
               alt='Restaurante Ayres de Calafate'
@@ -92,7 +92,7 @@ function page() {
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"></path></svg>
                 <div className={styles.hours_restaurant}>
                   <span>{t('open_daily')}</span>
-                  <span><b>{t('dining_breakfast')}</b> 06:30 AM - 10:30 AM</span>
+                  <span><b>{t('dining_breakfast')}</b> 06:30 AM - 10:00 AM</span>
                   <span><b>{t('dining_lunch')}</b> 12:30 PM – 3:00 PM</span>
                   <span><b>{t('dining_dinner')}</b> 06:30 PM - 10:30 PM</span>
                 </div>
