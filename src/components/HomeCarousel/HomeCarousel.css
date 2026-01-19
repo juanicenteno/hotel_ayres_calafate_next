@@ -222,64 +222,71 @@
   top: 0;
 }
 
-.promo_infoBox{
-      display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-    background: #ecdec6;
-    color: var(--text-color-b);
-    border-radius: 10px;
+.promo_infoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  background: #ecdec6;
+  color: var(--text-color-b);
+  border-radius: 10px;
+  padding: 1rem 0;
 }
 
-.promo_infoBox h2{
-      display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #63271c;
-    font-weight: 600;
-    font-size: 32px;
+.promo_infoBox h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #63271c;
+  font-weight: 600;
+  font-size: 32px;
 }
 
-.promo_infoBox h2 span{
-      color: var(--black);
-    font-size: 40px;
+.promo_infoBox h2 span {
+  color: var(--black);
+  font-size: 40px;
 }
 
-.promo_infoBox span{
-      font-size: 20px;
-    font-weight: 600;
+.promo_infoBox span {
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.promo_infoReserve{
-      width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ecdec6;
-    color: var(--text-color-b);
-    padding: 1rem;
-    font-weight: 600;
-    border-radius: 10px;
+.promo_infoReserve {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ecdec6;
+  color: var(--text-color-b);
+  padding: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
 }
 
-.promo_infoReserve a{
+.promo_infoReserve a {
   background-color: #a58765;
-    color: var(--background);
-    width: 100%;
-    height: 3rem;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
+  color: var(--background);
+  width: 100%;
+  height: 3rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  transition: all .3s;
+}
+
+.promo_infoReserve a:hover {
+  background-color: var(--gold2);
+  text-decoration: underline;
 }
 
 
 
-.promo{
+.promo {
   z-index: 1;
 }
 

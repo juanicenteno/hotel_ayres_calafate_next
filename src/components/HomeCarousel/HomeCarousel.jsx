@@ -57,15 +57,15 @@ function HomeCarousel() {
                             <section className='promo_container'>
                                 <article className='promo_infoBox promo'>
                                     <h2>
-                                        PROMO
+                                        {t('promo_title')}
                                         <span>3x2</span>
                                     </h2>
-                                    <span>Hasta Julio de 2026</span>
-                                    <small>Hasta agotar stock*</small>
+                                    <span>{t('promo_title2')}</span>
+                                    <small>{t('promo_title_small')}</small>
                                 </article>
                                 <article className='promo_infoReserve promo'>
                                     <a href="https://wa.me/5492966568253?text=Hola%2C%20%C2%BFqu%C3%A9%20tal%3F%20Me%20interesa%20la%20promoci%C3%B3n%203x2%20y%20quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n.%20Muchas%20gracias.">
-                                        RESERVA AHORA</a>
+                                        {t('reserve')} {t('now')}</a>
                                     <span>+54 9 2966 56-8253</span>
                                     <span>reservas@ayresdecalafate.com</span>
                                 </article>
