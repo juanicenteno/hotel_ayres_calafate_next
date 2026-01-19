@@ -3,6 +3,7 @@ import Carrousel from "@/components/Carrousel_Rooms/Carrousel";
 import Image from "next/image";
 import { useLocale } from 'next-intl';
 import { useTranslations } from 'next-intl';
+import HomeCarousel from "@/components/HomeCarousel/HomeCarousel";
 
 export default function Home() {
   const t = useTranslations();
@@ -12,7 +13,7 @@ export default function Home() {
     <>
       <section className={styles.header_image}>
         <Image
-          src="https://simplicitysoftware.site/img_prueba.jpg"
+          src="https://ayresdecalafate.com/images/img_prueba.jpg"
           alt=""
           fill
           style={{ objectFit: "cover" }}
@@ -24,9 +25,9 @@ export default function Home() {
           <h1>{t('home_imgText')}</h1>
           <a aria-label="Reservar habitación" href={`https://www.todoalojamiento.com/portal/${locale}?idHotel=3032&forzarLimpiar=true`} target="_blank">{t('reserve')} {t('now')}</a>
         </div>
-
         <div className={styles.gradient}></div>
       </section>
+      <HomeCarousel />
       <main className={styles.main}>
         <section className={styles.ayresPresentation}>
           <article>
@@ -38,7 +39,7 @@ export default function Home() {
           </article>
           <div className={styles.image_desktop_container} style={{ position: "relative", width: "40%", height: "100%" }}>
             <Image
-              src="https://simplicitysoftware.site/images/webp_new/9.webp"
+              src="https://ayresdecalafate.com/images/webp_new/9.webp"
               alt=""
               fill
               style={{ objectFit: "cover" }}
@@ -50,7 +51,7 @@ export default function Home() {
         <section className={styles.ayresPresentation}>
           <div className={styles.image_desktop_container} style={{ position: "relative", width: "40%", height: "100%", alignSelf: "flex-start" }}>
             <Image
-              src="https://simplicitysoftware.site/images/webp_new/44.webp"
+              src="https://ayresdecalafate.com/images/webp_new/44.webp"
               alt=""
               fill
               style={{ objectFit: "cover" }}

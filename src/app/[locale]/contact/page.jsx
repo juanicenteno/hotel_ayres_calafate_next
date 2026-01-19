@@ -39,7 +39,7 @@ function Contacto() {
         <>
             <section className={styles.header_image_contact}>
                 <Image
-                    src="https://simplicitysoftware.site/images/webp_new/78.webp"
+                    src="https://ayresdecalafate.com/images/webp_new/78.webp"
                     alt=""
                     fill
                     style={{ objectFit: "cover" }}

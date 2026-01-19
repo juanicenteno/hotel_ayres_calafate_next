@@ -58,7 +58,7 @@ export const metadata = {
     siteName: "Ayres de Calafate",
     images: [
       {
-        url: "https://simplicitysoftware.site/images/ayresnegro2.webp",
+        url: "https://ayresdecalafate.com/images/ayresnegro2.webp",
         width: 1200,
         height: 630,
         alt: "Hotel Ayres de Calafate con vista al Lago Argentino",
@@ -72,7 +72,7 @@ export const metadata = {
     title: "Ayres de Calafate - Hotel Boutique",
     description:
       "Un refugio boutique en la Patagonia, con vistas al Lago Argentino y servicio de excelencia.",
-    images: ["https://simplicitysoftware.site/ayresnegro2.webp"],
+    images: ["https://ayresdecalafate.com/ayresnegro2.webp"],
   },
   metadataBase: new URL("https://ayresdecalafate.com"),
   alternates: {
@@ -93,6 +93,7 @@ export default async function RootLayout({ children, params }) {
   return (
     <html lang={locale || "es"} className={`${ebGaramond.variable} ${lora.variable} ${bodar.variable}`} data-scroll-behavior="smooth">
       <body id="Body">
+        <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
         <NextIntlClientProvider locale={locale}>
           <Header />
           {children}
