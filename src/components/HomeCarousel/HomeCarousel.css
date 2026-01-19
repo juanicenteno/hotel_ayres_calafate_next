@@ -1,0 +1,333 @@
+#embla_room_carousel {
+  max-width: 48rem;
+  margin: auto;
+  --slide-height: 19rem;
+  --slide-spacing: 1rem;
+  --slide-size: 100%;
+  position: relative;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+#embla_viewport_room {
+  overflow: hidden;
+}
+
+#embla__container_room_detail {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+
+#embla__slide_room_detail {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+}
+
+#embla__slide__number_room_detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  user-select: none;
+  position: relative;
+  background: #dedede;
+  background: -webkit-linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
+  background: -moz-linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
+  background: linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#DEDEDE", endColorstr="#A3A3A3", GradientType=0);
+}
+
+.embla-thumbs {
+  margin-top: .5rem;
+}
+
+.embla-thumbs__viewport {
+  overflow: hidden;
+}
+
+.embla-thumbs__container {
+  display: flex;
+  gap: .3rem;
+}
+
+
+.embla-thumbs__slide__number {
+  cursor: pointer;
+  position: relative;
+  width: 9rem;
+  height: 6rem;
+}
+
+.embla-thumbs__slide__number img {
+  transition: all .3s;
+  background: #dedede;
+  background: -webkit-linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
+  background: -moz-linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
+  background: linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#DEDEDE", endColorstr="#A3A3A3", GradientType=0);
+  filter: brightness(.5);
+
+}
+
+.embla-thumbs__slide--selected .embla-thumbs__slide__number img {
+  filter: none;
+}
+
+
+
+#embla__buttons_room_detail {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-140%);
+  z-index: 1;
+}
+
+#embla__buttons_room_detail button {
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  color: #fff;
+}
+
+#embla__buttons_room_detail button svg {
+  cursor: pointer;
+}
+
+#embla__buttons_room_detail button:disabled {
+  background-color: transparent;
+  color: #323232;
+}
+
+
+.ayresdorados_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 35rem;
+  background-image: url(https://ayresdecalafate.com/images/ayres_dorados.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* margin: 4rem auto 0; */
+  position: relative;
+}
+
+.ayresdorados_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  opacity: .7;
+  z-index: 0;
+}
+
+.ayresdorados_container article {
+  margin: 0 1rem;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  color: #fff;
+}
+
+.ayresdorados_container h2 {
+  text-align: center;
+  font-size: 30px;
+  color: var(--admonition-warning);
+  font-family: 'bodar', serif;
+}
+
+.ayresdorados_container .known {
+  font-size: 24px;
+  color: var(--text-color-w);
+  font-family: 'lora', serif;
+}
+
+.ayresdorados_container p {
+  font-size: 14px;
+  text-align: center;
+  color: var(--text-color-w);
+}
+
+.ayresdorados_container a {
+  color: #000;
+  background-color: var(--admonition-warning);
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 3rem;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  font-family: 'eb-garamond', serif;
+  transition: all .3s;
+}
+
+.ayresdorados_container a:hover {
+  background-color: var(--gold);
+}
+
+.ayresdorados_container article ul {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .8rem;
+}
+
+.ayresdorados_container article ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  width: 45%;
+}
+
+.promo_container {
+  background-image: url(https://ayresdecalafate.com/images/webp_new/habitaciones/doble_estandar/doble_estandar5.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--text-color-w);
+  gap: 4rem;
+}
+
+.promo_container::before {
+  content: "";
+  opacity: .7;
+  z-index: 0;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.promo_infoBox{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    background: #ecdec6;
+    color: var(--text-color-b);
+    border-radius: 10px;
+}
+
+.promo_infoBox h2{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #63271c;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.promo_infoBox h2 span{
+      color: var(--black);
+    font-size: 40px;
+}
+
+.promo_infoBox span{
+      font-size: 20px;
+    font-weight: 600;
+}
+
+.promo_infoReserve{
+      width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ecdec6;
+    color: var(--text-color-b);
+    padding: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.promo_infoReserve a{
+  background-color: #a58765;
+    color: var(--background);
+    width: 100%;
+    height: 3rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+
+
+.promo{
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .ayresdorados_container h2 {
+    font-size: 36px;
+  }
+
+  .ayresdorados_container span {
+    font-size: 28px;
+  }
+
+  .ayresdorados_container p {
+    font-size: 16px;
+  }
+
+  .ayresdorados_container a {
+    font-size: 20px;
+    width: 60%;
+  }
+
+  /* .ayresdorados_container {
+    width: 80%;
+  } */
+
+  .ayresdorados_container article ul li {
+    padding: 1rem;
+    background-color: var(--background);
+    color: var(--red);
+  }
+
+  .ayresdorados_container article ul li span {
+    color: var(--red);
+    font-size: 16px !important;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  /* .ayresdorados_container {
+    width: 60%;
+  } */
+
+  .ayresdorados_container p {
+    font-size: 18px;
+  }
+
+  .ayresdorados_container article ul li span {
+    font-size: 18px !important;
+  }
+}
