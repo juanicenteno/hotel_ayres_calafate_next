@@ -1,4 +1,4 @@
-#embla_room_carousel {
+#embla_homep_carousel {
   max-width: 48rem;
   margin: auto;
   --slide-height: 19rem;
@@ -9,24 +9,24 @@
   margin-top: 3rem;
 }
 
-#embla_viewport_room {
+#embla_viewport_homep {
   overflow: hidden;
 }
 
-#embla__container_room_detail {
+#embla__container_homep_detail {
   display: flex;
   touch-action: pan-y pinch-zoom;
   margin-left: calc(var(--slide-spacing) * -1);
 }
 
-#embla__slide_room_detail {
+#embla__slide_homep_detail {
   transform: translate3d(0, 0, 0);
   flex: 0 0 var(--slide-size);
   min-width: 0;
   padding-left: var(--slide-spacing);
 }
 
-#embla__slide__number_room_detail {
+#embla__slide__number_homep_detail {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,7 +78,7 @@
 
 
 
-#embla__buttons_room_detail {
+#embla__buttons_homep_detail {
   position: absolute;
   display: flex;
   width: 100%;
@@ -88,18 +88,18 @@
   z-index: 1;
 }
 
-#embla__buttons_room_detail button {
+#embla__buttons_homep_detail button {
   width: 2rem;
   height: 2rem;
   background-color: transparent;
   color: #fff;
 }
 
-#embla__buttons_room_detail button svg {
+#embla__buttons_homep_detail button svg {
   cursor: pointer;
 }
 
-#embla__buttons_room_detail button:disabled {
+#embla__buttons_homep_detail button:disabled {
   background-color: transparent;
   color: #323232;
 }

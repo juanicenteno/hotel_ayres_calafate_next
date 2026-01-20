@@ -42,18 +42,18 @@ function HomeCarousel() {
     }, [emblaMainApi])
 
     return (
-        <div className="embla" id="embla_room_carousel">
+        <div className="embla" id="embla_homep_carousel">
             <div
                 className="embla__viewport"
-                id="embla_viewport_room"
+                id="embla_viewport_homep"
                 ref={emblaMainRef}
             >
                 <div
                     className="embla__container"
-                    id="embla__container_room_detail"
+                    id="embla__container_homep_detail"
                 >
-                    <div className="embla__slide" id="embla__slide_room_detail">
-                        <div className="embla__slide__number" id="embla__slide__number_room_detail">
+                    <div className="embla__slide" id="embla__slide_homep_detail">
+                        <div className="embla__slide__number" id="embla__slide__number_homep_detail">
                             <section className='promo_container'>
                                 <article className='promo_infoBox promo'>
                                     <h2>
@@ -72,10 +72,10 @@ function HomeCarousel() {
                             </section>
                         </div>
                     </div>
-                    <div className="embla__slide" id="embla__slide_room_detail">
+                    <div className="embla__slide" id="embla__slide_homep_detail">
                         <div
                             className="embla__slide__number"
-                            id="embla__slide__number_room_detail"
+                            id="embla__slide__number_homep_detail"
                         >
                             <section className="ayresdorados_container">
                                 <article className="dorados_desc">
@@ -143,8 +143,8 @@ function HomeCarousel() {
                 </div>
             </div>
 
-            <div className="embla__controls" id="embla__controls_room_detail">
-                <div className="embla__buttons" id="embla__buttons_room_detail">
+            <div className="embla__controls" id="embla__controls_homep_detail">
+                <div className="embla__buttons" id="embla__buttons_homep_detail">
                     <PrevButton
                         onClick={onPrevButtonClick}
                         disabled={prevBtnDisabled}
