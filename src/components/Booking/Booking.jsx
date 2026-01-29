@@ -3,8 +3,10 @@ import { useState, useEffect, useRef } from "react";
 import styles from "./Booking.module.css";
 import toast, { Toaster } from "react-hot-toast";
 import { useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 
 function Booking() {
+  const locale = useLocale();
   const t = useTranslations();
   const hoy = new Date();
   const año = hoy.getFullYear();
@@ -34,17 +36,18 @@ function Booking() {
   }, [searchOpen]);
 
   const notifyError = (msg) =>
-    toast.error(msg, {
-      style: {
-        border: "1px solid #713200",
-        padding: "16px",
-        color: "#713200",
-      },
-      iconTheme: {
-        primary: "#713200",
-        secondary: "#FFFAEE",
-      },
-    });
+  toast.error(msg, {
+    style: {
+      border: "1px solid #713200",
+      padding: "16px",
+      color: "#713200",
+    },
+    iconTheme: {
+      primary: "#713200",
+      secondary: "#FFFAEE",
+    },
+  });
+
 
   const generarEnlaceReserva = () => {
     if (!date1 || !date2) return notifyError("Debes completar fecha de entrada y salida.");
@@ -59,7 +62,7 @@ function Booking() {
       ninios: childrenCount,
     });
 
-    const url = `https://www.todoalojamiento.com/portal/es?${params.toString()}`;
+    const url = `https://www.todoalojamiento.com/portal/${locale}?${params.toString()}`;
     window.open(url, "_blank");
   };
 

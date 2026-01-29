@@ -32,7 +32,7 @@
                 "lock": "Cerradura Electrónica",
                 "dryer": "Secador de pelo",
                 "breakfast": "Desayuno buffet",
-                "pool": "Piscina al aire libre",
+                "pool": "Piscina",
                 "parking": "Estacionamiento"
             },
             "en": {
@@ -46,7 +46,7 @@
                 "lock": "Electronic lock",
                 "dryer": "Hairdryer",
                 "breakfast": "Buffet breakfast",
-                "pool": "Outdoor pool",
+                "pool": "pool",
                 "parking": "Parking"
             },
             "pt": {
@@ -60,7 +60,7 @@
                 "lock": "Fechadura eletrônica",
                 "dryer": "Secador de cabelo",
                 "breakfast": "Café da manhã buffet",
-                "pool": "Piscina ao ar livre",
+                "pool": "Piscina",
                 "parking": "Estacionamento"
             }
         },
@@ -107,7 +107,7 @@
                 "lock": "Cerradura Electrónica",
                 "dryer": "Secador de pelo",
                 "breakfast": "Desayuno buffet",
-                "pool": "Piscina al aire libre",
+                "pool": "Piscina",
                 "parking": "Estacionamiento"
             },
             "en": {
@@ -121,7 +121,7 @@
                 "lock": "Electronic lock",
                 "dryer": "Hairdryer",
                 "breakfast": "Buffet breakfast",
-                "pool": "Outdoor pool",
+                "pool": "pool",
                 "parking": "Parking"
             },
             "pt": {
@@ -135,7 +135,7 @@
                 "lock": "Fechadura eletrônica",
                 "dryer": "Secador de cabelo",
                 "breakfast": "Café da manhã buffet",
-                "pool": "Piscina ao ar livre",
+                "pool": "Piscina",
                 "parking": "Estacionamento"
             }
         },
@@ -178,7 +178,7 @@
                 "lock": "Cerradura Electrónica",
                 "dryer": "Secador de pelo",
                 "breakfast": "Desayuno buffet",
-                "pool": "Piscina al aire libre",
+                "pool": "Piscina",
                 "parking": "Estacionamiento"
             },
             "en": {
@@ -192,7 +192,7 @@
                 "lock": "Electronic lock",
                 "dryer": "Hairdryer",
                 "breakfast": "Buffet breakfast",
-                "pool": "Outdoor pool",
+                "pool": "pool",
                 "parking": "Parking"
             },
             "pt": {
@@ -206,7 +206,7 @@
                 "lock": "Fechadura eletrônica",
                 "dryer": "Secador de cabelo",
                 "breakfast": "Café da manhã buffet",
-                "pool": "Piscina ao ar livre",
+                "pool": "Piscina",
                 "parking": "Estacionamento"
             }
         },
@@ -251,7 +251,7 @@
                 "lock": "Cerradura Electrónica",
                 "dryer": "Secador de pelo",
                 "breakfast": "Desayuno buffet",
-                "pool": "Piscina al aire libre",
+                "pool": "Piscina",
                 "parking": "Estacionamiento"
             },
             "en": {
@@ -265,7 +265,7 @@
                 "lock": "Electronic lock",
                 "dryer": "Hairdryer",
                 "breakfast": "Buffet breakfast",
-                "pool": "Outdoor pool",
+                "pool": "pool",
                 "parking": "Parking"
             },
             "pt": {
@@ -279,7 +279,7 @@
                 "lock": "Fechadura eletrônica",
                 "dryer": "Secador de cabelo",
                 "breakfast": "Café da manhã buffet",
-                "pool": "Piscina ao ar livre",
+                "pool": "Piscina",
                 "parking": "Estacionamento"
             }
         },
