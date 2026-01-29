@@ -9,11 +9,11 @@ function Booking() {
   const locale = useLocale();
   const t = useTranslations();
   const hoy = new Date();
-  const año = hoy.getFullYear();
-  const mes = String(hoy.getMonth() + 1).padStart(2, "0");
-  const dia = String(hoy.getDate()).padStart(2, "0");
-  const fechaFormateada = `${año}-${mes}-${dia}`;
-  const fechaMax = `${año + 2}-${mes}-${dia}`; // ahora dinámico
+  const formatFecha = (d) => d.toISOString().split('T')[0];
+  const fechaFormateada = formatFecha(hoy);
+  const maxDateObj = new Date(hoy); // ahora dinámico
+  maxDateObj.setFullYear(hoy.getFullYear() + 2);
+  const fechaMax = formatFecha(maxDateObj);
 
   const [date1, setDate1] = useState(fechaFormateada);
   const [date2, setDate2] = useState("");
