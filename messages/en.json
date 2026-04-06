@@ -99,7 +99,14 @@
     "dorados_desc3": "We look forward to welcoming you for a golden experience!",
     "dorados_amenity_1": "Beachfront location",
     "known_dorados": "Get to know Ayres Dorados",
-    "promo_title": "PROMO",
-    "promo_title2": "Until July 2026",
-    "promo_title_small": "While supplies last*"
+    "experience_promo_title": "AYRES DE CALAFATE EXPERIENCE",
+    "experience_promo_item_night": "1 night",
+    "experience_promo_item_breakfast": "Breakfast included",
+    "experience_promo_item_dinner": "Dinner included",
+    "experience_promo_item_people": "2 People",
+    "experience_promo_price": "$160 USD",
+    "experience_promo_price_subtext": "TAXES INCLUDED",
+    "experience_promo_cta": "BOOK NOW",
+    "experience_promo_footer": "Promo until stock lasts*",
+    "experience_promo_hero_alt": "Hotel room with a view"
 }

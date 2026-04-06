@@ -197,97 +197,324 @@
   width: 45%;
 }
 
-.promo_container {
-  background-image: url(https://ayresdecalafate.com/images/webp_new/habitaciones/doble_estandar/doble_estandar5.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
+/* —— Carrusel: slide “Experiencia Ayres” (reemplazo promo 3x2) —— */
+.experience_promo {
+  --exp-brown: #2d0d0d;
+  --exp-beige: #d9d2c5;
   width: 100%;
+  min-height: 35rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  color: var(--text-color-w);
-  gap: 4rem;
+  color: #fff;
+  text-align: left;
 }
 
-.promo_container::before {
-  content: "";
-  opacity: .7;
+.experience_promo__hero {
+  position: relative;
+  flex: 1;
+  min-height: 22rem;
+  overflow: hidden;
+}
+
+.experience_promo__heroImg {
+  object-fit: cover;
+  object-position: center;
   z-index: 0;
-  background-color: #000;
-  width: 100%;
-  height: 100%;
+}
+
+.experience_promo__heroScrim {
   position: absolute;
-  top: 0;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    105deg,
+    rgba(0, 0, 0, 0.72) 0%,
+    rgba(0, 0, 0, 0.45) 45%,
+    rgba(0, 0, 0, 0.35) 100%
+  );
 }
 
-.promo_infoBox {
+.experience_promo__heroContent {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 80%;
-  margin: 0 auto;
-  background: #ecdec6;
-  color: var(--text-color-b);
-  border-radius: 10px;
-  padding: 1rem 0;
+  height: 100%;
+  min-height: 22rem;
+  padding: 1.25rem 1rem 1.5rem;
+  gap: 1rem;
 }
 
-.promo_infoBox h2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #63271c;
-  font-weight: 600;
-  font-size: 32px;
-}
-
-.promo_infoBox h2 span {
-  color: var(--black);
-  font-size: 40px;
-}
-
-.promo_infoBox span {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.promo_infoReserve {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ecdec6;
-  color: var(--text-color-b);
-  padding: 1rem;
-  font-weight: 600;
-  border-radius: 10px;
-}
-
-.promo_infoReserve a {
-  background-color: #a58765;
-  color: var(--background);
-  width: 100%;
-  height: 3rem;
-  border-radius: 5px;
+.experience_promo__logoRow {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
-  transition: all .3s;
+  width: 100%;
 }
 
-.promo_infoReserve a:hover {
-  background-color: var(--gold2);
+.experience_promo__logo {
+  height: auto;
+  width: min(11rem, 55vw);
+  filter: brightness(0) invert(1);
+  object-fit: contain;
+}
+
+.experience_promo__body {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.experience_promo__left {
+  flex: 1;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.experience_promo__title {
+  font-size: clamp(0.95rem, 3.8vw, 1.35rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.85rem;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+.experience_promo__pills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.experience_promo__pill {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--exp-brown);
+  color: #fff;
+  border-radius: 1.25rem;
+  padding: 0.4rem 0.65rem 0.4rem 0.5rem;
+  font-size: clamp(0.65rem, 2.4vw, 0.8rem);
+  font-weight: 600;
+  line-height: 1.2;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.experience_promo__pillIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.experience_promo__pillIcon svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.experience_promo__right {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.experience_promo__badge {
+  width: clamp(4.5rem, 22vw, 6.5rem);
+  height: clamp(4.5rem, 22vw, 6.5rem);
+  background: var(--exp-brown);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.35rem;
+  clip-path: polygon(
+    50% 0%,
+    63% 12%,
+    78% 6%,
+    84% 22%,
+    100% 18%,
+    94% 35%,
+    100% 50%,
+    94% 65%,
+    100% 82%,
+    84% 78%,
+    78% 94%,
+    63% 88%,
+    50% 100%,
+    37% 88%,
+    22% 94%,
+    16% 78%,
+    0% 82%,
+    6% 65%,
+    0% 50%,
+    6% 35%,
+    0% 18%,
+    16% 22%,
+    22% 6%,
+    37% 12%
+  );
+}
+
+.experience_promo__price {
+  font-size: clamp(0.75rem, 3.2vw, 1rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.experience_promo__priceSub {
+  font-size: clamp(0.45rem, 1.6vw, 0.55rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 0.2rem;
+  max-width: 5.5rem;
+}
+
+.experience_promo__dots {
+  align-self: center;
+  width: 2.75rem;
+  height: 4.25rem;
+  background-image: radial-gradient(circle, #fff 2.5px, transparent 2.5px);
+  background-size: 11px 14px;
+  opacity: 0.9;
+}
+
+.experience_promo__ctaBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.35rem;
+  margin-top: auto;
+  text-align: right;
+}
+
+.experience_promo__cta {
+  font-size: clamp(0.75rem, 2.8vw, 0.95rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s;
+}
+
+.experience_promo__cta:hover {
+  opacity: 0.85;
+}
+
+.experience_promo__contactLines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  font-size: clamp(0.65rem, 2.2vw, 0.8rem);
+  font-weight: 500;
+}
+
+.experience_promo__contactLines a {
+  color: #fff;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.experience_promo__contactLines a:hover {
   text-decoration: underline;
 }
 
+.experience_promo__footer {
+  background: var(--exp-brown);
+  padding: 1.25rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
 
+.experience_promo__circles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.75rem, 4vw, 1.75rem);
+  width: 100%;
+}
 
-.promo {
-  z-index: 1;
+.experience_promo__circle {
+  position: relative;
+  width: clamp(4.5rem, 22vw, 7rem);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 6px solid var(--exp-beige);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.experience_promo__circleImg {
+  object-fit: cover;
+}
+
+.experience_promo__footerNote {
+  font-size: clamp(0.6rem, 2vw, 0.75rem);
+  font-weight: 500;
+  text-align: center;
+  opacity: 0.95;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .experience_promo__body {
+    flex-wrap: wrap;
+  }
+
+  .experience_promo__right {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .experience_promo__dots {
+    display: none;
+  }
+
+  .experience_promo__ctaBlock {
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .experience_promo__heroContent {
+    padding: 1.75rem 1.75rem 1.75rem;
+    min-height: 24rem;
+  }
+
+  .experience_promo__title {
+    font-size: 1.5rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .experience_promo__pill {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.85rem 0.5rem 0.65rem;
+  }
+
+  .experience_promo__circle {
+    border-width: 8px;
+  }
 }
 
 @media (min-width: 768px) {

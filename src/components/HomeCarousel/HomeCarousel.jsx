@@ -1,24 +1,26 @@
 "use client"
 import React, { useState, useEffect, useCallback } from 'react'
+import Image from 'next/image'
+import { Montserrat } from 'next/font/google'
 import './HomeCarousel.css'
 import useEmblaCarousel from 'embla-carousel-react'
 import { PrevButton, NextButton } from "../EmbaCarousel/EmblaCarouselArrowButtons"
 import { useTranslations } from 'next-intl'
+
+const experienceFont = Montserrat({
+    subsets: ['latin'],
+    weight: ['500', '600', '700'],
+})
 
 function HomeCarousel() {
     const t = useTranslations()
 
     const [prevBtnDisabled, setPrevBtnDisabled] = useState(true)
     const [nextBtnDisabled, setNextBtnDisabled] = useState(true)
-    const [selectedIndex, setSelectedIndex] = useState(0)
-
     const [emblaMainRef, emblaMainApi] = useEmblaCarousel()
 
     const onSelect = useCallback(() => {
         if (!emblaMainApi) return
-
-        const selected = emblaMainApi.selectedScrollSnap()
-        setSelectedIndex(selected)
 
         setPrevBtnDisabled(!emblaMainApi.canScrollPrev())
         setNextBtnDisabled(!emblaMainApi.canScrollNext())
@@ -41,6 +43,13 @@ function HomeCarousel() {
         emblaMainApi?.scrollNext()
     }, [emblaMainApi])
 
+    const pillItems = [
+        { key: 'experience_promo_item_night', icon: 'moon' },
+        { key: 'experience_promo_item_breakfast', icon: 'coffee' },
+        { key: 'experience_promo_item_dinner', icon: 'meal' },
+        { key: 'experience_promo_item_people', icon: 'people' },
+    ]
+
     return (
         <div className="embla" id="embla_homep_carousel">
             <div
@@ -54,21 +63,114 @@ function HomeCarousel() {
                 >
                     <div className="embla__slide" id="embla__slide_homep_detail">
                         <div className="embla__slide__number" id="embla__slide__number_homep_detail">
-                            <section className='promo_container'>
-                                <article className='promo_infoBox promo'>
-                                    <h2>
-                                        {t('promo_title')}
-                                        <span>3x2</span>
-                                    </h2>
-                                    <span>{t('promo_title2')}</span>
-                                    <small>{t('promo_title_small')}</small>
-                                </article>
-                                <article className='promo_infoReserve promo'>
-                                    <a href="https://wa.me/5492966568253?text=Hola%2C%20%C2%BFqu%C3%A9%20tal%3F%20Me%20interesa%20la%20promoci%C3%B3n%203x2%20y%20quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n.%20Muchas%20gracias.">
-                                        {t('reserve')} {t('now')}</a>
-                                    <span>+54 9 2966 56-8253</span>
-                                    <span>reservas@ayresdecalafate.com</span>
-                                </article>
+                            <section className={`experience_promo ${experienceFont.className}`}>
+                                <div className="experience_promo__hero">
+                                    <Image
+                                        src="/images/promo/hero.webp"
+                                        alt={t('experience_promo_hero_alt')}
+                                        fill
+                                        className="experience_promo__heroImg"
+                                        sizes="(max-width: 768px) 100vw, 48rem"
+                                        priority
+                                    />
+                                    <div className="experience_promo__heroScrim" aria-hidden />
+
+                                    <div className="experience_promo__heroContent">
+                                        <div className="experience_promo__logoRow">
+                                            <Image
+                                                src="/images/promo/logo.webp"
+                                                alt=""
+                                                width={200}
+                                                height={56}
+                                                className="experience_promo__logo"
+                                                priority
+                                            />
+                                        </div>
+
+                                        <div className="experience_promo__body">
+                                            <div className="experience_promo__left">
+                                                <h2 className="experience_promo__title">
+                                                    {t('experience_promo_title')}
+                                                </h2>
+                                                <ul className="experience_promo__pills">
+                                                    {pillItems.map(({ key, icon }) => (
+                                                        <li key={key} className="experience_promo__pill">
+                                                            <span className="experience_promo__pillIcon" aria-hidden>
+                                                                {icon === 'moon' && (
+                                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
+                                                                )}
+                                                                {icon === 'coffee' && (
+                                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1" /><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" /><line x1="6" y1="1" x2="6" y2="4" /><line x1="10" y1="1" x2="10" y2="4" /><line x1="14" y1="1" x2="14" y2="4" /></svg>
+                                                                )}
+                                                                {icon === 'meal' && (
+                                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" /><path d="M7 2v20" /><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" /></svg>
+                                                                )}
+                                                                {icon === 'people' && (
+                                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
+                                                                )}
+                                                            </span>
+                                                            <span>{t(key)}</span>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+
+                                            <div className="experience_promo__right">
+                                                <div className="experience_promo__badge" aria-label={t('experience_promo_price_subtext')}>
+                                                    <span className="experience_promo__price">{t('experience_promo_price')}</span>
+                                                    <span className="experience_promo__priceSub">{t('experience_promo_price_subtext')}</span>
+                                                </div>
+                                                <div className="experience_promo__dots" aria-hidden />
+                                            </div>
+                                        </div>
+
+                                        <div className="experience_promo__ctaBlock">
+                                            <a
+                                                className="experience_promo__cta"
+                                                href="mailto:comercial@ayresdecalafate.com"
+                                            >
+                                                {t('experience_promo_cta')}
+                                            </a>
+                                            <div className="experience_promo__contactLines">
+                                                <a href="mailto:comercial@ayresdecalafate.com">comercial@ayresdecalafate.com</a>
+                                                <a href="tel:+5492966568253">+54 9 2966 56-8253</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <footer className="experience_promo__footer">
+                                    <div className="experience_promo__circles">
+                                        <div className="experience_promo__circle">
+                                            <Image
+                                                src="/images/promo/circle-pool.webp"
+                                                alt=""
+                                                fill
+                                                className="experience_promo__circleImg"
+                                                sizes="120px"
+                                            />
+                                        </div>
+                                        <div className="experience_promo__circle">
+                                            <Image
+                                                src="/images/promo/circle-hotel.webp"
+                                                alt=""
+                                                fill
+                                                className="experience_promo__circleImg"
+                                                sizes="120px"
+                                            />
+                                        </div>
+                                        <div className="experience_promo__circle">
+                                            <Image
+                                                src="/images/promo/circle-room.webp"
+                                                alt=""
+                                                fill
+                                                className="experience_promo__circleImg"
+                                                sizes="120px"
+                                            />
+                                        </div>
+                                    </div>
+                                    <p className="experience_promo__footerNote">{t('experience_promo_footer')}</p>
+                                </footer>
                             </section>
                         </div>
                     </div>

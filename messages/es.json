@@ -104,7 +104,14 @@
     "dorados_amenity_1": "Ubicación frente al mar",
     "known_dorados": "Conocé Ayres Dorados",
 
-    "promo_title": "PROMO",
-    "promo_title2": "Hasta Julio de 2026",
-    "promo_title_small": "Hasta agotar stock*"
+    "experience_promo_title": "EXPERIENCIA AYRES DE CALAFATE",
+    "experience_promo_item_night": "1 noche",
+    "experience_promo_item_breakfast": "Desayuno incluido",
+    "experience_promo_item_dinner": "Cena incluida",
+    "experience_promo_item_people": "2 Personas",
+    "experience_promo_price": "$160 USD",
+    "experience_promo_price_subtext": "CON IMPUESTOS INCLUIDOS",
+    "experience_promo_cta": "RESERVA AHORA",
+    "experience_promo_footer": "Promo hasta agotar stock*",
+    "experience_promo_hero_alt": "Habitación del hotel con vista"
 }
