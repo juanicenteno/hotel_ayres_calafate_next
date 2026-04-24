@@ -60,7 +60,6 @@
     "details": "Detalles",
     "spa_imagetext": "el mejor lugar para relajarse y disfrutar",
     "spa_imagetext2": "Lugar perfecto para disfrutar tu vida",
-    "spa_subtitle": "Respire hondo, relájese y disfrute de una experiencia única.",
     "spa_text": "En Ayres de Calafate, cada experiencia de spa está diseñada para renovar cuerpo, mente y espíritu. Utilizamos aceites esenciales de la región, técnicas inspiradas en la naturaleza patagónica y un entorno que invita a la relajación y al equilibrio.",
     "our_treatments": "Descubre nuestros tratamientos",
     "hour_spa": "HORARIO DE APERTURA",
@@ -113,5 +112,47 @@
     "experience_promo_price_subtext": "CON IMPUESTOS INCLUIDOS",
     "experience_promo_cta": "RESERVA AHORA",
     "experience_promo_footer": "Promo hasta agotar stock*",
-    "experience_promo_hero_alt": "Habitación del hotel con vista"
+    "experience_promo_hero_alt": "Habitación del hotel con vista",
+
+    "spa_title": "SPA",
+    "spa_subtitle": "Experiencias de Bienestar",
+    "spa_welcome_title": "Bienvenido a nuestro Santuario",
+    "spa_welcome_text": "Descubre una experiencia única de relajación y bienestar en el corazón de la Patagonia. Nuestros tratamientos combinan técnicas ancestrales con elementos naturales de la región.",
+    "spa_treatments_title": "Nuestros Tratamientos",
+
+    "spa_lavanda_title": "Lavanda Patagónica",
+    "spa_lavanda_desc": "Un ritual que combina suaves maniobras de masaje con la energía terapéutica de la lavanda, planta milenaria de alta frecuencia. Favorece la relajación profunda, alivia el estrés y la ansiedad, y promueve un descanso reparador. La combinación de técnicas lentas, suaves y profundas libera tensiones físicas y mentales, restaurando el equilibrio y el bienestar integral.",
+    "spa_menta_title": "Masaje de Descanso con Menta del Sur",
+    "spa_menta_desc": "Pensado para quienes recorren y exploran la Patagonia a pie. Este masaje alivia el cansancio y la pesadez en las piernas, mejorando la circulación mediante la aplicación de gel frío y aceite esencial de menta. Brinda una sensación inmediata de frescura, ligereza y renovación.",
+    "spa_armonia_title": "Armonía del Calafate",
+    "spa_armonia_desc": "Un masaje holístico que integra cuerpo, mente, emociones y espíritu. A través de maniobras profundas en sincronía, aromas de aceites esenciales de la región y sonidos envolventes, se equilibran los centros energéticos (chakras) y se libera tensión física y mental. Una experiencia sensorial que invita a la conexión y al relax profundo.",
+
+    "spa_badge_relaxation": "Relajación",
+    "spa_badge_energizing": "Energizante",
+    "spa_badge_holistic": "Holístico",
+
+    "spa_duration_60": "60 minutos",
+    "spa_duration_40": "40 minutos",
+    "spa_duration_30": "30 minutos",
+
+    "spa_price_70k": "AR$66.000",
+    "spa_price_60k": "AR$55.000",
+    "spa_price_50k": "AR$66.000",
+
+    "spa_reserve_now": "Reservar ahora",
+
+    "spa_hours_title": "Horario de Masajes",
+    "spa_hours_schedule": "de 18:00 a 22:00 hs.",
+    "spa_hours_morning": "Por la mañana, sujeto a confirmación según disponibilidad.",
+
+    "spa_notes_title": "Notas Importantes",
+    "spa_note_1hr": "Masajes de 1hs $70.000",
+    "spa_note_40min": "Masajes de 40 min $60.000",
+    "spa_note_30min": "Masajes de 30 min $50.000",
+    "spa_note_turn": "Siempre se debe solicitar turno previo exclusivamente en recepción",
+    "spa_note_advance": "Se recomienda solicitar turno con al menos 4 horas de anticipación",
+    "spa_note_professionals": "Todas las experiencias son realizadas por profesionales especializados",
+    "spa_note_adapt": "Las experiencias pueden adaptarse a necesidades específicas",
+    "spa_note_max_duration": "El tiempo máximo de cada masaje es de 45 minutos, excepto el masaje para el Caminante con Menta de la Patagonia, cuya duración es de 30 minutos",
+    "spa_card_payment_warning": "IMPORTANTE: PAGANDO CON TARJETA TENDRÁ UN 10% DE RECARGO"
 }

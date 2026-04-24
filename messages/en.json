@@ -60,7 +60,6 @@
     "details": "Details",
     "spa_imagetext": "best place to relax & enjoy",
     "spa_imagetext2": "Perfect Place to Enjoy Your Life",
-    "spa_subtitle": "Breathe deeply, relax, and enjoy a unique experience.",
     "spa_text": "At Ayres de Calafate, every spa experience is designed to renew body, mind, and spirit. We use regional essential oils, techniques inspired by Patagonian nature, and an atmosphere that invites relaxation and balance.",
     "our_treatments": "Discover our treatments",
     "hour_spa": "OPENING HOURS",
@@ -108,5 +107,47 @@
     "experience_promo_price_subtext": "TAXES INCLUDED",
     "experience_promo_cta": "BOOK NOW",
     "experience_promo_footer": "Promo until stock lasts*",
-    "experience_promo_hero_alt": "Hotel room with a view"
+    "experience_promo_hero_alt": "Hotel room with a view",
+
+    "spa_title": "SPA",
+    "spa_subtitle": "Wellness Experiences",
+    "spa_welcome_title": "Welcome to our Sanctuary",
+    "spa_welcome_text": "Discover a unique relaxation and wellness experience in the heart of Patagonia. Our treatments combine ancestral techniques with natural elements from the region.",
+    "spa_treatments_title": "Our Treatments",
+
+    "spa_lavanda_title": "Patagonian Lavender",
+    "spa_lavanda_desc": "A ritual that combines gentle massage maneuvers with the therapeutic energy of lavender, an ancient plant of high frequency. It promotes deep relaxation, relieves stress and anxiety, and encourages restorative rest. The combination of slow, soft, and deep techniques releases physical and mental tensions, restoring balance and holistic well-being.",
+    "spa_menta_title": "Rest Massage with Southern Mint",
+    "spa_menta_desc": "Designed for those who explore Patagonia on foot. This massage relieves tiredness and heaviness in the legs, improving circulation through the application of cold gel and mint essential oil. It provides an immediate sensation of freshness, lightness, and renewal.",
+    "spa_armonia_title": "Calafate Harmony",
+    "spa_armonia_desc": "A holistic massage that integrates body, mind, emotions, and spirit. Through deep synchronized maneuvers, aromas of regional essential oils, and enveloping sounds, the energy centers (chakras) are balanced and physical and mental tension is released. A sensory experience that invites connection and deep relaxation.",
+
+    "spa_badge_relaxation": "Relaxation",
+    "spa_badge_energizing": "Energizing",
+    "spa_badge_holistic": "Holistic",
+
+    "spa_duration_60": "60 minutes",
+    "spa_duration_40": "40 minutes",
+    "spa_duration_30": "30 minutes",
+
+    "spa_price_70k": "AR$70.000",
+    "spa_price_60k": "AR$60.000",
+    "spa_price_50k": "AR$50.000",
+
+    "spa_reserve_now": "Book now",
+
+    "spa_hours_title": "Massage Schedule",
+    "spa_hours_schedule": "from 6:00 PM to 10:00 PM",
+    "spa_hours_morning": "In the morning, subject to confirmation based on availability.",
+
+    "spa_notes_title": "Important Notes",
+    "spa_note_1hr": "1 hour massages $70.000",
+    "spa_note_40min": "40 min massages $60.000",
+    "spa_note_30min": "30 min massages $50.000",
+    "spa_note_turn": "Appointments must be requested in advance exclusively at reception",
+    "spa_note_advance": "We recommend requesting an appointment at least 4 hours in advance",
+    "spa_note_professionals": "All experiences are conducted by specialized professionals",
+    "spa_note_adapt": "Experiences can be adapted to specific needs",
+    "spa_note_max_duration": "The maximum duration of each massage is 45 minutes, except for the Mint Patagonia Hiker massage, which lasts 30 minutes",
+    "spa_card_payment_warning": "IMPORTANT: PAYING BY CARD WILL HAVE A 10% SURCHARGE"
 }
