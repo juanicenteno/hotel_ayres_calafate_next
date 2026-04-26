@@ -130,9 +130,9 @@
     "spa_duration_40": "40 minutes",
     "spa_duration_30": "30 minutes",
 
-    "spa_price_70k": "AR$70.000",
-    "spa_price_60k": "AR$60.000",
-    "spa_price_50k": "AR$50.000",
+    "spa_price_70k": "AR$66.000",
+    "spa_price_60k": "AR$55.000",
+    "spa_price_50k": "AR$66.000",
 
     "spa_reserve_now": "Book now",
 
@@ -141,13 +141,13 @@
     "spa_hours_morning": "In the morning, subject to confirmation based on availability.",
 
     "spa_notes_title": "Important Notes",
-    "spa_note_1hr": "1 hour massages $70.000",
-    "spa_note_40min": "40 min massages $60.000",
-    "spa_note_30min": "30 min massages $50.000",
+    "spa_note_1hr": "1 hour massages $77.000",
+    "spa_note_40min": "40 min massages $66.000",
+    "spa_note_30min": "30 min massages $55.000",
     "spa_note_turn": "Appointments must be requested in advance exclusively at reception",
     "spa_note_advance": "We recommend requesting an appointment at least 4 hours in advance",
     "spa_note_professionals": "All experiences are conducted by specialized professionals",
     "spa_note_adapt": "Experiences can be adapted to specific needs",
     "spa_note_max_duration": "The maximum duration of each massage is 45 minutes, except for the Mint Patagonia Hiker massage, which lasts 30 minutes",
-    "spa_card_payment_warning": "IMPORTANT: PAYING BY CARD WILL HAVE A 10% SURCHARGE"
+    "spa_card_payment_warning": "IMPORTANT: PAYING IN CASH WILL GIVE YOU A 10% DISCOUNT"
 }

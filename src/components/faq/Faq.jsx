@@ -36,20 +36,18 @@ export default function FAQ() {
             <ul className={styles.faq}>
                 {faqs.map((item, index) => (
                     <li key={index}>
-                        <div
-                            className={styles.question}
-                            onClick={() => toggleQuestion(index)}
-                        >
-                            {item.question}
-                            {activeIndex === index ?
-                                <svg style={{transform: "rotate(90deg)"}} xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="var(--text-color-b)"><path d="M400-280v-400l200 200-200 200Z" /></svg>
-                                :
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="var(--text-color-b)"><path d="M400-280v-400l200 200-200 200Z" /></svg>
-                            }
-                        </div>
-                        {activeIndex === index && (
-                            <div className={styles.answer}>{item.answer}</div>
-                        )}
+                         <div
+                             className={styles.question}
+                             onClick={() => toggleQuestion(index)}
+                         >
+                             {item.question}
+                             <svg className={`${styles.icon} ${activeIndex === index ? styles['icon-active'] : ''}`} xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="var(--text-color-b)">
+                                 <path d="M400-280v-400l200 200-200 200Z" />
+                             </svg>
+                         </div>
+                          <div className={`${styles.answer} ${activeIndex === index ? styles['answer-active'] : ''}`}>
+                              {item.answer}
+                          </div>
                     </li>
                 ))}
             </ul>

@@ -75,7 +75,7 @@ function Spa() {
               </div>
               <p>{t('spa_lavanda_desc')}</p>
               <div className={styles.treatment_footer}>
-                <span className={styles.treatment_time}>{t('spa_duration_60')}</span>
+                <span className={styles.treatment_time}>{t('spa_duration_40')}</span>
                 <span className={styles.treatment_price}>{t('spa_price_70k')}</span>
               </div>
               <a
@@ -100,7 +100,7 @@ function Spa() {
               </div>
               <p>{t('spa_menta_desc')}</p>
               <div className={styles.treatment_footer}>
-                <span className={styles.treatment_time}>{t('spa_duration_40')}</span>
+                <span className={styles.treatment_time}>{t('spa_duration_30')}</span>
                 <span className={styles.treatment_price}>{t('spa_price_60k')}</span>
               </div>
               <a
@@ -125,7 +125,7 @@ function Spa() {
               </div>
               <p>{t('spa_armonia_desc')}</p>
               <div className={styles.treatment_footer}>
-                <span className={styles.treatment_time}>{t('spa_duration_60')}</span>
+                <span className={styles.treatment_time}>{t('spa_duration_40')}</span>
                 <span className={styles.treatment_price}>{t('spa_price_70k')}</span>
               </div>
               <a

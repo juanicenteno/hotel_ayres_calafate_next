@@ -130,9 +130,9 @@
     "spa_duration_40": "40 minutos",
     "spa_duration_30": "30 minutos",
 
-    "spa_price_70k": "AR$70.000",
-    "spa_price_60k": "AR$60.000",
-    "spa_price_50k": "AR$50.000",
+    "spa_price_70k": "AR$66.000",
+    "spa_price_60k": "AR$55.000",
+    "spa_price_50k": "AR$66.000",
 
     "spa_reserve_now": "Reservar agora",
 
@@ -141,13 +141,13 @@
     "spa_hours_morning": "Pela manhã, sujeito à confirmação conforme disponibilidade.",
 
     "spa_notes_title": "Notas Importantes",
-    "spa_note_1hr": "Massagens de 1h $70.000",
-    "spa_note_40min": "Massagens de 40 min $60.000",
-    "spa_note_30min": "Massagens de 30 min $50.000",
+    "spa_note_1hr": "Massagens de 1h $77.000",
+    "spa_note_40min": "Massagens de 40 min $66.000",
+    "spa_note_30min": "Massagens de 30 min $55.000",
     "spa_note_turn": "Sempre deve-se solicitar horário com antecedência exclusivamente na recepção",
     "spa_note_advance": "Recomenda-se solicitar horário com pelo menos 4 horas de antecedência",
     "spa_note_professionals": "Todas as experiências são realizadas por profissionais especializados",
     "spa_note_adapt": "As experiências podem ser adaptadas a necessidades específicas",
     "spa_note_max_duration": "O tempo máximo de cada massagem é de 45 minutos, exceto a massagem para o Caminhante com Hortelã da Patagônia, cuja duração é de 30 minutos",
-    "spa_card_payment_warning": "IMPORTANTE: PAGANDO COM CARTÃO TERÁ UM ACÉSCIMO DE 10%"
+    "spa_card_payment_warning": "IMPORTANTE: PAGANDO COM DINHEIRO TERÁ UM DESCONTO DE 10%"
 }

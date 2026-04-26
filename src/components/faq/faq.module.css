@@ -22,6 +22,7 @@
     align-items: center;
     cursor: pointer;
     padding: 1.3rem 0;
+    transition: background-color .3s ease;
 }
 
 .question:target{
@@ -30,16 +31,34 @@
 
 .answer{
     font-size: 14px;
-    margin-top: 0.5rem;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.06);
+    /* margin-top: 0.5rem; */
+    padding: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height .3s ease, opacity .3s ease;
+}
+
+.answer-active {
+    max-height: 1000px;
+    opacity: 1;
+    margin-bottom: 0.5rem;
     padding: 1rem;
+}
+
+.icon {
+    transition: transform .3s ease;
+}
+
+.icon-active {
+    transform: rotate(90deg);
 }
 
 @media (min-width: 1024px) {
     .question{
         font-size: 20px;
-        transition: all .3s ;
     }
     .question:hover{
         /* background-color: #e5dfd5; */
