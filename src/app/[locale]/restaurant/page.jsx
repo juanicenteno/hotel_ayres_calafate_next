@@ -33,7 +33,7 @@ export async function generateMetadata({ params }) {
   }
 }
 
-function page() {
+function Page() {
   const t = useTranslations();
 
 
@@ -46,6 +46,7 @@ function page() {
           fill
           style={{ objectFit: "cover" }}
           loading="eager"
+          sizes="(max-width: 768px) 100vw, 50vw"
         />
         <div className={styles.imageText_container}>
           <article>
@@ -81,6 +82,7 @@ function page() {
               src="https://ayresdecalafate.com/images/webp_new/42.webp"
               fill
               style={{ objectFit: "cover" }}
+              sizes="(max-width: 768px) 100vw, 50vw"
               alt='Restaurante Ayres de Calafate'
             />
           </div>
@@ -113,4 +115,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

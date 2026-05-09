@@ -50,6 +50,7 @@ function Rooms() {
                                         src={item.thumbnailImage}
                                         fill
                                         alt="imagen de habitacion ayres de calafate"
+                                        sizes="(max-width: 768px) 100vw, 50vw"
                                     />
                                 </Link>
                             </div>

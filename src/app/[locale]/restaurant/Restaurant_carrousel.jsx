@@ -51,6 +51,7 @@ function Restaurant_carrousel() {
                                             loading="lazy"
                                             className="embla__slide__img"
                                             style={{ objectFit: "cover" }}
+                                            sizes="(max-width: 768px) 100vw, 50vw"
                                         />
                                     </div>
                                 </div>

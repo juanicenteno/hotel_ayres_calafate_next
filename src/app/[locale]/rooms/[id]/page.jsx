@@ -19,8 +19,6 @@ export default function RoomDetail({ params }) {
     const locale = paramsData.locale;
     const room = rooms.find(r => r.id === paramsData.id);
 
-    if (!room) return <p>Habitación no encontrada</p>
-
     const [selectedIndex, setSelectedIndex] = useState(0)
     const [prevBtnDisabled, setPrevBtnDisabled] = useState(true)
     const [nextBtnDisabled, setNextBtnDisabled] = useState(true)
@@ -30,6 +28,7 @@ export default function RoomDetail({ params }) {
         containScroll: 'keepSnaps',
         dragFree: true,
     })
+
 
     // Click en miniaturas
     const onThumbClick = useCallback(
@@ -56,6 +55,12 @@ export default function RoomDetail({ params }) {
         if (!emblaMainApi) return
         onSelect()
         emblaMainApi.on('select', onSelect).on('reInit', onSelect)
+
+
+        return () => {
+            emblaMainApi.off('select', onSelect)
+            emblaMainApi.off('reInit', onSelect)
+        }
     }, [emblaMainApi, onSelect])
 
     // Botones de navegación
@@ -98,6 +103,7 @@ export default function RoomDetail({ params }) {
 
     };
 
+    if (!room) return <p>Habitación no encontrada</p>
     return (
         <>
             <main className='main_room_detail'>
@@ -130,6 +136,7 @@ export default function RoomDetail({ params }) {
                                                 loading="lazy"
                                                 className="embla__slide__img"
                                                 style={{ objectFit: "cover" }}
+                                                sizes="(max-width: 768px) 100vw, 50vw"
                                             />
                                         </div>
                                     </div>

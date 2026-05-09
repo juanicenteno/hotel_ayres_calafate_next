@@ -5,6 +5,53 @@ import toast, { Toaster } from "react-hot-toast";
 import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
 
+// ---- Componentes pequeños reutilizables ----
+  const DatePicker = ({ label, value, onChange, min, max }) => (
+    <article className={styles.datePicker}>
+      <span>{label}</span>
+      <input
+        label="check-in & check-out"
+        type="date"
+        min={min}
+        max={max}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        onClick={(e) => e.target.showPicker()}
+      />
+    </article>
+  );
+
+  const GuestsSelector = ({ label, count, setCount }) => (
+    <div className={styles.AdultsMenu}>
+      <span>{label}</span>
+      <div className={styles.AddDelete}>
+        <svg
+          onClick={() => setCount((prev) => Math.max(0, prev - 1))}
+          viewBox="0 0 24 24"
+          fill="none"
+          aria-label={`Restar ${label}`}
+        >
+          <path d="M6 12L18 12" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+        <small>{count}</small>
+        <svg
+          onClick={() => setCount((prev) => prev + 1)}
+          viewBox="0 0 24 24"
+          fill="none"
+          aria-label={`Sumar ${label}`}
+        >
+          <path
+            d="M6 12H18M12 6V18"
+            stroke="#000"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
+  );
+
 function Booking() {
   const locale = useLocale();
   const t = useTranslations();
@@ -66,52 +113,6 @@ function Booking() {
     window.open(url, "_blank");
   };
 
-  // ---- Componentes pequeños reutilizables ----
-  const DatePicker = ({ label, value, onChange, min, max }) => (
-    <article className={styles.datePicker}>
-      <span>{label}</span>
-      <input
-        label="check-in & check-out"
-        type="date"
-        min={min}
-        max={max}
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        onClick={(e) => e.target.showPicker()}
-      />
-    </article>
-  );
-
-  const GuestsSelector = ({ label, count, setCount }) => (
-    <div className={styles.AdultsMenu}>
-      <span>{label}</span>
-      <div className={styles.AddDelete}>
-        <svg
-          onClick={() => setCount((prev) => Math.max(0, prev - 1))}
-          viewBox="0 0 24 24"
-          fill="none"
-          aria-label={`Restar ${label}`}
-        >
-          <path d="M6 12L18 12" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-        <small>{count}</small>
-        <svg
-          onClick={() => setCount((prev) => prev + 1)}
-          viewBox="0 0 24 24"
-          fill="none"
-          aria-label={`Sumar ${label}`}
-        >
-          <path
-            d="M6 12H18M12 6V18"
-            stroke="#000"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </div>
-    </div>
-  );
 
   const guestsMenuRef = useRef(null);
 

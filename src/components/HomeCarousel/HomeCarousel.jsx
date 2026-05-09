@@ -33,6 +33,12 @@ function HomeCarousel() {
         emblaMainApi
             .on('select', onSelect)
             .on('reInit', onSelect)
+
+            return () => {
+            emblaMainApi.off('select', onSelect)
+            emblaMainApi.off('reInit', onSelect)
+        }
+        
     }, [emblaMainApi, onSelect])
 
     const onPrevButtonClick = useCallback(() => {

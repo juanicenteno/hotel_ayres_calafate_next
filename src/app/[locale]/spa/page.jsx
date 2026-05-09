@@ -43,6 +43,7 @@ function Spa() {
           fill
           style={{ objectFit: "cover" }}
           loading="eager"
+          sizes="(max-width: 768px) 100vw, 50vw"
         />
         <div className={styles.imageText_container}>
           <small>{t('spa_title')}</small>
@@ -66,7 +67,14 @@ function Spa() {
 
           <div className={styles.treatment_card}>
             <div className={styles.treatment_image_wrapper}>
-              <img loading="lazy" src="https://ayresdecalafate.com/images/ayres_webp/spa1.webp" alt={t('spa_lavanda_title')} />
+              <Image
+                src="https://ayresdecalafate.com/images/ayres_webp/spa1.webp"
+                alt={t('spa_lavanda_title')}
+                fill
+                style={{ objectFit: "cover" }}
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
             <div className={styles.treatment_content}>
               <div className={styles.treatment_header}>
@@ -91,7 +99,13 @@ function Spa() {
 
           <div className={styles.treatment_card}>
             <div className={styles.treatment_image_wrapper}>
-              <img loading="lazy" src="https://ayresdecalafate.com/images/ayres_webp/spa4.webp" alt={t('spa_menta_title')} />
+              <Image
+                src="https://ayresdecalafate.com/images/ayres_webp/spa4.webp"
+                alt={t('spa_menta_title')}
+                fill
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
             <div className={styles.treatment_content}>
               <div className={styles.treatment_header}>
@@ -116,7 +130,14 @@ function Spa() {
 
           <div className={styles.treatment_card}>
             <div className={styles.treatment_image_wrapper}>
-              <img loading="lazy" src="https://ayresdecalafate.com/images/ayres_webp/spa3.webp" alt={t('spa_armonia_title')} />
+              <Image
+                src="https://ayresdecalafate.com/images/ayres_webp/spa3.webp"
+                alt={t('spa_armonia_title')}
+                fill
+                style={{ objectFit: "cover" }}
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
             <div className={styles.treatment_content}>
               <div className={styles.treatment_header}>
@@ -145,7 +166,14 @@ function Spa() {
             <h3>{t('spa_hours_title')}</h3>
             <p className={styles.hours_text}>{t('spa_hours_schedule')}</p>
             <p className={styles.hours_subtext}>{t('spa_hours_morning')}</p>
-            <img loading="lazy" src="https://ayresdecalafate.com/images/ayres_webp/spa_hours.webp" alt={t('spa_hours_title')} />
+            <Image
+              src="https://ayresdecalafate.com/images/ayres_webp/spa_hours.webp"
+              alt={t('spa_hours_title')}
+              fill
+              style={{ objectFit: "cover" }}
+              loading="lazy"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
           </div>
 
           <div className={styles.notes_card}>

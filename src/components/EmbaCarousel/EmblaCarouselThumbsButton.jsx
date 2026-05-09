@@ -17,6 +17,7 @@ export const Thumb = ({ selected, src, onClick }) => (
         className="embla-thumbs__slide__img"
         fill
         style={{ objectFit: "cover" }}
+        sizes="(max-width: 768px) 100vw, 50vw"
         // placeholder="blur"
       />
     </button>

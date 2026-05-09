@@ -33,15 +33,16 @@ export default function LocaleSwitcher() {
         aria-label="cambiar idioma"
       >
         <div className="image_container_currentFlag">
-        <Image
-          src={flags[locale] || 'https://flagcdn.com/ar.svg'}
-          alt={locale}
-          fill
-          className="holasoyeste"
-          style={{objectFit: "cover"}}
-          loading="eager"
+          <Image
+            src={flags[locale] || 'https://flagcdn.com/ar.svg'}
+            alt={locale}
+            fill
+            className="holasoyeste"
+            style={{ objectFit: "cover" }}
+            loading="eager"
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
-          </div>
+        </div>
         {/* <span className="">{locale}</span> */}
         <svg className="arrow_down" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10 7L15 12L10 17" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
       </button>
@@ -60,7 +61,8 @@ export default function LocaleSwitcher() {
                 alt={cur}
                 fill
                 className=""
-                style={{objectFit: "cover"}}
+                style={{ objectFit: "cover" }}
+                sizes="(max-width: 768px) 100vw, 50vw"
                 loading="eager"
               />
               {/* <span className="">{cur}</span> */}

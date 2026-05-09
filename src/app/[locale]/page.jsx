@@ -17,7 +17,9 @@ export default function Home() {
           alt=""
           fill
           style={{ objectFit: "cover" }}
+          priority 
           loading="eager"
+          sizes="(max-width: 768px) 100vw, 50vw"
         />
         <div className={styles.imageText_container}>
           <div className={styles.lineDivider}></div>
@@ -43,6 +45,7 @@ export default function Home() {
               alt=""
               fill
               style={{ objectFit: "cover" }}
+              sizes="(max-width: 768px) 100vw, 50vw"
               loading="eager"
             />
           </div>
@@ -56,6 +59,7 @@ export default function Home() {
               fill
               style={{ objectFit: "cover" }}
               loading="eager"
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
           <article>

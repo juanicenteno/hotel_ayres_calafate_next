@@ -60,6 +60,7 @@ function Carrousel() {
                                                         alt=""
                                                         fill
                                                         loading="eager"
+                                                        sizes="(max-width: 768px) 100vw, 50vw"
                                                     />
                                                     <article className={Styles.imgText}>
                                                         <div className={Styles.TitlePrice}>

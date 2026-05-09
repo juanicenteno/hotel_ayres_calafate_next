@@ -93,7 +93,6 @@ export default async function RootLayout({ children, params }) {
   return (
     <html lang={locale || "es"} className={`${ebGaramond.variable} ${lora.variable} ${bodar.variable}`} data-scroll-behavior="smooth">
       <body id="Body">
-        <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
         <NextIntlClientProvider locale={locale}>
           <Header />
           {children}

@@ -11,7 +11,8 @@
 }
 
 .footerImg img {
-    width: 8rem;
+    position: inherit !important;
+    width: 14rem  !important;
 }
 
 .footerImg {
