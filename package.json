@@ -13,11 +13,9 @@
     "@formatjs/intl-localematcher": "^0.6.2",
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
-    "install": "^0.13.0",
     "negotiator": "^1.0.0",
-    "next": "^15.5.7",
+    "next": "^15.5.18",
     "next-intl": "^4.3.12",
-    "npm": "^11.6.1",
     "react": "^19.1.2",
     "react-dom": "^19.1.2",
     "react-hot-toast": "^2.6.0",
@@ -27,6 +25,6 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "eslint": "^9",
-    "eslint-config-next": "15.5.2"
+    "eslint-config-next": "^15.5.18"
   }
 }
