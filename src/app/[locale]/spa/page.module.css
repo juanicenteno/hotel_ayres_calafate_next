@@ -2,57 +2,20 @@ html {
     scroll-behavior: smooth;
 }
 
-.header_image_spa {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
+.heroSpa {
     height: 28rem;
     margin-top: 6rem;
 }
 
-.header_image_spa img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-}
-
-.imageText_container {
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 1rem;
-    gap: 0.5rem;
-    z-index: 1;
-}
-
-.gradient {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(99, 39, 28, 0.6) 100%);
-    opacity: 1;
-}
-
-.imageText_container small {
-    font-size: 18px;
-    color: #BF9766;
-    font-family: var(--font-bodar), serif;
-    font-style: italic;
+.spaLabel {
     letter-spacing: 4px;
-    font-weight: 600;
     text-transform: uppercase;
 }
 
-.imageText_container h1 {
-    font-size: 42px;
+.spaTitle {
+    text-align: center;
     font-family: var(--font-bodar), serif;
     font-style: italic;
-    text-align: center;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -334,7 +297,7 @@ html {
 }
 
 @media (min-width: 768px) {
-    .imageText_container h1 {
+    .spaTitle {
         font-size: 48px;
     }
 
@@ -359,16 +322,16 @@ html {
 }
 
 @media (min-width: 1024px) {
-    .header_image_spa {
+    .heroSpa {
         margin-top: 8rem;
         height: 32rem;
     }
 
-    .imageText_container h1 {
+    .spaTitle {
         font-size: 52px;
     }
 
-    .imageText_container small {
+    .spaLabel {
         font-size: 20px;
     }
 
@@ -402,7 +365,7 @@ html {
         width: 80%;
     }
 
-    .header_image_spa {
+    .heroSpa {
         height: 36rem;
     }
 }

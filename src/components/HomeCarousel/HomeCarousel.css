@@ -112,7 +112,7 @@
   justify-content: center;
   flex-direction: column;
   height: 100%;
-  background-image: url(https://ayresdecalafate.com/images/ayres_dorados.webp);
+  background-image: url("/images/ayres_dorados.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

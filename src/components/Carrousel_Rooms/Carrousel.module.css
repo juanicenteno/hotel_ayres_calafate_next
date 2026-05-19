@@ -8,6 +8,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+.carrouselContainer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/images/textura_dorada.png") no-repeat center center;
+    background-size: cover;
+    opacity: 0.3;
+    z-index: 0;
 }
 
 .textContainer {
@@ -28,6 +41,7 @@
     /* margin-top: 2rem; */
     font-weight: normal;
     text-align: center;
+    z-index: 1;
 }
 
 .carrouselContainer h4 {
@@ -36,6 +50,7 @@
     margin-top: 0.3rem;
     font-weight: normal;
     text-align: center;
+    z-index: 1;
 }
 
 .lineDivider {

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useLocale } from 'next-intl';
 import { useTranslations } from 'next-intl';
 import HomeCarousel from "@/components/HomeCarousel/HomeCarousel";
+import SectionHero from "@/components/SectionHero/SectionHero";
 
 export default function Home() {
   const t = useTranslations();
@@ -11,24 +12,17 @@ export default function Home() {
 
   return (
     <>
-      <section className={styles.header_image}>
-        <Image
-          src="https://ayresdecalafate.com/images/img_prueba.jpg"
-          alt=""
-          fill
-          style={{ objectFit: "cover" }}
-          priority 
-          loading="eager"
-          sizes="(max-width: 768px) 100vw, 50vw"
-        />
-        <div className={styles.imageText_container}>
-          <div className={styles.lineDivider}></div>
-          <small>{t('spa_imagetext')}</small>
-          <h1>{t('home_imgText')}</h1>
-          <a aria-label="Reservar habitación" href={`https://www.todoalojamiento.com/portal/${locale}?idHotel=3032&forzarLimpiar=true`} target="_blank">{t('reserve')} {t('now')}</a>
-        </div>
-        <div className={styles.gradient}></div>
-      </section>
+      <SectionHero
+        imageSrc="/images/img_prueba.jpg"
+        label={t('spa_imagetext')}
+        title={t('home_imgText')}
+        lineDivider
+        cta={{
+          href: `https://www.todoalojamiento.com/portal/${locale}?idHotel=3032&forzarLimpiar=true`,
+          text: `${t('reserve')} ${t('now')}`,
+          ariaLabel: "Reservar habitación",
+        }}
+      />
       <HomeCarousel />
       <main className={styles.main}>
         <section className={styles.ayresPresentation}>
@@ -41,7 +35,7 @@ export default function Home() {
           </article>
           <div className={styles.image_desktop_container} style={{ position: "relative", width: "40%", height: "100%" }}>
             <Image
-              src="https://ayresdecalafate.com/images/webp_new/9.webp"
+              src="/images/webp_new/9.webp"
               alt=""
               fill
               style={{ objectFit: "cover" }}
@@ -54,7 +48,7 @@ export default function Home() {
         <section className={styles.ayresPresentation}>
           <div className={styles.image_desktop_container} style={{ position: "relative", width: "40%", height: "100%", alignSelf: "flex-start" }}>
             <Image
-              src="https://ayresdecalafate.com/images/webp_new/44.webp"
+              src="/images/webp_new/44.webp"
               alt=""
               fill
               style={{ objectFit: "cover" }}

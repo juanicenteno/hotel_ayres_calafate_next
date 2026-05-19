@@ -3,8 +3,8 @@ import RoomsData from "../../../data/Rooms.json"
 import Image from "next/image";
 import { useTranslations, useLocale } from 'next-intl';
 import { metadata as defaultMetadata } from '../layout';
-
 import { Link } from '@/i18n/routing';
+import SectionHero from "@/components/SectionHero/SectionHero";
 
 export async function generateMetadata({ params }) {
     const { locale } = await params;
@@ -38,6 +38,12 @@ function Rooms() {
     const locale = useLocale();
     return (
         <>
+            <SectionHero
+                className={styles.heroRooms}
+                imageSrc="/images/webp_new/39.webp"
+                title={t('our_rooms')}
+                subtitle={t('roomsCarousel_subtitle')}
+            />
             <main className={styles.rooms_container}>
                 {RoomsData.map(item => (
                     <div key={item.id} id={styles.rooms}>

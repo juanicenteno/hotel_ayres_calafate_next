@@ -1,8 +1,10 @@
 import React from 'react'
 import styles from './page.module.css'
-import Image from 'next/image'
 import { useTranslations } from 'next-intl';
 import { metadata as defaultMetadata } from '../layout';
+import SectionHero from "@/components/SectionHero/SectionHero";
+import Image from 'next/image';
+
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -34,23 +36,14 @@ export async function generateMetadata({ params }) {
 
 function Spa() {
   const t = useTranslations();
-  return (
+    return (
     <>
-      <section className={styles.header_image_spa}>
-        <Image
-          src="https://ayresdecalafate.com/images/webp_new/59.webp"
-          alt=""
-          fill
-          style={{ objectFit: "cover" }}
-          loading="eager"
-          sizes="(max-width: 768px) 100vw, 50vw"
-        />
-        <div className={styles.imageText_container}>
-          <small>{t('spa_title')}</small>
-          <h1>{t('spa_subtitle')}</h1>
-        </div>
-        <div className={styles.gradient}></div>
-      </section>
+    <SectionHero
+        className={styles.heroSpa}
+        imageSrc="/images/webp_new/60.webp"
+        title={t('spa_title')}
+        subtitle={t('spa_subtitle')}
+      />
 
       <main className={styles.spa_section}>
         <section className={styles.intro_section}>
@@ -68,7 +61,7 @@ function Spa() {
           <div className={styles.treatment_card}>
             <div className={styles.treatment_image_wrapper}>
               <Image
-                src="https://ayresdecalafate.com/images/ayres_webp/spa1.webp"
+                src="/images/ayres_webp/spa1.webp"
                 alt={t('spa_lavanda_title')}
                 fill
                 style={{ objectFit: "cover" }}
@@ -100,7 +93,7 @@ function Spa() {
           <div className={styles.treatment_card}>
             <div className={styles.treatment_image_wrapper}>
               <Image
-                src="https://ayresdecalafate.com/images/ayres_webp/spa4.webp"
+                src="/images/ayres_webp/spa4.webp"
                 alt={t('spa_menta_title')}
                 fill
                 loading="lazy"
@@ -131,7 +124,7 @@ function Spa() {
           <div className={styles.treatment_card}>
             <div className={styles.treatment_image_wrapper}>
               <Image
-                src="https://ayresdecalafate.com/images/ayres_webp/spa3.webp"
+                src="/images/ayres_webp/spa3.webp"
                 alt={t('spa_armonia_title')}
                 fill
                 style={{ objectFit: "cover" }}
@@ -167,7 +160,7 @@ function Spa() {
             <p className={styles.hours_text}>{t('spa_hours_schedule')}</p>
             <p className={styles.hours_subtext}>{t('spa_hours_morning')}</p>
             <Image
-              src="https://ayresdecalafate.com/images/ayres_webp/spa_hours.webp"
+              src="/images/ayres_webp/spa_hours.webp"
               alt={t('spa_hours_title')}
               fill
               style={{ objectFit: "cover" }}

@@ -1,9 +1,10 @@
-import Image from 'next/image'
 import styles from './page.module.css'
 import "./embla_restaurant.css"
+import Image from 'next/image'
 import { useTranslations } from 'next-intl';
 import Restaurant_carrousel from './Restaurant_carrousel';
 import { metadata as defaultMetadata } from '../layout';
+import SectionHero from "@/components/SectionHero/SectionHero";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -39,23 +40,12 @@ function Page() {
 
   return (
     <>
-      <section className={styles.header_image_restaurant}>
-        <Image
-          src="https://ayresdecalafate.com/images/webp_new/43.webp"
-          alt=""
-          fill
-          style={{ objectFit: "cover" }}
-          loading="eager"
-          sizes="(max-width: 768px) 100vw, 50vw"
-        />
-        <div className={styles.imageText_container}>
-          <article>
-            <h1>{t('dining')}</h1>
-            <small>{t('dining_description')}</small>
-          </article>
-        </div>
-        <div className={styles.gradient}></div>
-      </section>
+      <SectionHero
+        className={styles.heroRestaurant}
+        imageSrc="/images/webp_new/43.webp"
+        title={t('ayres_restaurant')}
+        subtitle={t('dining_description')}
+      />
 
       <main className={styles.main}>
         <section className={styles.restaurant_text}>
@@ -79,7 +69,7 @@ function Page() {
           <div className={styles.ImageContainer}>
             <Image
               className={styles.img}
-              src="https://ayresdecalafate.com/images/webp_new/42.webp"
+              src="/images/webp_new/42.webp"
               fill
               style={{ objectFit: "cover" }}
               sizes="(max-width: 768px) 100vw, 50vw"

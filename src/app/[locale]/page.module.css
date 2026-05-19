@@ -60,82 +60,7 @@
   background-color: #63271cdc;
 }
 
-.header_image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 39rem;
-  position: relative;
-  background: #000000;
-  background: linear-gradient(180deg, #000000 0%, #ffffff 80%);
-  background: -webkit-linear-gradient(180deg, #000000 0%, #ffffff 80%);
-  background: -moz-linear-gradient(180deg, #000000 0%, #ffffff 80%);
-}
 
-
-.header_image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-}
-
-.gradient {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  /* background: #000000; */
-  /* background: linear-gradient(180deg, #000000 0%, #ffffff 80%); */
-  background: -webkit-linear-gradient(268deg, #000000 0%, #7f7f7f 80%);
-  background: -moz-linear-gradient(180deg, #000000 0%, #ffffff 80%);
-  opacity: .7;
-}
-
-.imageText_container {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  width: 90%;
-  left: 50%;
-  z-index: 1;
-}
-
-.lineDivider {
-  width: 2px;
-  background: #fff;
-  height: 7rem;
-  border-radius: 5px;
-  align-self: flex-start;
-}
-
-.imageText_container small {
-  font-size: 16px;
-  color: #BF9766;
-  font-family: var(--font-bodar), serif;
-  font-style: italic;
-  align-self: flex-start;
-  font-weight: 600;
-}
-
-.imageText_container h1 {
-  font-size: 38px;
-  font-family: var(--font-eb-garamond), serif;
-}
-
-.imageText_container a {
-  margin-top: 5rem;
-  width: 100%;
-  background: #323232;
-  height: 4rem;
-  font-size: 22px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-}
 
 .image_desktop_container {
   display: none;
@@ -168,10 +93,6 @@
 }
 
 @media (min-width: 768px) {
-  .imageText_container h1 {
-    align-self: flex-start;
-  }
-
   .wpp_btn {
     right: 3rem;
     bottom: 8rem;
@@ -179,15 +100,6 @@
 }
 
 @media (min-width: 1024px) {
-
-  .header_image {
-    height: 70vh;
-    width: 90%;
-    margin: 8rem auto 0;
-    flex-direction: column;
-    gap: 4rem;
-  }
-
   .ayresPresentation {
     display: flex;
     flex-direction: row;
@@ -208,18 +120,6 @@
     display: block;
   }
 
-  .imageText_container a {
-    display: none;
-  }
-
-  .imageText_container small {
-    font-size: 20px;
-  }
-
-  .imageText_container h1 {
-    font-size: 48px;
-  }
-
   .ayresPresentation small {
     font-size: 20px;
   }
@@ -234,10 +134,6 @@
 }
 
 @media (min-width: 1440px) {
-  .imageText_container {
-    width: 80%;
-  }
-
   .main {
     width: 80%;
     margin: 6rem auto 0;

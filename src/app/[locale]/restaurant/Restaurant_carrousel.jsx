@@ -8,11 +8,11 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 
 const imgCarrusel = [
-    "https://ayresdecalafate.com/images/webp_new/44.webp",
-    "https://ayresdecalafate.com/images/webp_new/56.webp",
-    "https://ayresdecalafate.com/images/webp_new/63.webp",
-    "https://ayresdecalafate.com/images/webp_new/58.webp",
-    "https://ayresdecalafate.com/images/webp_new/82.webp"
+    "/images/webp_new/44.webp",
+    "/images/webp_new/56.webp",
+    "/images/webp_new/63.webp",
+    "/images/webp_new/58.webp",
+    "/images/webp_new/82.webp"
 ]
 
 

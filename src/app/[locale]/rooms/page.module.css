@@ -1,9 +1,14 @@
+.heroRooms {
+    height: 20rem;
+    margin-top: 6rem;
+}
+
 .rooms_container {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
     justify-content: center;
-    margin-top: 11rem;
+    margin-top: 6rem;
 }
 
 .image_container_rooms {
@@ -105,6 +110,11 @@
 }
 
 @media (min-width: 1024px) {
+    .heroRooms {
+        margin-top: 8rem;
+        height: 25rem;
+    }
+
     .rooms_container {
         width: 90%;
         margin: 11rem auto 0;

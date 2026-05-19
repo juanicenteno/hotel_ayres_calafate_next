@@ -1,9 +1,9 @@
 import React from 'react'
 import Contact from '@/components/contact/ContactForm'
 import styles from './page.module.css'
-import Image from 'next/image'
 import { useTranslations } from 'next-intl';
 import { metadata as defaultMetadata } from '../layout';
+import SectionHero from "@/components/SectionHero/SectionHero";
 
 export async function generateMetadata({ params }) {
     const { locale } = await params;
@@ -37,23 +37,12 @@ function Contacto() {
     const t = useTranslations();
     return (
         <>
-            <section className={styles.header_image_contact}>
-                <Image
-                    src="https://ayresdecalafate.com/images/webp_new/78.webp"
-                    alt=""
-                    fill
-                    style={{ objectFit: "cover" }}
-                    loading="eager"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                />
-                <div className={styles.imageText_container}>
-                    <article>
-                        <h1>{t('contact_us')}</h1>
-                        <small>{t('contact_text')}</small>
-                    </article>
-                </div>
-                <div className={styles.gradient}></div>
-            </section>
+            <SectionHero
+                className={styles.heroContact}
+                imageSrc="/images/webp_new/78.webp"
+                title={t('contact_us')}
+                subtitle={t('contact_text')}
+            />
             <h1 style={{ textAlign: "center", marginTop: "4rem" }}>{t('have_questions')}</h1>
             <main className={styles.main}>
                 <Contact />
