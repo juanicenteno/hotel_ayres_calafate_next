@@ -39,7 +39,7 @@ function Contacto() {
         <>
             <SectionHero
                 className={styles.heroContact}
-                imageSrc="/images/webp_new/78.webp"
+                imageSrc="/images/webp_new/28.webp"
                 title={t('contact_us')}
                 subtitle={t('contact_text')}
             />

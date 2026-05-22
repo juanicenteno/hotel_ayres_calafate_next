@@ -48,6 +48,19 @@
     fill: var(--gold);
 }
 
+.travel_agencies_number{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    color: #b5b5b5;
+    color: #b5b5b5;
+}
+
+.footerNavegation svg {
+    fill: var(--gold);
+}
+
+
 .footerNavegation {
     display: flex;
     flex-direction: column;
