@@ -22,8 +22,7 @@ export default function SectionHero({
         fill
         style={{ objectFit: "cover" }}
         priority={priority}
-        loading="eager"
-        sizes="(max-width: 768px) 100vw, 50vw"
+        sizes="(max-width: 1024px) 100vw, 90vw"
       />
       <div className={styles.overlay} />
       <div className={styles.content}>

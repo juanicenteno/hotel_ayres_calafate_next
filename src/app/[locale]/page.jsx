@@ -5,6 +5,7 @@ import { useLocale } from 'next-intl';
 import { useTranslations } from 'next-intl';
 import HomeCarousel from "@/components/HomeCarousel/HomeCarousel";
 import SectionHero from "@/components/SectionHero/SectionHero";
+import { getBookingUrl } from "@/utils/booking";
 
 export default function Home() {
   const t = useTranslations();
@@ -18,7 +19,7 @@ export default function Home() {
         title={t('home_imgText')}
         lineDivider
         cta={{
-          href: `https://www.todoalojamiento.com/portal/${locale}?idHotel=3032&forzarLimpiar=true`,
+          href: getBookingUrl({ locale }),
           text: `${t('reserve')} ${t('now')}`,
           ariaLabel: "Reservar habitación",
         }}
@@ -36,7 +37,7 @@ export default function Home() {
           <div className={styles.image_desktop_container} style={{ position: "relative", width: "40%", height: "100%" }}>
             <Image
               src="/images/webp_new/9.webp"
-              alt=""
+              alt={t('home_imgText')}
               fill
               style={{ objectFit: "cover" }}
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -49,7 +50,7 @@ export default function Home() {
           <div className={styles.image_desktop_container} style={{ position: "relative", width: "40%", height: "100%", alignSelf: "flex-start" }}>
             <Image
               src="/images/webp_new/44.webp"
-              alt=""
+              alt={t('discover_ayres')}
               fill
               style={{ objectFit: "cover" }}
               loading="eager"
@@ -59,7 +60,7 @@ export default function Home() {
           <article>
             <h3>{t('discover_ayres')}</h3>
             <p>{t('home_discover_text')}</p>
-            <a aria-label="reservar ahora" href={`https://www.todoalojamiento.com/portal/${locale}?idHotel=3032&forzarLimpiar=true`} target="_blank">{t('reserve')} {t('now')}</a>
+            <a aria-label="reservar ahora" href={getBookingUrl({ locale })} target="_blank">{t('reserve')} {t('now')}</a>
           </article>
         </section>
       </main>

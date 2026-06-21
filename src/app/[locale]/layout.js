@@ -4,7 +4,7 @@ import "./globals.css";
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-
+// import { ViewTransitions } from 'next-view-transitions';
 import { EB_Garamond, Lora } from "next/font/google";
 import localFont from "next/font/local";
 import styles from "./page.module.css";
@@ -30,7 +30,7 @@ const bodar = localFont({
   display: "swap",
 });
 
-export const metadata = {
+export const baseMetadata = {
   title: "Ayres de Calafate",
   description:
     "Bienvenidos a Ayres de Calafate, un hotel boutique en el corazón de El Calafate. Un refugio acogedor donde el confort se combina con el paisaje patagónico. Ubicación ideal, atención personalizada y una experiencia única al pie de los glaciares.",
@@ -79,6 +79,29 @@ export const metadata = {
     canonical: "https://ayresdecalafate.com",
   },
 };
+
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams || {};
+  const lang = locale || 'es';
+
+  return {
+    ...baseMetadata,
+    openGraph: {
+      ...baseMetadata.openGraph,
+      url: `https://ayresdecalafate.com/${lang}`,
+      locale: lang === 'es' ? 'es_AR' : lang === 'pt' ? 'pt_BR' : 'en_US',
+    },
+    alternates: {
+      canonical: `https://ayresdecalafate.com/${lang}`,
+      languages: {
+        'es': 'https://ayresdecalafate.com/es',
+        'en': 'https://ayresdecalafate.com/en',
+        'pt': 'https://ayresdecalafate.com/pt',
+      }
+    }
+  };
+}
 
 
 export default async function RootLayout({ children, params }) {

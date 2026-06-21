@@ -3,7 +3,7 @@ import "./embla_restaurant.css"
 import Image from 'next/image'
 import { useTranslations } from 'next-intl';
 import Restaurant_carrousel from './Restaurant_carrousel';
-import { metadata as defaultMetadata } from '../layout';
+import { baseMetadata as defaultMetadata } from '../layout';
 import SectionHero from "@/components/SectionHero/SectionHero";
 
 export async function generateMetadata({ params }) {

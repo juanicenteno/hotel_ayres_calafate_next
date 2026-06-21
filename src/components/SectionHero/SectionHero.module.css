@@ -12,7 +12,7 @@
   position: absolute;
   inset: 0;
   background: linear-gradient(268deg, #000000 0%, #323232 80%);
-  opacity: 0.7;
+  opacity: 0.45;
   z-index: 1;
   pointer-events: none;
 }

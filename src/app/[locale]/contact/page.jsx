@@ -2,7 +2,7 @@ import React from 'react'
 import Contact from '@/components/contact/ContactForm'
 import styles from './page.module.css'
 import { useTranslations } from 'next-intl';
-import { metadata as defaultMetadata } from '../layout';
+import { baseMetadata as defaultMetadata } from '../layout';
 import SectionHero from "@/components/SectionHero/SectionHero";
 
 export async function generateMetadata({ params }) {

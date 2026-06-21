@@ -9,6 +9,7 @@ import Image from 'next/image'
 
 import { PrevButton, NextButton } from "../../../../components/EmbaCarousel/EmblaCarouselArrowButtons"
 import { useTranslations } from 'next-intl';
+import { getBookingUrl } from "../../../../utils/booking";
 
 export default function RoomDetail({ params }) {
     const t = useTranslations();
@@ -178,7 +179,7 @@ export default function RoomDetail({ params }) {
                                 </li>
                             ))}
                         </ul>
-                        <a aria-label='reservar habitación' href={`https://www.todoalojamiento.com/portal/${locale}?idHotel=3032&forzarLimpiar=true&idHabitacion=${room.id_ta}`} target='_blank' className='reserve_btn'>{t('reserve')} {t('now')}</a>
+                        <a aria-label='reservar habitación' href={getBookingUrl({ locale, roomId: room.id_ta })} target='_blank' rel="noopener noreferrer" className='reserve_btn'>{t('reserve')} {t('now')}</a>
                     </section>
                 </div>
             </main>

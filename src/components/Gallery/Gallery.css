@@ -1,11 +1,161 @@
-.yarl__portal_open{
+.yarl__portal_open {
     z-index: 1000000 !important;
 }
 
-.thumbImage_container{
-    background: #dedede;
-    background: -webkit-linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
-    background: -moz-linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
+.gallery_section_container {
+    max-width: 1400px;
+    margin: 9rem auto 5rem;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Barra de Filtros */
+.filter_bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+}
+
+.filter_button {
+    font-family: var(--font-eb-garamond), serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    background: transparent;
+    border: 1px solid rgba(165, 135, 101, 0.3); /* --brown light */
+    color: var(--text-color-b);
+    padding: 0.6rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.filter_button:hover {
+    border-color: var(--brown);
+    background: rgba(165, 135, 101, 0.05);
+}
+
+.filter_button.active {
+    background: var(--brown);
+    border-color: var(--brown);
+    color: var(--white);
+    box-shadow: 0 4px 12px rgba(165, 135, 101, 0.2);
+}
+
+/* Grid de Imágenes */
+.gallery_grid_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.gallery_card {
+    position: relative;
+    aspect-ratio: 3/2; /* aspect ratio premium horizontal */
+    overflow: hidden;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #eae7e1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.gallery_card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.thumbImage_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(181deg, rgba(222, 222, 222, 0.5) 0%, rgba(227, 227, 227, 0.5) 27%, rgba(196, 196, 196, 0.5) 50%, rgba(150, 150, 150, 0.5) 73%, rgba(163, 163, 163, 0.5) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#DEDEDE", endColorstr="#A3A3A3", GradientType=0);
+    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.gallery_card:hover .thumbImage_container {
+    transform: scale(1.05);
+}
+
+/* Overlay en Hover */
+.gallery_card_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(99, 39, 28, 0.25); /* Tono rojo marca */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery_card:hover .gallery_card_overlay {
+    opacity: 1;
+}
+
+.gallery_card_overlay svg {
+    color: var(--white);
+    width: 2.2rem;
+    height: 2.2rem;
+    transform: scale(0.8);
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.gallery_card:hover .gallery_card_overlay svg {
+    transform: scale(1);
+}
+
+/* Botón Cargar Más */
+.load_more_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.load_more_button {
+    font-family: var(--font-eb-garamond), serif;
+    font-size: 1.15rem;
+    letter-spacing: 0.05em;
+    background: transparent;
+    border: 1px solid var(--red);
+    color: var(--red);
+    padding: 0.75rem 2.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.load_more_button:hover {
+    background: var(--red);
+    color: var(--white);
+    box-shadow: 0 4px 12px rgba(99, 39, 28, 0.15);
+}
+
+@media (max-width: 768px) {
+    .gallery_section_container {
+        margin: 7rem auto 3rem;
+    }
+    
+    .filter_bar {
+        margin-bottom: 2rem;
+    }
+    
+    .filter_button {
+        font-size: 0.95rem;
+        padding: 0.5rem 1.1rem;
+    }
+
+    .gallery_grid_container {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 0.5rem;
+    }
 }

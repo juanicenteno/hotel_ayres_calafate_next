@@ -14,9 +14,9 @@ export default function LocaleSwitcher() {
   const [open, setOpen] = useState(false)
 
   const flags = {
-    es: 'https://flagcdn.com/ar.svg',
-    en: 'https://flagcdn.com/us.svg',
-    pt: 'https://flagcdn.com/br.svg',
+    es: '/images/flags/ar.svg',
+    en: '/images/flags/us.svg',
+    pt: '/images/flags/br.svg',
   }
 
   const handleSelect = (nextLocale) => {
@@ -34,7 +34,7 @@ export default function LocaleSwitcher() {
       >
         <div className="image_container_currentFlag">
           <Image
-            src={flags[locale] || 'https://flagcdn.com/ar.svg'}
+            src={flags[locale] || '/images/flags/ar.svg'}
             alt={locale}
             fill
             className="holasoyeste"
@@ -57,7 +57,7 @@ export default function LocaleSwitcher() {
               className="image_container_flags"
             >
               <Image
-                src={flags[cur] || 'https://flagcdn.com/ar.svg'}
+                src={flags[cur] || '/images/flags/ar.svg'}
                 alt={cur}
                 fill
                 className=""

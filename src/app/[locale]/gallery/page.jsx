@@ -1,5 +1,5 @@
 import Gallery from "@/components/Gallery/Gallery"
-import { metadata as defaultMetadata } from '../layout';
+import { baseMetadata as defaultMetadata } from '../layout';
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;

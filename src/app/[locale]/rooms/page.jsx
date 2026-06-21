@@ -2,8 +2,9 @@ import styles from "./page.module.css"
 import RoomsData from "../../../data/Rooms.json"
 import Image from "next/image";
 import { useTranslations, useLocale } from 'next-intl';
-import { metadata as defaultMetadata } from '../layout';
-import { Link } from '@/i18n/routing';
+import { baseMetadata as defaultMetadata } from '../layout';
+// import { Link } from '@/i18n/routing';
+import { TransitionLink } from '@/components/TransitionLink';
 import SectionHero from "@/components/SectionHero/SectionHero";
 
 export async function generateMetadata({ params }) {
@@ -39,6 +40,7 @@ function Rooms() {
     return (
         <>
             <SectionHero
+                style={{ viewTransitionName: 'titulo-pedido-prueba' }}
                 className={styles.heroRooms}
                 imageSrc="/images/webp_new/39.webp"
                 title={t('our_rooms')}
@@ -49,7 +51,7 @@ function Rooms() {
                     <div key={item.id} id={styles.rooms}>
                         <article className={styles.card}>
                             <div className={styles.image_container_rooms}>
-                                <Link key={item.id} href={`/rooms/${item.id}`}>
+                                <TransitionLink key={item.id} href={`/rooms/${item.id}`}>
                                     <Image
                                         loading="lazy"
                                         className={styles.room_image}
@@ -58,7 +60,7 @@ function Rooms() {
                                         alt="imagen de habitacion ayres de calafate"
                                         sizes="(max-width: 768px) 100vw, 50vw"
                                     />
-                                </Link>
+                                </TransitionLink>
                             </div>
                             <section className={styles.description_container}>
                                 <h1>{item.nombre[locale]}</h1>
@@ -69,7 +71,7 @@ function Rooms() {
                                     ))}
                                 </ul>
                                 <small className={styles.room_price}>{item.precio}/{t('night')}</small>
-                                <Link aria-label="ver detalles de habitacion" key={item.id} href={`/rooms/${item.id}`} className={styles.reserve_button}>{t('see_more')}</Link>
+                                <TransitionLink aria-label="ver detalles de habitacion" key={item.id} href={`/rooms/${item.id}`} className={styles.reserve_button}>{t('see_more')}</TransitionLink>
                             </section>
                         </article>
                         {/* <li key={item.id}>{item.nombre.es}</li> */}

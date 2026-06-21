@@ -4,6 +4,7 @@ import styles from "./Booking.module.css";
 import toast, { Toaster } from "react-hot-toast";
 import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
+import { getBookingUrl } from "@/utils/booking";
 
 // ---- Componentes pequeños reutilizables ----
   const DatePicker = ({ label, value, onChange, min, max }) => (
@@ -100,16 +101,13 @@ function Booking() {
     if (!date1 || !date2) return notifyError("Debes completar fecha de entrada y salida.");
     if (adultsCount === 0) return notifyError("Debes seleccionar al menos 1 adulto.");
 
-    const params = new URLSearchParams({
-      idHotel: 3032,
-      forzarLimpiar: true,
-      fechaDesde: date1,
-      fechaHasta: date2,
-      adultos: adultsCount,
-      ninios: childrenCount,
+    const url = getBookingUrl({
+      locale,
+      checkin: date1,
+      checkout: date2,
+      adults: adultsCount,
+      children: childrenCount,
     });
-
-    const url = `https://www.todoalojamiento.com/portal/${locale}?${params.toString()}`;
     window.open(url, "_blank");
   };
 

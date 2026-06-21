@@ -6,9 +6,11 @@ import Styles from './Carrousel.module.css'
 import "./embla.css"
 import RoomsData from "../../data/Rooms.json"
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/routing';
+// import { Link } from '@/i18n/routing';
+import { TransitionLink } from '@/components/TransitionLink';
 import { useLocale } from 'next-intl';
 import { useMediaQuery } from 'react-responsive';
+import { getBookingUrl } from "@/utils/booking";
 
 import { DotButton, useDotButton } from "../EmbaCarousel/EmblaCarouselDotButton"
 import {
@@ -73,8 +75,8 @@ function Carrousel() {
                                                             ))}
                                                         </ul>
                                                         <ul className={Styles.buttonsList}>
-                                                            <li><Link aria-label='ver detalles de habitación' href={`/rooms/${room.id}`} className={Styles.DetailsButton}>{t('details')} <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6" /></svg></Link></li>
-                                                            <li><Link aria-label='reservar habitación ahora' href={`https://www.todoalojamiento.com/portal/${locale}?idHotel=3032&forzarLimpiar=true&idHabitacion=${room.id_ta}`} className={Styles.BookNow} target='_blank'>{t('reserve')} {t('now')} <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6" /></svg></Link></li>
+                                                            <li><TransitionLink aria-label='ver detalles de habitación' href={`/rooms/${room.id}`} className={Styles.DetailsButton}>{t('details')} <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6" /></svg></TransitionLink></li>
+                                                            <li><a aria-label='reservar habitación ahora' href={getBookingUrl({ locale, roomId: room.id_ta })} className={Styles.BookNow} target='_blank' rel="noopener noreferrer">{t('reserve')} {t('now')} <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6" /></svg></a></li>
                                                         </ul>
                                                     </article>
                                                 </div>

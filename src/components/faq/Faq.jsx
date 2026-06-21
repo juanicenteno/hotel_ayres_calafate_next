@@ -30,8 +30,25 @@ export default function FAQ() {
         setActiveIndex(activeIndex === index ? null : index);
     };
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(item => ({
+            "@type": "Question",
+            "name": item.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer
+            }
+        }))
+    };
+
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
             <h3 id="faq2" className={styles.FaqTitle}>{t('faq')}</h3>
             <ul className={styles.faq}>
                 {faqs.map((item, index) => (

@@ -244,11 +244,31 @@
     }
 
     .list_item {
-        transition: opacity .3s ease-in-out;
+        position: relative;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .list_item::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1px;
+        bottom: -4px;
+        left: 0;
+        background-color: var(--brown);
+        transform-origin: bottom right;
+        transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    .list_item:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
     }
 
     .list_item:hover {
-        opacity: .7;
+        color: var(--brown);
     }
 }
 

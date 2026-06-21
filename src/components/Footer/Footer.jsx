@@ -4,7 +4,8 @@ import { useEffect } from 'react';
 import Faq from '../faq/Faq'
 import styles from "./Footer.module.css"
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/routing';
+// import { Link } from '@/i18n/routing';
+import { TransitionLink } from '@/components/TransitionLink';
 import Image from 'next/image'
 
 function Footer() {
@@ -59,10 +60,10 @@ function Footer() {
             <article className={styles.footerNavegation}>
               <h3>{t('navegation')}</h3>
               <ul>
-                <li><Link href="#Body">{t('home')}</Link></li>
-                <li><Link href="/rooms">{t('rooms')}</Link></li>
-                <li><Link href="/gallery">{t('gallery')}</Link></li>
-                <li><Link href="/contact">{t('contact_us')}</Link></li>
+                <li><TransitionLink href="/">{t('home')}</TransitionLink></li>
+                <li><TransitionLink href="/rooms">{t('rooms')}</TransitionLink></li>
+                <li><TransitionLink href="/gallery">{t('gallery')}</TransitionLink></li>
+                <li><TransitionLink href="/contact">{t('contact_us')}</TransitionLink></li>
               </ul>
             </article>
             <article className={styles.footerContact}>

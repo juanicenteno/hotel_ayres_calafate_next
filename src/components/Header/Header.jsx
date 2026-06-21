@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { Link } from '@/i18n/routing';
+// import { Link } from '@/i18n/routing';
+import { TransitionLink } from '@/components/TransitionLink';
 
 import styles from './Header.module.css'
 import Booking from "../Booking/Booking";
@@ -66,33 +67,33 @@ function Header() {
                     <small className={styles.burger_small}>{t('menu')}</small>
                 </div>
                 <div className={styles.content_header}>
-                    <Link className={styles.containerLogo} href="/">
+                    <TransitionLink className={styles.containerLogo} href="/" style={{ viewTransitionName: 'titulo-pedido-prueba' }}>
                         <img
                             className={styles.logo}
                             src="/images/ayresnegro2.webp"
                             alt="logo del hotel ayres de calafate"
                             loading="eager"
                         />
-                    </Link>
+                    </TransitionLink>
                     <nav className={styles.desktop_nav}>
                         <div className={styles.divider}>
                             <div className={styles.opensubmenu}>
-                                <Link className={styles.list_item} prefetch={true} href="/rooms">{t('rooms')}</Link>
+                                <TransitionLink className={styles.list_item} prefetch={true} href="/rooms">{t('rooms')}</TransitionLink>
                                 <svg onClick={handleSubMenu} className={`${styles.openBox} ${isSubmenuOpen ? 'active' : ''}`} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10 7L15 12L10 17" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
                             </div>
                             <ul className={`${styles.submenu} ${isSubmenuOpen ? 'active' : ''}`}>
-                                <li><Link prefetch={true} href="/rooms/doble-estandar">{t('room_doble_standard')}</Link></li>
-                                <li><Link prefetch={true} href="/rooms/triple-estandar">{t('room_triple_standard')}</Link></li>
-                                {/* <li><Link prefetch={true} href="/rooms/suite">{t('suite')}</Link></li> */}
-                                <li><Link prefetch={true} href="/rooms/doble-superior">{t('room_doble_superior')}</Link></li>
-                                <li><Link prefetch={true} href="/rooms/triple-superior">{t('room_triple_superior')}</Link></li>
+                                <li><TransitionLink prefetch={true} href="/rooms/doble-estandar">{t('room_doble_standard')}</TransitionLink></li>
+                                <li><TransitionLink prefetch={true} href="/rooms/triple-estandar">{t('room_triple_standard')}</TransitionLink></li>
+                                {/* <li><TransitionLink prefetch={true} href="/rooms/suite">{t('suite')}</TransitionLink></li> */}
+                                <li><TransitionLink prefetch={true} href="/rooms/doble-superior">{t('room_doble_superior')}</TransitionLink></li>
+                                <li><TransitionLink prefetch={true} href="/rooms/triple-superior">{t('room_triple_superior')}</TransitionLink></li>
                             </ul>
                         </div>
-                        <Link className={styles.list_item} prefetch={true} href="/gallery">{t('gallery')}</Link>
-                        <Link className={styles.list_item} prefetch={true} href="/restaurant">{t('dining')}</Link>
-                        <Link className={styles.list_item} prefetch={true} href="/spa">{t('our_spa')}</Link>
+                        <TransitionLink className={styles.list_item} prefetch={true} href="/gallery">{t('gallery')}</TransitionLink>
+                        <TransitionLink className={styles.list_item} prefetch={true} href="/restaurant">{t('dining')}</TransitionLink>
+                        <TransitionLink className={styles.list_item} prefetch={true} href="/spa">{t('our_spa')}</TransitionLink>
                         <a className={styles.list_item} href="#faq2">{t('faq')}</a>
-                        <Link prefetch={true} className={styles.list_item} href="/contact">{t('contact')}</Link>
+                        <TransitionLink prefetch={true} className={styles.list_item} href="/contact">{t('contact')}</TransitionLink>
                         <LanguageSwitcher />
                     </nav>
                 </div>
@@ -112,27 +113,27 @@ function Header() {
                     <section className={styles.container}>
                         <h3 className={styles.nav_title}>{t('menu')}</h3>
                         <ul className={styles.nav_list}>
-                            <li><Link className={styles.list_item} onClick={handleMobileNavClick} href="/">{t('home')}</Link></li>
-                            <li><Link className={styles.list_item} prefetch={true} href="/gallery" onClick={handleMobileNavClick}>{t('gallery')}</Link></li>
-                            <li><Link className={styles.list_item} prefetch={true} href="/restaurant" onClick={handleMobileNavClick}>{t('dining')}</Link></li>
-                            <li><Link className={styles.list_item} prefetch={true} href="/spa" onClick={handleMobileNavClick}>{t('our_spa')}</Link></li>
+                            <li><TransitionLink className={styles.list_item} onClick={handleMobileNavClick} href="/">{t('home')}</TransitionLink></li>
+                            <li><TransitionLink className={styles.list_item} prefetch={true} href="/gallery" onClick={handleMobileNavClick}>{t('gallery')}</TransitionLink></li>
+                            <li><TransitionLink className={styles.list_item} prefetch={true} href="/restaurant" onClick={handleMobileNavClick}>{t('dining')}</TransitionLink></li>
+                            <li><TransitionLink className={styles.list_item} prefetch={true} href="/spa" onClick={handleMobileNavClick}>{t('our_spa')}</TransitionLink></li>
                             <li>
                                 <div className={styles.divider}>
                                     <div className={styles.opensubmenu}>
-                                        <Link className={styles.list_item} prefetch={true} onClick={handleMobileNavClick} href="/rooms">{t('rooms')}</Link>
+                                        <TransitionLink className={styles.list_item} prefetch={true} onClick={handleMobileNavClick} href="/rooms">{t('rooms')}</TransitionLink>
                                         <svg onClick={handleSubMenu} className={`${styles.openBox} ${isSubmenuOpen ? 'active' : ''}`} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10 7L15 12L10 17" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
                                     </div>
                                     <ul className={`${styles.submenu} ${isSubmenuOpen ? 'active' : ''}`}>
-                                        <li><Link prefetch={true} onClick={handleMobileNavClick} href="/rooms/doble-estandar">{t('room_doble_standard')}</Link></li>
-                                        <li><Link prefetch={true} onClick={handleMobileNavClick} href="/rooms/triple-estandar">{t('room_triple_standard')}</Link></li>
-                                        {/* <li><Link prefetch={true} onClick={handleMobileNavClick} href="/rooms/suite">{t('suite')}</Link></li> */}
-                                        <li><Link prefetch={true} onClick={handleMobileNavClick} href="/rooms/doble-superior">{t('room_doble_superior')}</Link></li>
-                                        <li><Link prefetch={true} onClick={handleMobileNavClick} href="/rooms/triple-superior">{t('room_triple_superior')}</Link></li>
+                                        <li><TransitionLink prefetch={true} onClick={handleMobileNavClick} href="/rooms/doble-estandar">{t('room_doble_standard')}</TransitionLink></li>
+                                        <li><TransitionLink prefetch={true} onClick={handleMobileNavClick} href="/rooms/triple-estandar">{t('room_triple_standard')}</TransitionLink></li>
+                                        {/* <li><TransitionLink prefetch={true} onClick={handleMobileNavClick} href="/rooms/suite">{t('suite')}</TransitionLink></li> */}
+                                        <li><TransitionLink prefetch={true} onClick={handleMobileNavClick} href="/rooms/doble-superior">{t('room_doble_superior')}</TransitionLink></li>
+                                        <li><TransitionLink prefetch={true} onClick={handleMobileNavClick} href="/rooms/triple-superior">{t('room_triple_superior')}</TransitionLink></li>
                                     </ul>
                                 </div>
                             </li>
                             <li><a onClick={handleMobileNavClick} className={styles.list_item} href="#faq2">{t('faq')}</a></li>
-                            <li><Link prefetch={true} onClick={handleMobileNavClick} className={styles.list_item} href="/contact">{t('contact')}</Link></li>
+                            <li><TransitionLink prefetch={true} onClick={handleMobileNavClick} className={styles.list_item} href="/contact">{t('contact')}</TransitionLink></li>
                             <li>
                                 <div className={styles.socials_container}>
                                     <a aria-label="visitar instagram del hotel ayres de calafate" className={styles.social_item} href="https://www.instagram.com/ayresdecalafate/">
