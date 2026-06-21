@@ -95,7 +95,7 @@ function Footer() {
         </section>
         <article className={styles.copyRight}>
           <span>© 2026 Ayres de Calafate. All rights reserved.</span>
-          <span>Developed by <a href="https://simplicitysoftware.site" style={{ fontWeight: "600", color: "var(--text-color-w)", marginLeft: "10px" }}>Simplicity Software</a></span>
+          <span>Developed by <a href="https://juani-portfolio-six.vercel.app/" style={{ fontWeight: "600", color: "var(--text-color-w)", marginLeft: "10px" }}>Juan I. Centeno</a></span>
         </article>
       </footer>
     </>
