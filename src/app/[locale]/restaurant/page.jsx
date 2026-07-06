@@ -60,7 +60,7 @@ function Page() {
               {t('dining_text3')}
             </p>
             <ul className={styles.list_btns}>
-              <li><a aria-label='reservar una mesa en el restaurante del hotel ayres de calafate' href="https://wa.me/5492966568253?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20mesa%20en%20Ayres%20Restaurante.%20%C2%BFTienen%20disponibilidad%3F">{t('book_table')}</a></li>
+              <li><a aria-label='reservar una mesa en el restaurante del hotel ayres de calafate' href="https://wa.me/5492902405455?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20mesa%20en%20Ayres%20Restaurante.%20%C2%BFTienen%20disponibilidad%3F">{t('book_table')}</a></li>
             </ul>
           </article>
         </section>
@@ -91,12 +91,12 @@ function Page() {
               </li>
               <li style={{ alignItems: "center" }}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"></path></svg>
-                +54 9 2966 56-8253
+                +54 9 2902 40-5455
               </li>
             </ul>
             <ul className={styles.btns_reserve}>
               <li><a aria-label='ver ofertas en el restaurante del hotel ayres de calafate' href="https://www.instagram.com/ayres_restaurante/">{t('view_offers')}</a></li>
-              <li><a aria-label='reservar una mesa en el restaurante del hotel ayres de calafate' href="https://wa.me/5492966568253?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20mesa%20en%20Ayres%20Restaurante.%20%C2%BFTienen%20disponibilidad%3F">{t('book_table')}</a></li>
+              <li><a aria-label='reservar una mesa en el restaurante del hotel ayres de calafate' href="https://wa.me/5492902405455?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20mesa%20en%20Ayres%20Restaurante.%20%C2%BFTienen%20disponibilidad%3F">{t('book_table')}</a></li>
             </ul>
           </article>
         </section>

@@ -81,7 +81,7 @@ function Spa() {
               </div>
               <a
                 aria-label={t('spa_reserve_now')}
-                href="https://wa.me/5492966568253?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20el%20tratamiento%20de%20Lavanda%20Patag%C3%B3nica.%20%C2%BFTienen%20disponibilidad%3F"
+                href="https://wa.me/5492902405455?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20el%20tratamiento%20de%20Lavanda%20Patag%C3%B3nica.%20%C2%BFTienen%20disponibilidad%3F"
                 target='_blank'
                 className={styles.btn_reserve}
               >
@@ -112,7 +112,7 @@ function Spa() {
               </div>
               <a
                 aria-label={t('spa_reserve_now')}
-                href="https://wa.me/5492966568253?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20el%20Masaje%20de%20Descanso%20con%20Menta%20del%20Sur.%20%C2%BFTienen%20disponibilidad%3F"
+                href="https://wa.me/5492902405455?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20el%20Masaje%20de%20Descanso%20con%20Menta%20del%20Sur.%20%C2%BFTienen%20disponibilidad%3F"
                 target='_blank'
                 className={styles.btn_reserve}
               >
@@ -144,7 +144,7 @@ function Spa() {
               </div>
               <a
                 aria-label={t('spa_reserve_now')}
-                href="https://wa.me/5492966568253?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20el%20tratamiento%20Armon%C3%ADa%20del%20Calafate.%20%C2%BFTienen%20disponibilidad%3F"
+                href="https://wa.me/5492902405455?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20el%20tratamiento%20Armon%C3%ADa%20del%20Calafate.%20%C2%BFTienen%20disponibilidad%3F"
                 target='_blank'
                 className={styles.btn_reserve}
               >

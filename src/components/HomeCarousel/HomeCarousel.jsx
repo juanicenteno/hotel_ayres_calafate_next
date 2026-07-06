@@ -139,7 +139,7 @@ function HomeCarousel() {
                                             </a>
                                             <div className="experience_promo__contactLines">
                                                 <a href="mailto:comercial@ayresdecalafate.com">comercial@ayresdecalafate.com</a>
-                                                <a href="tel:+5492966568253">+54 9 2966 56-8253</a>
+                                                <a href="tel:+5492902405455">+54 9 2902 40-5455</a>
                                             </div>
                                         </div>
                                     </div>
