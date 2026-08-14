@@ -1,0 +1,161 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--background);
+  padding: 4rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.topLine {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0.6;
+}
+
+.bottomLine {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0.6;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.25rem;
+  position: relative;
+  z-index: 1;
+  animation: fadeSlideUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.logo {
+  width: 140px;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.85;
+}
+
+.code {
+  font-size: 7rem;
+  font-family: var(--font-bodar), serif;
+  line-height: 1;
+  -webkit-text-stroke: 1px var(--gold);
+  color: transparent;
+  letter-spacing: -0.02em;
+}
+
+.divider {
+  width: 2px;
+  height: 4rem;
+  background: var(--gold);
+  border-radius: 5px;
+  opacity: 0.7;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-family: var(--font-bodar), serif;
+  color: var(--text-color-b);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+.description {
+  font-size: 14px;
+  font-family: "Lora", serif;
+  color: #6b6259;
+  line-height: 1.8;
+  max-width: 36ch;
+}
+
+.cta {
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.25rem;
+  padding: 0 2.5rem;
+  background-color: var(--red);
+  color: var(--text-color-w);
+  font-family: var(--font-eb-garamond), serif;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background-color: #4e1f16;
+  transform: translateY(-1px);
+}
+
+.cta:active {
+  transform: translateY(0);
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Tablet ── */
+@media (min-width: 768px) {
+  .code {
+    font-size: 10rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .cta {
+    height: 3.5rem;
+    font-size: 18px;
+  }
+}
+
+/* ── Desktop ── */
+@media (min-width: 1024px) {
+  .code {
+    font-size: 13rem;
+  }
+
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .description {
+    font-size: 16px;
+    max-width: 46ch;
+  }
+
+  .logo {
+    width: 180px;
+  }
+}

@@ -6,6 +6,8 @@ import { Thumb } from '../../../../components/EmbaCarousel/EmblaCarouselThumbsBu
 import rooms from "../../../../data/Rooms.json"
 import "./page.css"
 import Image from 'next/image'
+import { notFound } from 'next/navigation'
+
 
 import { PrevButton, NextButton } from "../../../../components/EmbaCarousel/EmblaCarouselArrowButtons"
 import { useTranslations } from 'next-intl';
@@ -104,7 +106,7 @@ export default function RoomDetail({ params }) {
 
     };
 
-    if (!room) return <p>Habitación no encontrada</p>
+    if (!room) notFound()
     return (
         <>
             <main className='main_room_detail'>

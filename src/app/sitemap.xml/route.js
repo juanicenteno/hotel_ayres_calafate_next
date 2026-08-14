@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 
-const BASE_URL = "https://www.ayresdecalafate.com";
+const BASE_URL = "https://ayresdecalafate.com";
 const paths = ["rooms", "gallery", "restaurant", "spa", "contact"];
 const locales = ["es", "en", "pt"];
-const roomIds = ["doble-estandar", "triple-estandar", "doble-superior", "triple-superior", "suite"];
+const roomIds = ["doble-estandar", "triple-estandar", "doble-superior", "triple-superior"]; //"suite"
 
 export async function GET() {
   const urls = [];
