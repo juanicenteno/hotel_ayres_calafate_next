@@ -41,5 +41,5 @@ export function getBookingUrl({
     params.append("ninios", children.toString());
   }
 
-  return `https://www.todoalojamiento.com/portal/${locale}?${params.toString()}`;
+  return `https://www.todoalojamiento.com/portal/${locale}?${params.toString()}#buscadorHorizontal`;
 }

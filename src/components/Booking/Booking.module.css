@@ -1,256 +1,107 @@
-.container {
-    margin-top: 6rem;
-    background: var(--background-green);
+/* ════════════════════════════════════════════════════════════════════
+   SHARED — DatePicker
+════════════════════════════════════════════════════════════════════ */
+.datePicker {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem 0 0;
+    gap: 0.45rem;
+    position: relative;
 }
 
-.container h3 {
-    font-size: 24px;
-    color: var(--white);
-    font-family: var(--font-bodar), serif;
+.datePicker span {
+    font-size: 0.6rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold2);
 }
 
-.DayPicker {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.DayPicker span {
-    background-color: var(--text-color-w);
-    padding: .3rem 2rem;
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    gap: .2rem;
-    cursor: pointer;
-}
-
-.DayPicker svg {
-    width: 17px !important;
-}
-
-.buttonReserve {
-    background: var(--brown);
-    padding: 1rem;
-    width: 100%;
-    font-family: var(--font-bodar), serif;
-    text-align: center;
+.datePicker input[type="date"] {
+    appearance: none;
+    background-color: rgba(20, 40, 30, 0.6);
+    border: 1px solid rgba(191, 151, 102, 0.25);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    font-family: inherit;
+    font-size: 0.85rem;
     color: var(--text-color-w);
-    font-size: 22px;
-    font-weight: 600;
     cursor: pointer;
+    height: 2.8rem;
+    transition: border-color 0.25s ease, background-color 0.25s ease;
 }
 
-.customersMenu {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    background-color: var(--background);
-    z-index: 10002;
+.datePicker input[type="date"]:hover {
+    border-color: rgba(191, 151, 102, 0.55);
+    background-color: rgba(20, 40, 30, 0.75);
 }
 
-.CloseCustomers {
-    width: 38px !important;
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
+.datePicker input[type="date"]:focus {
+    outline: none;
+    border-color: var(--gold2);
+    background-color: rgba(20, 40, 30, 0.8);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.6) sepia(0.3) saturate(1.2) hue-rotate(5deg);
     cursor: pointer;
+    opacity: 0.75;
+    transition: opacity 0.2s;
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   SHARED — GuestsSelector
+════════════════════════════════════════════════════════════════════ */
 .AdultsMenu {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    display: flex;
     width: 100%;
-    background-color: #323232;
+    background-color: rgba(20, 40, 30, 0.6);
+    border: 1px solid rgba(191, 151, 102, 0.25);
     color: var(--text-color-w);
-    padding: 0 .5rem;
+    padding: 0 0.75rem;
     height: 3rem;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
-.ChildrenMenu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.AdultsMenu span {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--text-color-w);
 }
 
 .AddDelete {
     display: flex;
     align-items: center;
-    gap: 1rem;
-}
-
-.AdultsMenu span,
-.ChildrenMenu span {
-    font-weight: 600;
-    font-size: 1.2rem;
+    gap: 0.75rem;
 }
 
 .AddDelete svg {
-    width: 24px;
-    border-radius: 5px;
-    background-color: #4d4d4d;
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    background-color: rgba(191, 151, 102, 0.15);
+    border: 1px solid rgba(191, 151, 102, 0.3);
     cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s;
+    flex-shrink: 0;
 }
 
-.AddDelete svg path{
+.AddDelete svg:hover {
+    background-color: rgba(191, 151, 102, 0.3);
+}
+
+.AddDelete svg:active {
+    transform: scale(0.9);
+}
+
+.AddDelete svg path {
     stroke: var(--gold2);
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-.buttons button {
-    cursor: pointer;
-}
-
-.cancelButton {
-    background: transparent;
-    border: 1px solid;
-    border-radius: 5px;
-    padding: .7rem 2rem;
-}
-
-.saveButton {
-    background-color: var(--background-green);
-    border: none;
-    border-radius: 5px;
-    padding: .7rem 2rem;
-    color: var(--text-color-w);
-}
-
-.calendarMenu {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    background-color: var(--background);
-    z-index: 10002;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin: 0 1rem;
-}
-
-.calendarMenu svg {
-    align-self: flex-end;
-    width: 38px;
-    margin: 2rem 2rem 0;
-    cursor: pointer;
-}
-
-.calendars {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    margin: 0 1rem;
-    /* background-color: #323232; */
-    padding: 1rem;
-    border-radius: 5px;
-    width: 90%;
-}
-
-.datePicker {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: .7rem;
-    position: relative;
-}
-
-.datePicker span{
-    color: var(--text-color-w);
-}
-
-.datePicker input {
-    cursor: pointer;
-    height: 2rem;
-}
-
-.dateSaveButton {
-    background-color: var(--gold2);
-    border: none;
-    border-radius: 5px;
-    padding: .7rem 0;
-    color: var(--text-color-b);
-    width: 70%;
-    align-self: center;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 600;
-    /* font-family: var(--font-bodar), serif; */
-    /* font-style: italic; */
-}
-
-.disponibilidad {
-    background-color: #1c1c1c;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all .2s ease-in-out;
-    z-index: 100;
-    gap: 3rem;
-}
-
-.disponibilidad:global(.active) {
-    height: 35rem;
-    transition: all .5s ease-in-out;
-    justify-content: flex-start;
-}
-
-.span {
-    color: var(--gold2);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.disponibilidad:global(.active) .span {
-    margin-top: 1rem !important;
-}
-
-.openBox {
-    width: 24px;
-    margin-left: 0.2rem;
-}
-
-.openBox:global(.active) {
-    transform: rotate(90deg);
-    transition: transform 0.3s ease-in-out;
-}
-
-.guests {
-    background-color: transparent;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    gap: 2rem;
-    margin: 0 1rem;
-    padding: 1rem;
-    width: 90%;
 }
 
 .AdultsMenu small {
@@ -260,171 +111,357 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s;
 }
 
-.bookingDesktop{
+/* ════════════════════════════════════════════════════════════════════
+   MOBILE — Drawer
+════════════════════════════════════════════════════════════════════ */
+.disponibilidad {
+    background-color: var(--background-green);
+    border-top: 1px solid rgba(191, 151, 102, 0.2);
+    color: var(--text-color-w);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: 100;
+    gap: 1.5rem;
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+.disponibilidad:global(.active) {
+    height: 38rem;
+    justify-content: flex-start;
+}
+
+.span {
+    color: var(--gold2);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.2s;
+}
+
+.span:hover {
+    color: var(--brown);
+}
+
+.disponibilidad:global(.active) .span {
+    margin-top: 1.25rem;
+}
+
+/* ─── Chevron ─── */
+.openBox {
+    width: 20px;
+    flex-shrink: 0;
+    transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.openBox:global(.active) {
+    transform: rotate(90deg);
+}
+
+/* ─── Calendarios mobile ─── */
+.calendars {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.5rem 1.25rem 0;
+    width: 100%;
+}
+
+/* ─── Huéspedes mobile ─── */
+.guests {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0 1.25rem;
+}
+
+/* ─── Botón buscar mobile ─── */
+.dateSaveButton {
+    background-color: var(--gold2);
+    border: none;
+    border-radius: 4px;
+    padding: 0.85rem 0;
+    color: var(--text-color-b);
+    width: calc(100% - 2.5rem);
+    align-self: center;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    transition: background-color 0.25s ease, transform 0.1s;
+}
+
+.dateSaveButton:hover {
+    background-color: var(--brown);
+}
+
+.dateSaveButton:active {
+    transform: scale(0.98);
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   DESKTOP — oculto por defecto
+════════════════════════════════════════════════════════════════════ */
+.bookingDesktop {
     display: none;
 }
 
-.datePicker input[type="date"] {
-  appearance: none;
-  background-color: #323232;
-  border-radius: 5px;
-  padding: 1rem;
-  font-family: inherit;
-  color: var(--text-color-w);
-  cursor: pointer;
-}
-
-.datePicker input[type="date"]:focus{
-    outline: 2px solid var(--gold2);
-}
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-  filter: invert(0.5); /* cambia el color del icono */
-  cursor: pointer;
-}
-
-@media (min-width: 768px) {
-    .datePicker input{
-        padding: 0 1rem;
-    }
-}
-
+/* ════════════════════════════════════════════════════════════════════
+   RESPONSIVE — Desktop (1024+)
+════════════════════════════════════════════════════════════════════ */
 @media (min-width: 1024px) {
 
+    /* Ocultar drawer mobile */
     .disponibilidad,
     .disponibilidad span {
         display: none !important;
     }
 
-    .calendars {
-        width: 40%;
-        height: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
-    .guestsDesktop {
-        font-size: 18px;
-        font-weight: 600;
-        color: #fff;
-        position: relative;
-        width: 40%;
-    }
-
+    /* ─── Barra desktop ─── */
     .bookingDesktop {
         position: fixed;
-        bottom: 2rem;
+        bottom: 1.75rem;
         width: 90%;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #1c1c1c;
-        height: 5rem;
+        background-color: rgba(30, 55, 40, 0.97);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        height: 5.5rem;
         z-index: 100;
-        gap: 1rem;
+        gap: 0;
         left: 50%;
         transform: translateX(-50%);
+        border-radius: 6px;
+        border: 1px solid rgba(191, 151, 102, 0.2);
+        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.45), 0 1px 0 rgba(191, 151, 102, 0.12) inset;
+        overflow: visible;
     }
 
-    .AdultsMenu{
-        border-radius: 0;
+    /* ─── Calendarios desktop ─── */
+    .calendars {
+        width: auto;
+        flex: 1 1 0;
+        height: 100%;
+        padding: 0;
+        gap: 0;
+        align-items: stretch;
     }
 
-    .bookingDesktop button {
-        width: 15%;
-        height: 80%;
-        display: flex;
-        align-items: center;
+    /* Separador vertical entre campos */
+    .calendars .datePicker + .datePicker {
+        border-left: 1px solid rgba(191, 151, 102, 0.15);
+    }
+
+    .datePicker {
+        height: 100%;
         justify-content: center;
-        font-size: 18px;
-        color: #323232;
-        font-weight: 600;
-        background-color: var(--gold2);
-        cursor: pointer;
-        transition: all .3s;
+        gap: 0.3rem;
+        padding: 0 1.5rem;
+        border-radius: 0;
+        transition: background-color 0.2s ease;
     }
 
-    .bookingDesktop button:hover{
-        background-color: #d7b488;
-    }
-
-    .guestsMenu {
-        position: absolute;
-        top: -8rem;
-        width: 100%;
-        z-index: 2;
+    .datePicker:hover {
+        background-color: rgba(191, 151, 102, 0.06);
     }
 
     .datePicker span {
-        color: #fff;
+        font-size: 0.55rem;
+        letter-spacing: 0.2em;
+        color: var(--gold2);
+    }
+
+    .datePicker input[type="date"] {
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        height: auto;
+        font-size: 0.9rem;
+        color: var(--text-color-w);
+    }
+
+    .datePicker input[type="date"]:hover,
+    .datePicker input[type="date"]:focus {
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+
+    /* ─── Huéspedes desktop ─── */
+    .guestsDesktop {
+        flex: 0 0 auto;
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: var(--text-color-w);
+        position: relative;
+        height: 100%;
+        border-left: 1px solid rgba(191, 151, 102, 0.15);
+    }
+
+    /* eyebrow label */
+    .guestsDesktop::before {
+        content: 'HUÉSPEDES';
+        position: absolute;
+        top: 50%;
+        transform: translateY(calc(-50% + 1px));
+        left: 1.5rem;
+        font-size: 0.55rem;
+        font-weight: 500;
+        letter-spacing: 0.2em;
+        color: var(--gold2);
+        pointer-events: none;
+        margin-top: -0.85rem;
+        line-height: 1;
     }
 
     .guestsDesktopSpan {
         display: flex;
         width: 100%;
+        height: 100%;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+        gap: 1rem;
         cursor: pointer;
-        height: 4rem;
-        background-color: #323232;
+        padding: 0 1.5rem;
+        user-select: none;
+        min-width: 220px;
+        font-size: 0.9rem;
+        transition: background-color 0.2s ease;
     }
 
-    .guestsDesktopSpan::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 2px;
-        width: 100%;
-        background-color: var(--gold2);
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 0.3s ease;
+    .guestsDesktopSpan:hover {
+        background-color: rgba(191, 151, 102, 0.06);
     }
 
-    .guestsDesktopSpan:hover::after {
-        transform: scaleX(1);
-    }
-
-    .datePicker input::after{
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 2px;
-        width: 100%;
-        background-color: var(--gold2);
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 0.3s ease;
-    }
-
-    .datePicker input:hover::after {
-        transform: scaleX(1);
+    .guestsDesktopSpan .guestText {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: var(--text-color-w);
     }
 
     .openBox {
         transform: rotate(90deg);
+        width: 18px;
+        flex-shrink: 0;
+    }
+
+    /* ─── Menú desplegable huéspedes ─── */
+    .guestsMenu {
+        position: absolute;
+        bottom: calc(100% + 0.75rem);
+        left: 0;
+        right: 0;
+        background-color: rgba(30, 55, 40, 0.98);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(191, 151, 102, 0.2);
+        border-radius: 6px;
+        padding: 1.25rem 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.4);
+        z-index: 2;
+        animation: fadeUp 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+
+    @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(6px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .AdultsMenu {
+        border-radius: 4px;
+        background-color: rgba(191, 151, 102, 0.08);
+        border: 1px solid rgba(191, 151, 102, 0.2);
     }
 
     .AdultsMenu small {
         width: 2rem;
-        background-color: var(--brown);
+        height: 2rem;
+        background-color: rgba(191, 151, 102, 0.2);
         border-radius: 3px;
-        color: #fff;
+        color: var(--gold2);
+        font-size: 0.95rem;
+        font-weight: 500;
+    }
+
+    /* ─── Botón buscar desktop ─── */
+    .bookingDesktop > button {
+        flex-shrink: 0;
+        height: 60%;
+        min-width: 140px;
         display: flex;
         align-items: center;
         justify-content: center;
+        font-family: inherit;
+        font-size: 0.7rem;
+        font-weight: 500;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--text-color-b);
+        background-color: var(--gold2);
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        margin: 0 1.25rem;
+        position: relative;
+        overflow: hidden;
+        transition: background-color 0.25s ease, transform 0.1s;
+    }
+
+    .bookingDesktop > button::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: var(--brown);
+        transform: translateX(-100%);
+        transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .bookingDesktop > button:hover::before {
+        transform: translateX(0);
+    }
+
+    .bookingDesktop > button:active {
+        transform: scale(0.97);
+    }
+
+    .bookingDesktop > button span {
+        position: relative;
+        z-index: 1;
     }
 }
 
-@media (min-width: 1440px){
-    .bookingDesktop{
-        width: 80%;
+/* ════════════════════════════════════════════════════════════════════
+   RESPONSIVE — Large desktop (1440+)
+════════════════════════════════════════════════════════════════════ */
+@media (min-width: 1440px) {
+    .bookingDesktop {
+        width: 75%;
     }
 }
-
