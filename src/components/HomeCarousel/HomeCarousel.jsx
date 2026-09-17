@@ -170,7 +170,7 @@ function HomeCarousel() {
                                         <div className="fit_promo__ctaBlock">
                                             <a
                                                 className="fit_promo__cta"
-                                                href="https://wa.me/5492902405455?text=Hola!%20Me%20contacto%20desde%20la%20web%20para%20coordinar%20una%20reuni%C3%B3n%20en%20la%20FIT%20Argentina%202026%20(Stand%20Nac%201012)"
+                                                href="https://wa.me/5493764804006?text=Hola!%20Me%20contacto%20desde%20la%20web%20para%20coordinar%20una%20reuni%C3%B3n%20en%20la%20FIT%20Argentina%202026%20(Stand%20Nac%201012)"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 aria-label={t('fit_slide_cta')}
@@ -183,9 +183,9 @@ function HomeCarousel() {
                                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                                                     <span>comercial@ayresdecalafate.com</span>
                                                 </a>
-                                                <a href="tel:+5492902405455" className="fit_promo__contactLink">
+                                                <a href="tel:+5493764804006" className="fit_promo__contactLink">
                                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                                                    <span>+54 9 2902 40-5455</span>
+                                                    <span>+54 9 3764 80-4006</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -272,7 +272,7 @@ function HomeCarousel() {
                                             </a>
                                             <div className="experience_promo__contactLines">
                                                 <a href="mailto:comercial@ayresdecalafate.com">comercial@ayresdecalafate.com</a>
-                                                <a href="tel:+5492902405455">+54 9 2902 40-5455</a>
+                                                <a href="tel:+5493764804006">+54 9 3764 80-4006</a>
                                             </div>
                                         </div>
                                     </div>
