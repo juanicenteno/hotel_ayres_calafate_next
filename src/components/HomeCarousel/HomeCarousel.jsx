@@ -67,6 +67,139 @@ function HomeCarousel() {
                     className="embla__container"
                     id="embla__container_homep_detail"
                 >
+                    {/* ─── SLIDE 1: FIT ARGENTINA 2026 ─── */}
+                    <div className="embla__slide" id="embla__slide_homep_detail">
+                        <div className="embla__slide__number" id="embla__slide__number_homep_detail">
+                            <section className={`fit_promo ${experienceFont.className}`}>
+                                <div className="fit_promo__hero">
+                                    <Image
+                                        src="/images/webp_new/9.webp"
+                                        alt="Ayres de Calafate en FIT Argentina 2026"
+                                        fill
+                                        className="fit_promo__heroImg"
+                                        sizes="(max-width: 768px) 100vw, 48rem"
+                                        priority
+                                    />
+                                    <div className="fit_promo__heroScrim" aria-hidden />
+
+                                    <div className="fit_promo__heroContent">
+                                        <div className="fit_promo__logosRow">
+                                            <Image
+                                                src="/ayresblanco2.png"
+                                                alt="Ayres de Calafate Hotel Boutique"
+                                                width={190}
+                                                height={52}
+                                                className="fit_promo__logoAyres"
+                                                priority
+                                            />
+                                            <div className="fit_promo__badgesGroup">
+                                                <div className="fit_promo__fitLogoBadge">
+                                                    <Image
+                                                        src="/images/fit.png"
+                                                        alt="FIT 2026 - Feria Internacional de Turismo"
+                                                        width={68}
+                                                        height={45}
+                                                        className="fit_promo__fitLogoImg"
+                                                        priority
+                                                    />
+                                                </div>
+                                                <div className="fit_promo__standBadge">
+                                                    <span className="fit_promo__standPin" aria-hidden>📍</span>
+                                                    <span>STAND NAC – 1012</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="fit_promo__body">
+                                            <div className="fit_promo__left">
+                                                <div className="fit_promo__headerText">
+                                                    <span className="fit_promo__eyebrow">
+                                                        ✦ {t('fit_slide_eyebrow')}
+                                                    </span>
+                                                    <h2 className="fit_promo__title">
+                                                        {t('fit_slide_title')}
+                                                    </h2>
+                                                    <p className="fit_promo__tagline">
+                                                        {t('fit_slide_tagline')}
+                                                    </p>
+                                                </div>
+
+                                                <ul className="fit_promo__pills">
+                                                    <li className="fit_promo__pill">
+                                                        <span className="fit_promo__pillIcon" aria-hidden>
+                                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" /></svg>
+                                                        </span>
+                                                        <span>{t('fit_slide_dates')}</span>
+                                                    </li>
+                                                    <li className="fit_promo__pill">
+                                                        <span className="fit_promo__pillIcon" aria-hidden>
+                                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
+                                                        </span>
+                                                        <span>{t('fit_slide_location')}</span>
+                                                    </li>
+                                                    <li className="fit_promo__pill fit_promo__pill--stand">
+                                                        <span className="fit_promo__pillIcon" aria-hidden>
+                                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 21h18" /><path d="M5 21V7l8-4v18" /><path d="M19 21V11l-6-4" /><path d="M9 9v.01" /><path d="M9 12v.01" /><path d="M9 15v.01" /><path d="M9 18v.01" /></svg>
+                                                        </span>
+                                                        <span className="fit_promo__pillTextHighlight">{t('fit_slide_stand')}</span>
+                                                    </li>
+                                                </ul>
+
+                                                <div className="fit_promo__textBlock">
+                                                    <p className="fit_promo__desc">{t('fit_slide_desc')}</p>
+                                                    <p className="fit_promo__note">{t('fit_slide_note')}</p>
+                                                </div>
+                                            </div>
+
+                                            <div className="fit_promo__right">
+                                                <div className="fit_promo__flyerCard">
+                                                    <Image
+                                                        src="/fit-ayres.png"
+                                                        alt="Flyer Ayres de Calafate en FIT 2026"
+                                                        fill
+                                                        className="fit_promo__flyerImg"
+                                                        sizes="(max-width: 768px) 140px, 185px"
+                                                    />
+                                                    <div className="fit_promo__flyerBadge">
+                                                        <span>📍 Stand Nac – 1012</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="fit_promo__ctaBlock">
+                                            <a
+                                                className="fit_promo__cta"
+                                                href="https://wa.me/5492902405455?text=Hola!%20Me%20contacto%20desde%20la%20web%20para%20coordinar%20una%20reuni%C3%B3n%20en%20la%20FIT%20Argentina%202026%20(Stand%20Nac%201012)"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                aria-label={t('fit_slide_cta')}
+                                            >
+                                                <svg className="fit_promo__ctaIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" /></svg>
+                                                <span>{t('fit_slide_cta')}</span>
+                                            </a>
+                                            <div className="fit_promo__contactLines">
+                                                <a href="mailto:comercial@ayresdecalafate.com?subject=Reunión%20FIT%20Argentina%202026%20-%20Ayres%20de%20Calafate" className="fit_promo__contactLink">
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                                    <span>comercial@ayresdecalafate.com</span>
+                                                </a>
+                                                <a href="tel:+5492902405455" className="fit_promo__contactLink">
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                                    <span>+54 9 2902 40-5455</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <footer className="fit_promo__footer">
+                                    <p className="fit_promo__footerNote">{t('fit_slide_footer')}</p>
+                                </footer>
+                            </section>
+                        </div>
+                    </div>
+
+                    {/* ─── SLIDE 2: EXPERIENCIA AYRES ─── */}
                     <div className="embla__slide" id="embla__slide_homep_detail">
                         <div className="embla__slide__number" id="embla__slide__number_homep_detail">
                             <section className={`experience_promo ${experienceFont.className}`}>
