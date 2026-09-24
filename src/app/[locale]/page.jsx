@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <SectionHero
-        imageSrc="/images/img_prueba.jpg"
+        imageSrc="/images/aura.png"
         label={t('spa_imagetext')}
         title={t('home_imgText')}
         lineDivider
