@@ -95,7 +95,7 @@ function Page() {
               </li>
             </ul>
             <ul className={styles.btns_reserve}>
-              <li><a aria-label='ver ofertas en el restaurante del hotel ayres de calafate' href="https://www.instagram.com/ayres_restaurante/">{t('view_offers')}</a></li>
+              <li><a aria-label='ver ofertas en el restaurante del hotel ayres de calafate' target="_blank" href="https://drive.google.com/file/d/1o5F_ENOYXk_XxzYzir802z2bJRKDwyJ1/view?usp=sharing">{t('view_offers')}</a></li>
               <li><a aria-label='reservar una mesa en el restaurante del hotel ayres de calafate' href="https://wa.me/5492902405455?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20mesa%20en%20Ayres%20Restaurante.%20%C2%BFTienen%20disponibilidad%3F">{t('book_table')}</a></li>
             </ul>
           </article>

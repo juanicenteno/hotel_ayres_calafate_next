@@ -154,6 +154,7 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
     cursor: pointer;
     user-select: none;
     transition: color 0.2s;
+    font-weight: bold;
 }
 
 .span:hover {

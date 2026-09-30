@@ -1,22 +1,17 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 // import { Link } from '@/i18n/routing';
 import { TransitionLink } from '@/components/TransitionLink';
 
 import styles from './Header.module.css'
 import Booking from "../Booking/Booking";
 
-import { usePathname } from "next/navigation";
-
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 
 function Header() {
     const t = useTranslations();
-    const locale = useLocale();
-    const pathname = usePathname();
     // State to manage header visibility
     const [isOpen, setIsOpen] = useState(false);
     const [isSubmenuOpen, setIsOpenSubmenu] = useState(false);
@@ -54,113 +49,48 @@ function Header() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    const isHomePage = pathname === "/" || pathname === `/${locale}` || pathname === `/${locale}/`;
-    const fitHref = isHomePage ? "#embla_homep_carousel" : `/${locale}#embla_homep_carousel`;
-
     return (
         <>
-            <div className={`${styles.header_fixed_wrap} ${showHeader ? styles.visible : styles.hidden}`}>
-                <a href={fitHref} className={styles.marquee_bar} aria-label="FIT Argentina 2026">
-                    <div className={styles.marquee_track}>
-                        <div className={styles.marquee_group}>
-                            <span className={styles.marquee_logo_badge}>
-                                <Image
-                                    src="/images/fit.png"
-                                    alt="FIT 2026"
-                                    width={32}
-                                    height={20}
-                                    className={styles.marquee_logo_img}
-                                    priority
-                                />
-                            </span>
-                            <span className={styles.marquee_highlight}>FIT 2026</span>
-                            <span>{t('fit_marquee_text')}</span>
-                            <span className={styles.marquee_sep}>•</span>
-                            <span className={styles.marquee_badge}>{t('fit_marquee_dates')}</span>
-                            <span className={styles.marquee_sep}>•</span>
-                            <span className={styles.marquee_stand_badge}>{t('fit_marquee_stand')}</span>
-                            <span className={styles.marquee_sep}>•</span>
-                        </div>
-                        <div className={styles.marquee_group} aria-hidden="true">
-                            <span className={styles.marquee_logo_badge}>
-                                <Image
-                                    src="/images/fit.png"
-                                    alt="FIT 2026"
-                                    width={32}
-                                    height={20}
-                                    className={styles.marquee_logo_img}
-                                />
-                            </span>
-                            <span className={styles.marquee_highlight}>FIT 2026</span>
-                            <span>{t('fit_marquee_text')}</span>
-                            <span className={styles.marquee_sep}>•</span>
-                            <span className={styles.marquee_badge}>{t('fit_marquee_dates')}</span>
-                            <span className={styles.marquee_sep}>•</span>
-                            <span className={styles.marquee_stand_badge}>{t('fit_marquee_stand')}</span>
-                            <span className={styles.marquee_sep}>•</span>
-                        </div>
-                        <div className={styles.marquee_group} aria-hidden="true">
-                            <span className={styles.marquee_logo_badge}>
-                                <Image
-                                    src="/images/fit.png"
-                                    alt="FIT 2026"
-                                    width={32}
-                                    height={20}
-                                    className={styles.marquee_logo_img}
-                                />
-                            </span>
-                            <span className={styles.marquee_highlight}>FIT 2026</span>
-                            <span>{t('fit_marquee_text')}</span>
-                            <span className={styles.marquee_sep}>•</span>
-                            <span className={styles.marquee_badge}>{t('fit_marquee_dates')}</span>
-                            <span className={styles.marquee_sep}>•</span>
-                            <span className={styles.marquee_stand_badge}>{t('fit_marquee_stand')}</span>
-                            <span className={styles.marquee_sep}>•</span>
-                        </div>
-                    </div>
-                </a>
-
-                <header id="Header" className={styles.header}>
-                    <div className={styles.burger_container} onClick={handleMobileNavClick}>
-                        <svg aria-label="Abrir Menú movil" className={styles.burger} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#000" strokeWidth="2" strokeLinecap="round"></path> <path d="M4 12L20 12" stroke="#000" strokeWidth="2" strokeLinecap="round"></path> <path d="M4 6L20 6" stroke="#000" strokeWidth="2" strokeLinecap="round"></path> </g></svg>
-                        <small className={styles.burger_small}>{t('menu')}</small>
-                    </div>
-                    <div className={styles.content_header}>
-                        <TransitionLink className={styles.containerLogo} href="/" style={{ viewTransitionName: 'titulo-pedido-prueba' }}>
-                            <img
-                                className={styles.logo}
-                                src="/images/ayresnegro2.webp"
-                                alt="logo del hotel ayres de calafate"
-                                loading="eager"
-                            />
-                        </TransitionLink>
-                        <nav className={styles.desktop_nav}>
-                            <div className={styles.divider}>
-                                <div className={styles.opensubmenu}>
-                                    <TransitionLink className={styles.list_item} prefetch={true} href="/rooms">{t('rooms')}</TransitionLink>
-                                    <svg onClick={handleSubMenu} className={`${styles.openBox} ${isSubmenuOpen ? 'active' : ''}`} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10 7L15 12L10 17" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
-                                </div>
-                                <ul className={`${styles.submenu} ${isSubmenuOpen ? 'active' : ''}`}>
-                                    <li><TransitionLink prefetch={true} href="/rooms/doble-estandar">{t('room_doble_standard')}</TransitionLink></li>
-                                    <li><TransitionLink prefetch={true} href="/rooms/triple-estandar">{t('room_triple_standard')}</TransitionLink></li>
-                                    {/* <li><TransitionLink prefetch={true} href="/rooms/suite">{t('suite')}</TransitionLink></li> */}
-                                    <li><TransitionLink prefetch={true} href="/rooms/doble-superior">{t('room_doble_superior')}</TransitionLink></li>
-                                    <li><TransitionLink prefetch={true} href="/rooms/triple-superior">{t('room_triple_superior')}</TransitionLink></li>
-                                </ul>
+            <header id="Header" className={`${styles.header} ${showHeader ? styles.visible : styles.hidden}`}>
+                <div className={styles.burger_container} onClick={handleMobileNavClick}>
+                    <svg aria-label="Abrir Menú movil" className={styles.burger} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#000" strokeWidth="2" strokeLinecap="round"></path> <path d="M4 12L20 12" stroke="#000" strokeWidth="2" strokeLinecap="round"></path> <path d="M4 6L20 6" stroke="#000" strokeWidth="2" strokeLinecap="round"></path> </g></svg>
+                    <small className={styles.burger_small}>{t('menu')}</small>
+                </div>
+                <div className={styles.content_header}>
+                    <TransitionLink className={styles.containerLogo} href="/">
+                        <img
+                            className={styles.logo}
+                            src="/images/ayresnegro2.webp"
+                            alt="logo del hotel ayres de calafate"
+                            loading="eager"
+                        />
+                    </TransitionLink>
+                    <nav className={styles.desktop_nav}>
+                        <div className={styles.divider}>
+                            <div className={styles.opensubmenu}>
+                                <TransitionLink className={styles.list_item} prefetch={true} href="/rooms">{t('rooms')}</TransitionLink>
+                                <svg onClick={handleSubMenu} className={`${styles.openBox} ${isSubmenuOpen ? 'active' : ''}`} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10 7L15 12L10 17" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
                             </div>
-                            <TransitionLink className={styles.list_item} prefetch={true} href="/gallery">{t('gallery')}</TransitionLink>
-                            <TransitionLink className={styles.list_item} prefetch={true} href="/restaurant">{t('dining')}</TransitionLink>
-                            <TransitionLink className={styles.list_item} prefetch={true} href="/spa">{t('our_spa')}</TransitionLink>
-                            <a className={styles.list_item} href="#faq2">{t('faq')}</a>
-                            <TransitionLink prefetch={true} className={styles.list_item} href="/contact">{t('contact')}</TransitionLink>
-                            <LanguageSwitcher />
-                        </nav>
-                    </div>
-                    <div className={styles.switcher_mobile}>
+                            <ul className={`${styles.submenu} ${isSubmenuOpen ? 'active' : ''}`}>
+                                <li><TransitionLink prefetch={true} href="/rooms/doble-estandar">{t('room_doble_standard')}</TransitionLink></li>
+                                <li><TransitionLink prefetch={true} href="/rooms/triple-estandar">{t('room_triple_standard')}</TransitionLink></li>
+                                {/* <li><TransitionLink prefetch={true} href="/rooms/suite">{t('suite')}</TransitionLink></li> */}
+                                <li><TransitionLink prefetch={true} href="/rooms/doble-superior">{t('room_doble_superior')}</TransitionLink></li>
+                                <li><TransitionLink prefetch={true} href="/rooms/triple-superior">{t('room_triple_superior')}</TransitionLink></li>
+                            </ul>
+                        </div>
+                        <TransitionLink className={styles.list_item} prefetch={true} href="/gallery">{t('gallery')}</TransitionLink>
+                        <TransitionLink className={styles.list_item} prefetch={true} href="/restaurant">{t('dining')}</TransitionLink>
+                        <TransitionLink className={styles.list_item} prefetch={true} href="/spa">{t('our_spa')}</TransitionLink>
+                        <a className={styles.list_item} href="#faq2">{t('faq')}</a>
+                        <TransitionLink prefetch={true} className={styles.list_item} href="/contact">{t('contact')}</TransitionLink>
                         <LanguageSwitcher />
-                    </div>
-                </header>
-            </div>
+                    </nav>
+                </div>
+                <div className={styles.switcher_mobile}>
+                    <LanguageSwitcher />
+                </div>
+            </header>
 
             <nav className={`${styles.nav} ${isOpen ? 'active' : ''}`}>
                 <svg
@@ -174,7 +104,7 @@ function Header() {
                 >
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                 </svg>
-                <img className={styles.logo} src="/images/ayresnegro2.webp" alt="logo del hotel ayres de calafate" loading="lazy" />
+                <img className={styles.logo_mobile} src="/images/ayresnegro2.webp" alt="logo del hotel ayres de calafate" loading="lazy" />
                 <section className={styles.container}>
                     <h3 className={styles.nav_title}>{t('menu')}</h3>
                     <ul className={styles.nav_list}>

@@ -60,6 +60,13 @@
     fill: var(--gold);
 }
 
+.footerNavegation div {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    color: #b5b5b5;
+}
+
 
 .footerNavegation {
     display: flex;

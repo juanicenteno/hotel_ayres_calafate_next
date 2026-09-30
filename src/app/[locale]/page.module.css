@@ -1,16 +1,78 @@
 .main {
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 
+.temporalPromos {
+  width: 90%;
+  margin: 3.5rem auto 0;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   VALUE PROPS (Barra de 4 pilares)
+════════════════════════════════════════════════════════════════════ */
+.valuePropsBar {
+  width: 90%;
+  margin: -2.5rem auto 3.5rem;
+  position: relative;
+  z-index: 10;
+  background: rgb(99, 39, 28, 0.95);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(191, 151, 102, 0.28);
+  border-radius: 8px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28);
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1.5rem;
+  gap: 1.25rem;
+}
+
+.valuePropItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.valuePropIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(191, 151, 102, 0.15);
+  border: 1px solid rgba(191, 151, 102, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--gold2);
+}
+
+.valuePropText h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-color-w);
+  letter-spacing: 0.02em;
+  margin-bottom: 0.2rem;
+}
+
+.valuePropText p {
+  font-size: 0.78rem;
+  color: rgba(244, 237, 224, 0.78);
+  line-height: 1.35;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   PRESENTACIÓN BOUTIQUE
+════════════════════════════════════════════════════════════════════ */
 .ayresPresentation {
   width: 90%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
-  margin: auto;
-  text-align: center;
-  margin: 0 auto 0;
+  margin: 3.5rem auto;
+  gap: 2rem;
+}
+
+.ayresPresentation article {
+  width: 100%;
 }
 
 .ayresPresentation small {
@@ -19,53 +81,270 @@
   font-family: var(--font-eb-garamond), serif;
   font-style: italic;
   font-weight: 500;
-  margin-bottom: 5px;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .ayresPresentation h2 {
   font-size: 30px;
   font-family: var(--font-bodar), serif;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.2;
 }
 
 .ayresPresentation h3 {
-  font-size: 32px;
+  font-size: 28px;
   font-family: var(--font-bodar), serif;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
   text-align: left;
   color: var(--red);
+  line-height: 1.2;
 }
 
 .ayresPresentation p {
-  font-size: 14px;
+  font-size: 15px;
+  line-height: 1.7;
   text-align: left;
+  color: #444;
+}
+
+.presentationHighlight {
+  margin-top: 1.25rem;
+  font-weight: 600;
+  color: var(--red);
+  font-size: 1.05rem;
 }
 
 .ayresPresentation a {
-  margin-top: 3rem;
-  width: 100%;
-  height: 4rem;
-  font-size: 18px;
+  margin-top: 2rem;
+  width: auto;
+  min-width: 200px;
+  height: 3.25rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  display: flex;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--red);
-  color: var(--text-body);
-  margin-bottom: 4rem;
-  transition: all .3s;
+  background-color: var(--gold2);
+  color: #1a1a1a;
+  border-radius: 4px;
+  border: 1px solid rgba(191, 151, 102, 0.4);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+  padding: 0 2rem;
 }
 
 .ayresPresentation a:hover {
-  background-color: #63271cdc;
+  background-color: var(--brown);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
 }
-
-
 
 .image_desktop_container {
-  display: none;
+  display: block;
+  width: 100% !important;
+  height: 280px !important;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
+/* ════════════════════════════════════════════════════════════════════
+   TEASER DE EXPERIENCIAS (Spa & Gastronomía)
+════════════════════════════════════════════════════════════════════ */
+.experiencesSection {
+  width: 90%;
+  margin: 4.5rem auto;
+}
+
+.experiencesHeader {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.experiencesHeader small {
+  color: var(--gold2);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.experiencesHeader h2 {
+  font-size: 30px;
+  font-family: var(--font-bodar), serif;
+  color: var(--text-color-b);
+}
+
+.experiencesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.experienceCard {
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(191, 151, 102, 0.25);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experienceCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.14);
+}
+
+.experienceImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 240px;
+}
+
+.experienceContent {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.experienceBadge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.5rem;
+}
+
+.experienceContent h3 {
+  font-family: var(--font-bodar), serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-color-b);
+}
+
+.experienceContent p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.experienceLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--red);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.experienceLink:hover {
+  color: var(--brown);
+  transform: translateX(4px);
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   BANNER ASESORAMIENTO & RESERVA DIRECTA
+════════════════════════════════════════════════════════════════════ */
+.directContactBanner {
+  width: 90%;
+  margin: 5rem auto;
+  background: linear-gradient(135deg, hsl(154, 26%, 22%) 0%, hsl(154, 26%, 16%) 100%);
+  border: 1px solid rgba(191, 151, 102, 0.3);
+  border-radius: 8px;
+  padding: 3rem 1.5rem;
+  color: var(--text-color-w);
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+.directContactEyebrow {
+  color: var(--gold2);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.directContactTitle {
+  font-family: var(--font-bodar), serif;
+  font-size: 1.85rem;
+  margin-bottom: 1rem;
+  color: var(--text-color-w);
+  line-height: 1.25;
+}
+
+.directContactDesc {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  max-width: 680px;
+  margin: 0 auto 2rem;
+  color: rgba(244, 237, 224, 0.88);
+}
+
+.directContactActions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.directWppCta {
+  background-color: #25D366;
+  color: #ffffff !important;
+  padding: 0 2rem;
+  height: 3.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3);
+  text-decoration: none;
+}
+
+.directWppCta:hover {
+  background-color: #20ba5a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+}
+
+.directWppCta svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.directSecondaryText {
+  color: rgba(244, 237, 224, 0.75);
+  font-size: 0.85rem;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   BOTÓN FLOTANTE WHATSAPP
+════════════════════════════════════════════════════════════════════ */
 .wpp_btn {
   position: fixed;
   background: #12C60F;
@@ -73,7 +352,6 @@
   bottom: 6rem;
   height: 4.5rem;
   width: 4.5rem;
-  /* padding: 1rem; */
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -92,7 +370,18 @@
   width: 100%;
 }
 
+@media (min-width: 640px) {
+  .directContactActions {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+}
+
 @media (min-width: 768px) {
+  .valuePropsBar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .wpp_btn {
     right: 3rem;
     bottom: 8rem;
@@ -100,24 +389,28 @@
 }
 
 @media (min-width: 1024px) {
-  .ayresPresentation {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 4rem;
-    height: 29rem;
+  .valuePropsBar {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1.5rem 2rem;
+    margin: -3rem auto 5rem;
   }
 
-  .ayresPresentation a {
-    margin-bottom: 0;
+  .ayresPresentation {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    margin: 5rem auto;
   }
 
   .ayresPresentation article {
-    width: 40%;
+    width: 48%;
   }
 
   .image_desktop_container {
-    display: block;
+    width: 48% !important;
+    height: 420px !important;
+    border-radius: 8px;
   }
 
   .ayresPresentation small {
@@ -128,14 +421,31 @@
     font-size: 38px;
   }
 
+  .ayresPresentation h3 {
+    font-size: 34px;
+  }
+
   .ayresPresentation p {
     font-size: 16px;
+  }
+
+  .experiencesGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .directContactBanner {
+    padding: 4rem 3.5rem;
+  }
+
+  .directContactTitle {
+    font-size: 2.4rem;
   }
 }
 
 @media (min-width: 1440px) {
   .main {
-    width: 80%;
-    margin: 6rem auto 0;
+    width: 85%;
+    margin: 3rem auto 0;
   }
 }

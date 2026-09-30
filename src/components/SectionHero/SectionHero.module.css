@@ -64,16 +64,34 @@
 }
 
 .cta {
-  margin-top: 5rem;
-  width: 100%;
-  background: #323232;
-  height: 4rem;
-  font-size: 22px;
+  margin-top: 2rem;
+  width: auto;
+  min-width: 180px;
+  padding: 0 2rem;
+  background-color: var(--gold2);
+  color: #1a1a1a;
+  height: 3.25rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  display: flex;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  border-radius: 4px;
+  border: 1px solid rgba(191, 151, 102, 0.4);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background-color: var(--brown);
+  color: #ffffff;
+  border-color: var(--brown);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 @keyframes fadeSlideUp {
@@ -89,13 +107,17 @@
 
 @media (min-width: 1024px) {
   .hero {
-    height: 70vh;
+    /* height: 70vh; */
     width: 90%;
-    margin: 8rem auto 0;
+    margin: 0 auto 0;
   }
 
   .cta {
-    display: none;
+    display: inline-flex;
+    margin-top: 2.25rem;
+    height: 3.5rem;
+    padding: 0 2.5rem;
+    font-size: 0.9rem;
   }
 
   .label {
@@ -108,5 +130,14 @@
 
   .subtitle {
     font-size: 20px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .hero {
+    height: 70vh;
+    width: 90%;
+    margin: 4rem auto 0;
   }
 }
