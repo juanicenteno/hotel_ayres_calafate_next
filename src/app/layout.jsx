@@ -1,6 +1,7 @@
 import { EB_Garamond, Lora } from "next/font/google";
 import localFont from "next/font/local";
 import { headers } from "next/headers";
+import "@fontsource-variable/montserrat";
 import "./[locale]/globals.css";
 
 const ebGaramond = EB_Garamond({
