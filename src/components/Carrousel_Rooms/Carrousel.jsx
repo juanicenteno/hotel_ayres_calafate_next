@@ -67,7 +67,7 @@ function Carrousel() {
                                                     <article className={Styles.imgText}>
                                                         <div className={Styles.TitlePrice}>
                                                             <h3>{room.nombre[locale]}</h3>
-                                                            <span>{room.precio} | {t('night')}</span>
+                                                            {/* <span>{room.precio} | {t('night')}</span> */}
                                                         </div>
                                                         <ul className={Styles.amenitiesList}>
                                                             {Object.entries(room.ventajas[locale]).slice(0, 6).map(([key, text]) => (
