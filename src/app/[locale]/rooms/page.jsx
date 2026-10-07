@@ -70,7 +70,7 @@ function Rooms() {
                                         <li key={key}>{text}</li>
                                     ))}
                                 </ul>
-                                <small className={styles.room_price}>{item.precio}/{t('night')}</small>
+                                {/* <small className={styles.room_price}>{item.precio}/{t('night')}</small> */}
                                 <TransitionLink aria-label="ver detalles de habitacion" key={item.id} href={`/rooms/${item.id}`} className={styles.reserve_button}>{t('see_more')}</TransitionLink>
                             </section>
                         </article>
