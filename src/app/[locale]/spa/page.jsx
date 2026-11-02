@@ -77,7 +77,7 @@ function Spa() {
               <p>{t('spa_lavanda_desc')}</p>
               <div className={styles.treatment_footer}>
                 <span className={styles.treatment_time}>{t('spa_duration_40')}</span>
-                <span className={styles.treatment_price}>{t('spa_price_70k')}</span>
+                <span className={styles.treatment_price}>AR$ 75.000</span>
               </div>
               <a
                 aria-label={t('spa_reserve_now')}
@@ -108,7 +108,7 @@ function Spa() {
               <p>{t('spa_menta_desc')}</p>
               <div className={styles.treatment_footer}>
                 <span className={styles.treatment_time}>{t('spa_duration_30')}</span>
-                <span className={styles.treatment_price}>{t('spa_price_60k')}</span>
+                <span className={styles.treatment_price}>AR$ 65.000</span>
               </div>
               <a
                 aria-label={t('spa_reserve_now')}
@@ -140,7 +140,7 @@ function Spa() {
               <p>{t('spa_armonia_desc')}</p>
               <div className={styles.treatment_footer}>
                 <span className={styles.treatment_time}>{t('spa_duration_40')}</span>
-                <span className={styles.treatment_price}>{t('spa_price_70k')}</span>
+                <span className={styles.treatment_price}>AR$ 92.000</span>
               </div>
               <a
                 aria-label={t('spa_reserve_now')}
@@ -183,6 +183,9 @@ function Spa() {
             </ul>
             <div className={styles.card_warning}>
               <strong>{t('spa_card_payment_warning').split(':')[0]}:</strong> {t('spa_card_payment_warning').split(':')[1]}
+            </div>
+            <div className={styles.card_warning}>
+              <strong>{t('spa_residents_warning').split(':')[0]}:</strong> {t('spa_residents_warning').split(':')[1]}
             </div>
           </div>
         </section>
